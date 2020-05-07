@@ -15,36 +15,36 @@
 			<div id="hide_on_first_playthrough">
 				<div id="section_dynamics">
 
-					On <i>average</i>,
-					each <icon i></icon>...
+					U <i>proseku</i>,
+					svaki <icon i></icon>...
 					<br><br>
 					
 					<div id="label_transmission">
-						Infects 1 <icon s></icon> per <span id="label_p_transmission">N</span> days
+						Inficira 1 <icon s></icon> na svakih <span id="label_p_transmission">N</span> dana
 						<br>
 						<span id="label_transmission_caveat">
-							(at the start of the epidemic)<br>
+							(na početku epidemije)<br>
 						</span>
 						<input class="sim_input" type="range" id="p_transmission" min="1" max="30" step="1" value="4">
 					</div>
 
 					<div id="label_c_exposed">
 						<input class="sim_checkbox" type="checkbox" id="c_exposed">
-						Takes <span id="label_p_exposed">N</span> days to go from <icon e></icon> to <icon i></icon>
+						Protekne <span id="label_p_exposed">N</span> dana od <icon e></icon> do <icon i></icon>
 						<br>
 						<input class="sim_input" type="range" id="p_exposed" min="1" max="30" step="1" value="3">
 					</div>
 					
 					<div id="label_c_recovery">
 						<input class="sim_checkbox" type="checkbox" id="c_recovery">
-						Takes <span id="label_p_recovery">N</span> days to go from <icon i></icon> to <icon r></icon>
+						Protekne <span id="label_p_recovery">N</span> dana od <icon i></icon> do <icon r></icon>
 						<br>
 						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="10">
 					</div>
 					
 					<div id="label_c_waning">
 						<input class="sim_checkbox" type="checkbox" id="c_waning">
-						Loses immunity <icon s></icon> in <span id="label_p_waning">N</span> months
+						<icon s></icon> izgubi imunitet za <span id="label_p_waning">N</span> meseci
 						<br>
 						<input class="sim_input" type="range" id="p_waning" min="1" max="60" step="1" value="12">
 					</div>
@@ -55,67 +55,67 @@
 
 				<div id="section_r">
 
-					R<sub>0</sub> is <span id="label_p_r0" toFixed="2"></span>
+					R<sub>0</sub> je <span id="label_p_r0" toFixed="2"></span>
 					<canvas class="r_canvas" id="canvas_r0"></canvas>
 					<!--input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled-->
 					<br>
 
 					<span id="label_s">
-						% of people who are <i>NOT</i> <icon s></icon>
+						% ljudi koji <i>NISU</i> <icon s></icon>
 						<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" value="0" disabled>
 						<div class="herd"></div>
 						<br>
 					</span>
 
 					<span id="int_block_0">
-						Increased Hygiene
+						Povećana higijena
 						<br>
 						<input class="sim_input recordable" type="range" id="p_hygiene" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_1">
-						Physical Distancing
+						Fizičko distanciranje (udaljavanje)
 						<br>
 						<input class="sim_input recordable" type="range" id="p_distancing" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_2">
-						Isolating Cases
+						Izolacija potvrđenih slučajeva
 						<br>
 						<input class="sim_input recordable" type="range" id="p_isolate" min="0" max="1" step="0.001" value="0">
 						<br>
-						Quarantining Contacts
+						Karantin osoba sa kojima je postojao kontakt
 						<br>
 						<input class="sim_input recordable" type="range" id="p_quarantine" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_3">
-						Face Masks
+						Maske
 						<br>
 						<input class="sim_input recordable" type="range" id="p_masks" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_4">
-						Strength of Summer
+						Vrelina leta
 						<br>
 						<input class="sim_input recordable" type="range" id="p_summer" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_5">
-						Vaccinations
+						Vakcinacije
 						<br>
 						<input class="sim_input recordable" type="range" id="p_vaccines" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 
 					<span id="label_re">
-						R is now <span id="label_p_re" toFixed="2"></span>
+						R je sada <span id="label_p_re" toFixed="2"></span>
 						<canvas class="r_canvas" id="canvas_re"></canvas>
 						<!--<input class="sim_input" type="range" id="p_re" min="0" max="6" step="0.01" disabled>-->
 					</span>
 
 					<span id="hospital_capacity">
-						ICU capacity at <span id="label_p_hospital">N</span>%
+						Popunjenost mesta na intenzivnoj nezi je <span id="label_p_hospital">N</span>%
 						<br>
 						<input class="sim_input recordable" type="range" id="p_hospital" min="100" max="1000" step="1" value="333">
 					</span>
@@ -126,13 +126,13 @@
 
 				<div id="section_meta">
 
-					Simulate <span id="label_p_years" toFixed="1">N</span> years
+					Simuliraj <span id="label_p_years" toFixed="1">N</span> godina
 					<span id="section_meta_years">
 						<br>
 						<input class="sim_input" type="range" id="p_years" min="0.5" max="10" step="0.5" value="2">
 						<br>
 					</span>
-					in <span id="label_p_speed">N</span> seconds
+					za <span id="label_p_speed">N</span> sekundi
 					<br>
 					<input class="sim_input" type="range" id="p_speed" min="1" max="60" step="1" value="30">
 
@@ -143,29 +143,29 @@
 				<div class="big_button">
 					<div id="bb_start">
 						<div class='control_icon' start></div>
-						Start
+						Pokreni
 					</div>
 					<div id="bb_pause">
 						<div class='control_icon' pause></div>
-						Pause
+						Pauziraj
 					</div>
 					<div id="bb_continue">
 						<div class='control_icon' continue></div>
-						Continue
+						Nastavi
 					</div>
 					<div id="bb_reset">
 						<div class='control_icon' reset></div>
-						Reset
+						Resetuj
 					</div>
 				</div>
 				<!--div id="sb_stop">
 					Stop
 				</div-->
 				<div id="sb_reset">
-					Reset All
+					Resetuj sve
 				</div>
 				<div id="sb_replay">
-					Replay Recording
+					Pusti ponovo simulaciju
 				</div>
 			</div>
 
@@ -182,31 +182,31 @@
 			<div id="legend">
 				
 				<span id="label_susceptible" class="lines">
-					<icon s></icon> Susceptible<span id="show_percent_s"></span>
+					<icon s></icon> Podložni<span id="show_percent_s"></span>
 					<br>
 				</span>
 				<span id="label_exposed" class="lines">
-					<icon e></icon> Exposed<span id="show_percent_e"></span>
+					<icon e></icon> Izloženi<span id="show_percent_e"></span>
 					<br>
 				</span>
 				<span id="label_infectious" class="lines">
-					<icon i></icon> Infectious<span id="show_percent_i"></span>
+					<icon i></icon> Inficirani<span id="show_percent_i"></span>
 					<br>
 				</span>
 				<span id="label_removed" class="lines">
-					<icon r></icon> Recovered<span id="show_percent_r"></span>
+					<icon r></icon> Oporavljeni<span id="show_percent_r"></span>
 				</span>
 				
 				<br class="lines">
 				
 				<span id="label_herd_immunity">
-				- - - Herd Immunity
+				- - - Imunitet krda
 				</span>
 
 				<br class="lines">
 				
 				<span id="label_capacity">
-				––– ICU Capacity
+				––– Kapacitet intenzivne nege
 				</span>
 
 			</div>
@@ -218,21 +218,21 @@
 			</div>
 			<div id="pointer_words">
 				<span id="pointer_params">
-					Try re-running the simulation
-					with different numbers!
+					Probaj da ponovo pokreneš simulaciju
+					sa drugim brojevima!
 					<span id="pointer_params_2">
-						<b>(note: you can change the numbers <i>while</i> the sim is running)</b>
+						<b>(možeš da promeniš brojeve i <i>dok</i> simulacija teče)</b>
 					</span>
 				</span>
 				<span id="pointer_scroll">
-					Once you're done playing around,
-					scroll down to keep reading!
+					Kada završiš sa igranjem isprobavanjem različitih scenarija,
+					nastavi da skroluješ za nastavak teksta!
 				</span>
 				<span id="pointer_replay">
-					This simulation has a "recorded scenario"!
+					Ova simulacija ima "snimljeni scenario"!
 					<br>
-					Click "Start" to watch the recording <i>before</i>
-					you change any of the numbers
+					Klikni "Pokreni" da vidiš snimak <i>pre</i>
+					nego što izmeniš neke od brojeva
 				</span>
 			</div>
 		</div>
@@ -244,12 +244,12 @@
 		<span>feb</span>
 		<span>mar</span>
 		<span>apr</span>
-		<span>may</span>
+		<span>maj</span>
 		<span>jun</span>
 		<span>jul</span>
-		<span>aug</span>
+		<span>avg</span>
 		<span>sep</span>
-		<span>oct</span>
+		<span>okt</span>
 		<span>nov</span>
 		<span>dec</span>
 	</span>
