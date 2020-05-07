@@ -36,7 +36,7 @@ Ovaj vodič (objavljen prvog maja 2020. vidi ovu fusnotu!→[^timestamp]) za cil
 
 [^timestamp]: Fusnote će sadržati izvore informacija, linkove i bonus komentare, kao ovaj komentar!
     
-    **Ovaj vodič je objavljen prvog maja 2020.** Mnogi detalji će se menjati ali smo mi uvereni da će ovaj vodič pokriti 95% mogućih budućnosti i da će Epidemiologija 101 biti zauvek od koristi.
+    **Ovaj vodič je objavljen prvog maja 2020.** Mnogi detalji će se menjati ali smo mi uvereni da će ovaj vodič pokriti 95% mogućih budućnosti i da će početni kurs Epidemiologije biti zauvek od koristi.
 
 Vežite se: na putu smo da osetimo turbulencije.
 
@@ -81,92 +81,92 @@ Ali, ova simulacija je pogrešna. Eksponencijalni rast, na svu sreću, ne dešav
 
 ![](pics/susceptibles.png)
 
-The more <span class="nowrap"><icon i></icon>s</span> there are, the faster <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s,</span> **but the fewer <span class="nowrap"><icon s></icon>s</span> there are, the *slower* <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span>**
+Što je više zaraznih <span class="nowrap"><icon i></icon>s</span>, brže zdravi <span class="nowrap"><icon s></icon>s</span> postaju zarazni <span class="nowrap"><icon i></icon>s,</span> **ali ima manje zdravih <span class="nowrap"><icon s></icon>s</span>, pa *sporije* zdravi <span class="nowrap"><icon s></icon>s</span> postaju zarazni <span class="nowrap"><icon i></icon>s.</span>**
 
-How's this change the growth of an epidemic? Let's find out:
+Kako ovo menja rast zaraženih tokom epidemije? Otkrijmo:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+Ovo je "S-kriva" ili **kriva logističkog rasta.** Počinje malim brojevima, zatim eksplodira, a onda usporava.
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+Ali, ova simulacija je *i dalje* pogrešna. Nismo iskoristili činjenicu da zarazni <icon i></icon> u nekom trenutku prestaju da budu zarazni, ili 1) oporavkom, 2) "oporavkom" sa oštećenim plućima, ili 3) umiranjem.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <span class="nowrap"><icon r></icon>s</span> can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+Zarad pojednostavljenja, hajde da pretpostavimo da svi <icon i></icon> zarazni ljudi postaju <icon r></icon> oporavljeni (eng. Recovered). (Samo zapamtite da u realnosti, neki umiru. Prim. prev. zato se na engleskom u okviru SIR modela - Recovered često nazivaju i Removed, tj. uklonjeni iz daljeg epidemiološkog razmatranja ili smrću ili trajnim imunitetom) <span class="nowrap"><icon r></icon>s</span> oporavljeni ne mogu ponovo biti zaraženi, i pretpostavimo – *za sada!* –da oni ostaju doživotno imuni.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <span class="nowrap"><icon i></icon>:</span>**
+U slučaju COVID-19, procenjeno je da su <icon i></icon> zarazni 10 dana, *u proseku*.[^infectiousness] To znači da će se nekiporaviti za manje od 10 dana, a nekima će biti potrebno više. **To izgleda ovako sa simulacijom koja *počinje* sa 100% <span class="nowrap"><icon i></icon>:</span>**
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^infectiousness]: “Medijalna vrednost perioda tokom koga je COVID-19 pozitivna osoba zarazna \[...\] je 9.5 dana.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Da, znamo da "medijalna" vrednost nije isto što i "prosečna vrednost". U cilju ovog pojednostavljenog edukativnog modela mislimo da su ove dve vrednosti dovoljno blizu.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+Ovo je suprotno od eksponencijalnog rasta, ovo je **kriva eksponencijalnog opadanja.**
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Šta se dešava ako simulirate S krivu logističkog rasta *sa* oporavljanjem?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Hajde da otkrijemo.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <span class="nowrap"><icon i></icon>,</span>    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>),</span>
-starts at just 0.001% <span class="nowrap"><icon i></icon>:</span>
+<b style='color:#ff4040'>Crvena kriva</b> predstavlja broj *aktuelnih* slučajeva <span class="nowrap"><icon i></icon>,</span>    
+<b style='color:#999999'>Siva kriva</b> je *ukupan* broj slučajeva (aktuelni + oporavljeni <span class="nowrap"><icon r></icon>),</span>
+počinjemo sa samo 0.001% <span class="nowrap"><icon i></icon>:</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+I *otuda* poznata kriva! Ovo nije zvono kriva (prim. prev. normalna raspodela, Gausova raspodela), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je spljoštite.
 
-This is the the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+Ovo je takozvani **SIR model**,[^sir]    
+(<icon s></icon>**S**usceptible - zdravi/podložni <icon i></icon>**I**nfectious - zarazni <icon r></icon>**R**ecovered - oporavljeni)      
+*druga* najvažnija ideja u početnom kursu Epidemiologije:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Za više tehničkih objašnjenja o SIR modelu, vidite [Institut za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-sir.html#) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**Komentar: Simulacije na osnovu kojih se donose odluke su *mnogo* sofisticiranije od ovih!** Ali SIR model i dalje može da objasni neke generalne trendove, iako mu nedostaju neke finese.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <span class="nowrap"><icon i></icon>,</span> they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+U stvari, hajde da dodamo još jednu finesu: pre nego što <icon s></icon> postane <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> inficirani (eng. Exposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara*ženi* ali ne još zara*zni*.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Ova varijanta modela zove se **SEIR model**[^seir], gde "E" potiče od <icon e></icon> "Exposed" - inficiranih. Na engleskom "Exposed" u svakodnevnom značenju približno našem "izložen", može značiti i da imate i da nemate virus, međutim u ovom tehničkom značenju, "Exposed" znači da imate virus. Naučna terminologija je loša. Prim. prevod. iz istog razloga je u ovom prevodu odabrano korišćenje "inficirani" umesto "izloženi".)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Za više tehničkih objašnjenja o SEIR modelu, pogledajte [Institute za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-seir.html) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-ne-još-zarazan provede 3 dana, *u proseku*.[^latent] Šta se dešava ako i to dodamo u simulaciju?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “Pretpostavljajući distribuciju perioda inkubacije sa prosečnom vrednošću od 5.2 dana iz druge studije na ranim COVID-19 slučajevima, mi smo zaključili da zaraznost počinje od 2.3 dana (0.8–3.0 dana sa sigurnošću od 95%) pre nego što počnu simptomi” (prevod: Pretpostavljajući da simptomi počinju petog dana, zaraznost počinje dva dana pre = zaraznost počinje tri dana nakon što je osoba inficirana) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <span class="nowrap"><icon e></icon>),</span>    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>):</span>
+<b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su *trenutni* slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span>    
+<b style='color:#888'>Siva kriva</b> su *ukupni* slučajevi (trenutni + oporavljeni <span class="nowrap"><icon r></icon>):</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <span class="nowrap"><icon e></icon>-to-<icon i></icon>,</span> and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Nije se mnogo toga promenilo! Vreme tokom koga osoba ostaje <icon e></icon> inficirana (ali ne i zarazna) menja odnos <span class="nowrap"><icon e></icon>-naspram-<icon i></icon>,</span> kao i *kada* trenutni broj slučajeva dostiže maksimum... ali *visina* maksimuma, i ukupan broj slučajeva na kraju, ostaje isti.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+Zašto je to tako? To je zbog *prve* najvažnije ideje u početnom kursu Epidemiologije:
 
 ![](pics/r.png)
 
-Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+Ovo je skraćeno od "Reprodukcioni broj" (eng. Reproduction number). To je *prosečan* broj ljudi koje <icon i></icon> zarazi *pre* nego što oni ozdrave (ili umru).
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R** se menja tokom trajanja epidemije, kako se povećava broj imunih kao i intervencija.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** (u izgovoru R-nula ili na engleskom R-nought) je vrednost R *na početku epidemije, pre imuniteta ili intervencija*. R<sub>0</sub> bliže prikazuje snagu samog virusa, ali se ipak menja u zavisnosti od lokacije. Na primer, R<sub>0</sub> je veće u gušće naseljenim gradovima nego u retko naseljenim ruralnim sredinama.
 
-(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
+(Većina članaka u novinama – čak i nekim istraživačkim radovima! – mešaju R i R<sub>0</sub>. Opet, naučna terminologija je loša)
 
-The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+R<sub>0</sub> "tipičnog" sezonskog gripa je oko 1.28[^r0_flu]. Ovo znači da na *početku* epidemije gripa, svaki <icon i></icon> zarazi 1.28 drugih *u proseku.* (Ako zvuči čudno što ovo nije ceo broj, setite se da "prosečno" majke imaju 2.4 deteta. To ne znači da polu-deca trče okolo.)
 
 [^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
