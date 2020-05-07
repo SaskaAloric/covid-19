@@ -5,7 +5,7 @@
         	Šta se sledeće dešava? 
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 budućnosti, objašnjene sa razigranim simulacijama
+			COVID-19 budućnosti, objašnjene sa simulacijama za igranje
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
@@ -14,7 +14,7 @@
 			</b>
 			pripremili
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiolog)
+			(epidemiološka slika)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
 			(umetnost/kod)
@@ -24,60 +24,60 @@
 
 "Jedina stvar za strah je sam strah" bio je glup savet.
 
-Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije da izbegnu "masovnu paniku". Strah nije problem, već kako *kanališemo* naš strah. Strah nam daje energiju da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
+Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već kako *kanališemo* naš strah. Strah nam daje energiju da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
 
-Iskreno, mi (Marcel, epidemiolog + Nicky, umetnost/kod) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi kanalisali naš strah u pripremanje ovih **razigrane simulacije**, tako da *vi* možete kanalisati strah u razumevanje:
+Iskreno, mi (Marcel, epidemiološka slika + Nicky, umetnost/kod) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi kanalisali naš strah u pripremanje ovih **razigrane simulacije**, tako da *vi* možete kanalisati strah u razumevanje:
 
-* **Poslednjih par meseci** (epidemiologija 101, SEIR model, R & R<sub>0</sub>)
-* **Narednih par meseci** (ograničenja kretanja, praćenje kontakata, maske)
-* **Narednih par godina** (gubitak imuniteta? nedostatak vakcine?)
+* **Poslednjih nekoliko meseci** (epidemiologija 101, SEIR model, R & R<sub>0</sub>)
+* **Narednih nekoliko meseci** (ograničenja kretanja, praćenje kontakata, maske)
+* **Narednih nekoliko godina** (gubitak imuniteta? nedostatak vakcine?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Ovaj vodič (objavljen prvog maja 2020. vidi ovu fusnotu!→[^timestamp]) za cilj ima da u vama pobudi nadu *i* strah. Da bismo pobedili COVID-19 **na način koji čuva naše mentalno i finansijsko stanje**, potreban nam je optimizam za smišljanje planova, i pesimizam za smišljanje rezervnih planova. Po rečima Gladis Brovnin Stern (Gladys Bronwyn Stern): *“Optimista izmisli avion a pesimista padobran.”*
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+[^timestamp]: Fusnote će sadržati izvore informacija, linkove i bonus komentare, kao ovaj komentar!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **Ovaj vodič je objavljen prvog maja 2020.** Mnogi detalji će se menjati ali smo mi uvereni da će ovaj vodič pokriti 95% mogućih budućnosti i da će Epidemiologija 101 biti zauvek od koristi.
 
-So, buckle in: we're about to experience some turbulence.
+Vežite se: na putu smo da osetimo turbulencije.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Poslednjih nekoliko meseci</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Piloti koriste simulatore letenja da nauče kako da ne ruše avione.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Epidemiolozi koriste simulatore epidemija da nauče kako da ne uruše čovečanstvo.**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+Počećemo od veoma, *veoma* jednostavnog "epidemiološkog simulatora letenja"! U ovoj simulaciji, <icon i></icon> zarazni ljudi (eng. Infected) mogu preneti zarazu na podložne/zdrave ljude <icon s></icon> (eng. Susceptible) uvećavajući tako broj zaraznih <icon i></icon>:
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+Procenjeno je da *se na početku* COVID-19 pandemije, virus prenosio sa <icon i></icon> na <icon s></icon> svaka 4 dana, *u proseku*.[^serial_interval] (zapamtite, ovo puno varira)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 days (3.53–4.39 dana sa 95% sigurnosti)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Preliminarna verzije članka, ne treba ih uzimati u obzir na isti način kao finalne verzije)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <span class="nowrap"><icon i></icon>,</span> what happens? 
+Ako simuliramo "dupliranje broja slučajeva na svaka 4 dana" *i ništa više*, na nivou populacije sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa? 
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**Pritiskom na "Pokreni" pokreće se simulacija! Možete je puštati ponovo kasnije sa drugačijim parametrima:** (tehnički detalji: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **Zapamtite: sve ove simulacije su vrlo pojednostavljene u svrhu obrazovanja.**
     
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    Jedno pojednostavljenje: Kada kažete simulaciji "Inficiraj 1 novu osobu svakih X dana", ona zapravo povećava broj zaraznih za 1/X svakog dana. Slično za buduća podešavanja u ovim simulacijama – "Oporavak svakih X dana" zapravo umanjuje broj zaraznih za 1/X svakog dana.
     
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    Ove dve interpretacije *nisu* u potpunosti iste, ali su dovoljno blizu, i za potrebe obrazovanja učinkovitije su od direktnog uspostavljanja stopa transmisije i oporavka.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
+Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, ali brzo eksplodira. Od "oh pa to je samo grip" do "zapravo, grip ne uzrokuje *masovne grobnice u bogatim gradovima*". 
 
 ![](pics/exponential.png)
 
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+Ali, ova simulacija je pogrešna. Eksponencijalni rast, na svu sreću, ne dešava se u nedogled. Jedna stvar koja zaustavlja širenje virusa su ljudi koji *već* imaju virus:
 
 ![](pics/susceptibles.png)
 
