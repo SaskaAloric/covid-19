@@ -76,7 +76,7 @@
             Šta se sledeće dešava? 
         </div>
         <div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-            COVID-19 budućnosti, objašnjene sa simulacijama za igranje
+            COVID-19 budućnosti, objašnjene sa interaktivnim simulacijama
         </div>
         <div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
             <b>
@@ -111,7 +111,7 @@
 <p>Piloti koriste simulatore letenja da nauče kako da ne ruše avione.</p>
 <p><strong>Epidemiolozi koriste simulatore epidemija da nauče kako da ne uruše čovečanstvo.</strong></p>
 <p>Počećemo od veoma, <em>veoma</em> jednostavnog "epidemiološkog simulatora letenja"! U ovoj simulaciji, <icon i></icon> zarazni ljudi (eng. Infected) mogu preneti zarazu na podložne/zdrave ljude <icon s></icon> (eng. Susceptible) uvećavajući tako broj zaraznih <icon i></icon>:</p>
-<p><img src="pics/spread.png" /></p>
+<p><img src="pics/spreadsrb.png" /></p>
 <p>Procenjeno je da <em>se na početku</em> COVID-19 pandemije, virus prenosio sa <icon i></icon> na <icon s></icon> svaka 4 dana, <em>u proseku</em>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> (zapamtite, ovo puno varira)</p>
 <p>Ako simuliramo "dupliranje broja slučajeva na svaka 4 dana" <em>i ništa više</em>, na nivou populacije sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa?</p>
 <p><strong>Pritiskom na "Pokreni" pokreće se simulacija! Možete je puštati ponovo kasnije sa drugačijim parametrima:</strong> (tehnički detalji: <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>)</p>
@@ -119,9 +119,9 @@
         <iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 <p>Ovo je <strong>kriva eksponencijalnog rasta.</strong> Počinje malim brojevima, ali brzo eksplodira. Od "oh pa to je samo grip" do "zapravo, grip ne uzrokuje <em>masovne grobnice u bogatim gradovima</em>".</p>
-<p><img src="pics/exponential.png" /></p>
+<p><img src="pics/exponentialsrb.png" /></p>
 <p>Ali, ova simulacija je pogrešna. Eksponencijalni rast, na svu sreću, ne dešava se u nedogled. Jedna stvar koja zaustavlja širenje virusa su ljudi koji <em>već</em> imaju virus:</p>
-<p><img src="pics/susceptibles.png" /></p>
+<p><img src="pics/susceptiblessrb.png" /></p>
 <p>Što je više zaraznih <span class="nowrap"><icon i></icon></span>, brže zdravi <span class="nowrap"><icon s></icon></span> postaju zarazni <span class="nowrap"><icon i></icon>,</span> <strong>ali ima manje zdravih <span class="nowrap"><icon s></icon>,</span> pa <em>sporije</em> zdravi <span class="nowrap"><icon s></icon></span> postaju zarazni <span class="nowrap"><icon i></icon>.</span></strong></p>
 <p>Kako ovo menja rast zaraženih tokom epidemije? Otkrijmo:</p>
 <div class="sim">
@@ -147,10 +147,10 @@
 <p>Ovo je takozvani <strong>SIR model</strong>,<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><br />
 (<icon s></icon><strong>S</strong>usceptible - zdravi/podložni <icon i></icon><strong>I</strong>nfectious - zarazni <icon r></icon><strong>R</strong>ecovered - oporavljeni)<br />
 <em>druga</em> najvažnija ideja u početnom kursu Epidemiologije:</p>
-<p><img src="pics/sir.png" /></p>
+<p><img src="pics/sirsrb.png" /></p>
 <p><strong>Komentar: Simulacije na osnovu kojih se donose odluke su <em>mnogo</em> sofisticiranije od ovih!</strong> Ali SIR model i dalje može da objasni neke generalne trendove, iako mu nedostaju neke finese.</p>
 <p>U stvari, hajde da dodamo još jednu finesu: pre nego što <icon s></icon> postane <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> inficirani (eng. Exposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara<em>ženi</em> ali ne još zara<em>zni</em>.</p>
-<p><img src="pics/seir.png" /></p>
+<p><img src="pics/seirsrb.png" /></p>
 <p>(Ova varijanta modela zove se <strong>SEIR model</strong><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>, gde "E" potiče od <icon e></icon> "Exposed" - inficiranih. Na engleskom "Exposed" u svakodnevnom značenju približno našem "izložen", može značiti i da imate i da nemate virus, međutim u ovom tehničkom značenju, "Exposed" znači da imate virus. Naučna terminologija je loša. Prim. prevod. iz istog razloga je u ovom prevodu odabrano korišćenje "inficirani" umesto "izloženi".)</p>
 <p>U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-ne-još-zarazan provede 3 dana, <em>u proseku</em>.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Šta se dešava ako i to dodamo u simulaciju?</p>
 <p><b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su <em>trenutni</em> slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span><br />
@@ -162,7 +162,7 @@
 <p>Zašto je to tako? To je zbog <em>prve</em> najvažnije ideje u početnom kursu Epidemiologije:</p>
 <p><img src="pics/r.png" /></p>
 <p>Ovo je skraćeno od "Reproduktivni broj" (eng. Reproduction number). To je <em>prosečan</em> broj ljudi koje <icon i></icon> zarazi <em>pre</em> nego što oni ozdrave (ili umru).</p>
-<p><img src="pics/r2.png" /></p>
+<p><img src="pics/r2srb.png" /></p>
 <p><strong>R</strong> se menja tokom trajanja epidemije, kako se povećava broj imunih kao i intervencija.</p>
 <p><strong>R<sub>0</sub></strong> (u izgovoru R-nula ili na engleskom R-nought) je vrednost R <em>na početku epidemije, pre imuniteta ili intervencija</em>. R<sub>0</sub> bliže prikazuje snagu samog virusa, ali se ipak menja u zavisnosti od lokacije. Na primer, R<sub>0</sub> je veće u gušće naseljenim gradovima nego u retko naseljenim ruralnim sredinama.</p>
 <p>(Većina članaka u novinama – čak i nekim istraživačkim radovima! – mešaju R i R<sub>0</sub>. Opet, naučna terminologija je loša)</p>
@@ -178,17 +178,17 @@
         <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 <p>Kada je dovoljan broj ljudi imun, R &lt; 1, i virus je zauzdan! Ovo je <strong>imunitet krda</strong>. Za viruse gripa, imunitet krda se dostiže <em>vakcinisanjem</em>. Pokušaj da se dostigne "prirodan imunitet krda" izlažući ljude zarazi je <em>strašna</em> ideja. (Ali ne zbog razloga koji vam možda padaju na pamet! Objasnićemo kasnije.)</p>
-<p>A sada, poigrajmo se sa SEIR modelom ponobo, ali prikazujući vrednosti R<sub>0</sub> i R kroz vreme, kao i granicu na kojoj je imunitet krda dostignut:</p>
+<p>A sada, poigrajmo se sa SEIR modelom ponovo, ali prikazujući vrednosti R<sub>0</sub> i R kroz vreme, kao i granicu na kojoj je imunitet krda dostignut:</p>
 <div class="sim">
         <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 <p><strong>Obratite pažnju: Ukupan broj slučajeva <em>ne staje sa rastom</em> dostizanjem broja zaraženih potrebnih za imuniteta krda, već ga prevazilazi!</strong> I prevazilazi granicu <em>tačno u momentu</em> kada broj trenutnih slučajeva dostiže maksimum. (Ovo se dešava nezavisno od toga kako promenite parametre – probajte!)</p>
 <p>Ovo se dešava zato što kada je više <span class="nowrap">ne-<icon s></icon>s</span> od potrebnog broja za imunitet krda, tada se dostiže R &lt; 1. A kada je R &lt; 1, tada i broj trenutnih sučajeva presta da raste: dostignut je maksimum.</p>
 <p><strong>Ako ćete iz ovog čitanja usvojiti samo jednu pouku, nek bude ova</strong> – u pitanju je izuzetno kompleksan dijagram, te mu posvetite koliko god je potrebno vremena da ga u potpunosti savladate:</p>
-<p><img src="pics/r3.png" /></p>
+<p><img src="pics/r3srb.png" /></p>
 <p><strong>Ovo znači: NE moramo da zauzdamo sva prenošenja virusa, čak ne ni skoro sva, da zaustavimo COVID-19!</strong></p>
 <p>Ovo je paradoks. COVID-19 je ekstremno zarazan, ali da ga zauzdamo, "samo" je potrebno zaustaviti 60% prenosa virusa. 60%?! Da je to školska ocena, bila bi neka dvojčica. Ali ako je R<sub>0</sub> = 2.5, smanjenjem od 61% dostižemo R = 0.975, koje je manje od 1 i virus je zauzdan! (tačna formula:<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>)</p>
-<p><img src="pics/r4.png" /></p>
+<p><img src="pics/r4srb.png" /></p>
 <p>(Ako mislite da je R<sub>0</sub> ili bilo koji drugi broj u našim simulacijama premali/prevelik, super je da preispitujete naše pretpostavke! Na kraju ovog vodiča biće još fleksibilnija verzija simulacije u kojoj možete uneti <em>vaše</em> brojeve, i simulirati šta se dešava.)</p>
 <p><em>Sve</em> interevencije protiv COVID-19 o kojima ste čuli – pranje ruku, socijalno/fizičko distanciranje, policijski čas, samoizalacija, praćenje kontakata i karantin, maske, pa čak i "imunitet stada" – one <em>sve</em> rade istu stvar:</p>
 <p>Spuštaju vrednost do R &lt; 1.</p>
@@ -231,7 +231,7 @@
 <li><p>You still run out of ICUs. For several months. (and remember, we <em>already</em> tripled ICUs for these simulations)</p></li>
 </ol>
 <p>That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at <strong>mitigation</strong> (reduce R, but R &gt; 1) will fail. The only way out is <strong>suppression</strong> (reduce R so that R &lt; 1).</p>
-<p><img src="pics/mitigation_vs_suppression.png" /></p>
+<p><img src="pics/mitigation_vs_suppressionsrb.png" /></p>
 <p>That is, don't merely "flatten" the curve, <em>crush</em> the curve. For example, with a...</p>
 <h3>Scenario 2: Months-Long Lockdown</h3>
 <p>Let's see what happens if we <em>crush</em> the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – <em>finally</em> – return to normal life:</p>
@@ -259,12 +259,12 @@
 <p><em>"Sure, we *could've* done what Taiwan &amp; South Korea did at the start, but it's too late now. We missed the start."</em></p>
 <p>But that's exactly it! “A lockdown isn't a cure, it's just a restart”... <strong>and a fresh start is what we need.</strong></p>
 <p>To understand how Taiwan &amp; South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>:</p>
-<p><img src="pics/timeline1.png" /></p>
+<p><img src="pics/timeline1srb.png" /></p>
 <p>If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:</p>
-<p><img src="pics/timeline2.png" /></p>
+<p><img src="pics/timeline2srb.png" /></p>
 <p>And in fact, 44% of all transmissions are like this: <em>pre</em>-symptomatic! <a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
 <p>But, if we find <em>and quarantine</em> a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!</p>
-<p><img src="pics/timeline3.png" /></p>
+<p><img src="pics/timeline3srb.png" /></p>
 <p>This is called <strong>contact tracing</strong>. It's an old idea, was used at an unprecedented scale to contain Ebola<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a>, and now it's core part of how Taiwan &amp; South Korea are containing COVID-19!</p>
 <p>(It also lets us use our limited tests more efficiently, to find pre-symptomatic <span class="nowrap"><icon i></icon>s</span> without needing to test almost everyone.)</p>
 <p>Traditionally, contacts are found with in-person interviews, but those <em>alone</em> are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – <em>NOT</em> replaced by – contact tracing apps.</p>
@@ -272,7 +272,7 @@
 <p>Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?</p>
 <p>Heck no! <strong><a href="https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing">DP-3T</a></strong>, a team of epidemiologists &amp; cryptographers (including one of us, Marcel Salathé) is <em>already</em> making a contact tracing app – with code available to the public – that reveals <strong>no info about your identity, location, who your contacts are, or even <em>how many contacts</em> you've had.</strong></p>
 <p>Here's how it works:</p>
-<p><img src="pics/dp3t.png" /></p>
+<p><img src="pics/dp3tsrb.png" /></p>
 <p>(<a href="https://ncase.me/contact-tracing/">Here's the full comic</a>. Details about "pranking"/false positives/etc in footnote:<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a>)</p>
 <p>Along with similar teams like TCN Protocol<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> and MIT PACT<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a>, they've inspired Apple &amp; Google to bake privacy-first contact tracing directly into Android/iOS.<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> (Don't trust Google/Apple? Good! The beauty of this system is it doesn't <em>need</em> trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!</p>
 <p>But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... <em>and that's okay!</em> We don't need to catch <em>all</em> transmissions, just 60%+ to get R &lt; 1.</p>
@@ -308,7 +308,7 @@
 <p><strong>Masks For All:</strong></p>
 <p><em>"Wait,"</em> you might ask, <em>"I thought face masks don't stop you from getting sick?"</em></p>
 <p>You're right. Masks don't stop you from getting sick<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a>... they stop you from getting <em>others</em> sick.</p>
-<p><img src="pics/masks.png" /></p>
+<p><img src="pics/maskssrb.png" /></p>
 <p>To put a number on it: surgical masks <em>on the infectious person</em> reduce cold &amp; flu viruses in aerosols by 70%.<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a> Reducing transmissions by 70% would be as large an impact as a lockdown!</p>
 <p>However, we don't know for sure the impact of masks on COVID-19 <em>specifically</em>. In science, one should only publish a finding if you're 95% sure of it. (...should.<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a>) Masks, as of May 1st 2020, are less than "95% sure".</p>
 <p>However, pandemics are like poker. <strong>Make bets only when you're 95% sure, and you'll lose everything at stake.</strong> As a recent article on masks in the British Medical Journal notes,<a href="#fn33" class="footnote-ref" id="fnref33" role="doc-noteref"><sup>33</sup></a> we <em>have</em> to make cost/benefit analyses under uncertainty. Like so:</p>
@@ -377,7 +377,7 @@
 </div>
 <p>Return of the exponential decay!</p>
 <p>This is the <strong>SEIRS Model</strong>. The final "S" stands for <icon s></icon> Susceptible, again.</p>
-<p><img src="pics/seirs.png" /></p>
+<p><img src="pics/seirssrb.png" /></p>
 <p>Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... <em>if immunity only lasts a year:</em></p>
 <div class="sim">
         <iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
@@ -426,7 +426,7 @@
 <p>Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a></p>
 <p>Teams of epidemiologists and policymakers (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">left</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">right</a>, and <a href="https://ethics.harvard.edu/covid-roadmap">multi-partisan</a>) have come to a consensus on how to beat COVID-19, while protecting our lives <em>and</em> liberties.</p>
 <p>Here's the rough idea, with some (less-consensus) backup plans:</p>
-<p><img src="pics/plan.png" /></p>
+<p><img src="pics/plansrb.png" /></p>
 <p>So what does this mean for YOU, right now?</p>
 <p><strong>For everyone:</strong> Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a <em>privacy-protecting</em> contact tracing app when those are available next month. Stay healthy, physically &amp; mentally! And write your local policymaker to get off their butt and...</p>
 <p><strong>For policymakers:</strong> Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, <em>supported</em> by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...</p>
@@ -439,7 +439,7 @@
 <ol>
 <li id="fn1" role="doc-endnote"><p>Fusnote će sadržati izvore informacija, linkove i bonus komentare, kao ovaj komentar!</p>
 <p><strong>Ovaj vodič je objavljen prvog maja 2020.</strong> Mnogi detalji će se menjati ali smo mi uvereni da će ovaj vodič pokriti 95% mogućih budućnosti i da će početni kurs Epidemiologije biti zauvek od koristi.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>“Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana)”. <a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a> (Upozorenje: Preliminarne verzije članaka, ne treba uzimati u obzir na isti način kao finalne verzije.)<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>“Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana)”. <a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a> (Upozorenje: Preliminarne verzije članaka ne treba uzimati u obzir na isti način kao finalne verzije.)<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3" role="doc-endnote"><p><strong>Zapamtite: sve ove simulacije su vrlo pojednostavljene u svrhu obrazovanja.</strong></p>
 <p>Jedno pojednostavljenje: Kada kažete simulaciji "Inficiraj 1 novu osobu svakih X dana", ona zapravo povećava broj zaraznih za 1/X svakog dana. Slično za buduća podešavanja u ovim simulacijama – "Oporavak svakih X dana" zapravo umanjuje broj zaraznih za 1/X svakog dana.</p>
 <p>Ove dve interpretacije <em>nisu</em> u potpunosti iste, ali su dovoljno blizu, i za potrebe obrazovanja učinkovitije su od direktnog uspostavljanja stopa transmisije i oporavka.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
