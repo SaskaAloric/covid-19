@@ -5,7 +5,7 @@
         	Šta se sledeće dešava? 
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 budućnosti, objašnjene sa simulacijama za igranje
+			COVID-19 budućnosti, objašnjene sa interaktivnim simulacijama
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
@@ -53,11 +53,11 @@ Piloti koriste simulatore letenja da nauče kako da ne ruše avione.
 
 Počećemo od veoma, *veoma* jednostavnog "epidemiološkog simulatora letenja"! U ovoj simulaciji, <icon i></icon> zarazni ljudi (eng. Infected) mogu preneti zarazu na podložne/zdrave ljude <icon s></icon> (eng. Susceptible) uvećavajući tako broj zaraznih <icon i></icon>:
 
-![](pics/spread.png)
+![](pics/spreadsrb.png)
 
 Procenjeno je da *se na početku* COVID-19 pandemije, virus prenosio sa <icon i></icon> na <icon s></icon> svaka 4 dana, *u proseku*.[^serial_interval] (zapamtite, ovo puno varira)
 
-[^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Upozorenje: Preliminarne verzije članaka, ne treba uzimati u obzir na isti način kao finalne verzije.)
+[^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Upozorenje: Preliminarne verzije članaka ne treba uzimati u obzir na isti način kao finalne verzije.)
 
 Ako simuliramo "dupliranje broja slučajeva na svaka 4 dana" *i ništa više*, na nivou populacije sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa? 
 
@@ -75,11 +75,11 @@ Ako simuliramo "dupliranje broja slučajeva na svaka 4 dana" *i ništa više*, n
 
 Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, ali brzo eksplodira. Od "oh pa to je samo grip" do "zapravo, grip ne uzrokuje *masovne grobnice u bogatim gradovima*". 
 
-![](pics/exponential.png)
+![](pics/exponentialsrb.png)
 
 Ali, ova simulacija je pogrešna. Eksponencijalni rast, na svu sreću, ne dešava se u nedogled. Jedna stvar koja zaustavlja širenje virusa su ljudi koji *već* imaju virus:
 
-![](pics/susceptibles.png)
+![](pics/susceptiblessrb.png)
 
 Što je više zaraznih <span class="nowrap"><icon i></icon></span>, brže zdravi <span class="nowrap"><icon s></icon></span> postaju zarazni <span class="nowrap"><icon i></icon>,</span> **ali ima manje zdravih <span class="nowrap"><icon s></icon>,</span> pa *sporije* zdravi <span class="nowrap"><icon s></icon></span> postaju zarazni <span class="nowrap"><icon i></icon>.</span>**
 
@@ -127,13 +127,13 @@ Ovo je takozvani **SIR model**,[^sir]
 
 [^sir]: Za više tehničkih objašnjenja o SIR modelu, vidite [Institut za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-sir.html#) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
-![](pics/sir.png)
+![](pics/sirsrb.png)
 
 **Komentar: Simulacije na osnovu kojih se donose odluke su *mnogo* sofisticiranije od ovih!** Ali SIR model i dalje može da objasni neke generalne trendove, iako mu nedostaju neke finese.
 
 U stvari, hajde da dodamo još jednu finesu: pre nego što <icon s></icon> postane <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> inficirani (eng. Exposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara*ženi* ali ne još zara*zni*.
 
-![](pics/seir.png)
+![](pics/seirsrb.png)
 
 (Ova varijanta modela zove se **SEIR model**[^seir], gde "E" potiče od <icon e></icon> "Exposed" - inficiranih. Na engleskom "Exposed" u svakodnevnom značenju približno našem "izložen", može značiti i da imate i da nemate virus, međutim u ovom tehničkom značenju, "Exposed" znači da imate virus. Naučna terminologija je loša. Prim. prevod. iz istog razloga je u ovom prevodu odabrano korišćenje "inficirani" umesto "izloženi".)
 
@@ -158,7 +158,7 @@ Zašto je to tako? To je zbog *prve* najvažnije ideje u početnom kursu Epidemi
 
 Ovo je skraćeno od "Reproduktivni broj" (eng. Reproduction number). To je *prosečan* broj ljudi koje <icon i></icon> zarazi *pre* nego što oni ozdrave (ili umru).
 
-![](pics/r2.png)
+![](pics/r2srb.png)
 
 **R** se menja tokom trajanja epidemije, kako se povećava broj imunih kao i intervencija.
 
@@ -194,7 +194,7 @@ Ali zapamtite, što je manje <span class="nowrap"><icon s></icon>s</span>, *spor
 
 Kada je dovoljan broj ljudi imun, R < 1, i virus je zauzdan! Ovo je **imunitet krda**. Za viruse gripa, imunitet krda se dostiže *vakcinisanjem*. Pokušaj da se dostigne "prirodan imunitet krda" izlažući ljude zarazi je *strašna* ideja. (Ali ne zbog razloga koji vam možda padaju na pamet! Objasnićemo kasnije.)
 
-A sada, poigrajmo se sa SEIR modelom ponobo, ali prikazujući vrednosti R<sub>0</sub> i R kroz vreme, kao i granicu na kojoj je imunitet krda dostignut:
+A sada, poigrajmo se sa SEIR modelom ponovo, ali prikazujući vrednosti R<sub>0</sub> i R kroz vreme, kao i granicu na kojoj je imunitet krda dostignut:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
@@ -206,7 +206,7 @@ Ovo se dešava zato što kada je više <span class="nowrap">ne-<icon s></icon>s<
 
 **Ako ćete iz ovog čitanja usvojiti samo jednu pouku, nek bude ova** – u pitanju je izuzetno kompleksan dijagram, te mu posvetite koliko god je potrebno vremena da ga u potpunosti savladate:
 
-![](pics/r3.png)
+![](pics/r3srb.png)
 
 **Ovo znači: NE moramo da zauzdamo sva prenošenja virusa, čak ne ni skoro sva, da zaustavimo COVID-19!**
 
@@ -224,7 +224,7 @@ Ovo je paradoks. COVID-19 je ekstremno zarazan, ali da ga zauzdamo, "samo" je po
     
     Stoga, potreno je zastaviti više od **1 - 1/R<sub>0</sub>** prenosa zaraze da bi R < 1 i zauzdali virus!
 
-![](pics/r4.png)
+![](pics/r4srb.png)
 
 (Ako mislite da je R<sub>0</sub> ili bilo koji drugi broj u našim simulacijama premali/prevelik, super je da preispitujete naše pretpostavke! Na kraju ovog vodiča biće još fleksibilnija verzija simulacije u kojoj možete uneti *vaše* brojeve, i simulirati šta se dešava.)
 
@@ -310,7 +310,7 @@ Three notes:
 
 That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
 
-![](pics/mitigation_vs_suppression.png)
+![](pics/mitigation_vs_suppressionsrb.png)
 
 That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
 
@@ -372,11 +372,11 @@ To understand how Taiwan & South Korea contained COVID-19, we need to understand
     
     **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
-![](pics/timeline1.png)
+![](pics/timeline1srb.png)
 
 If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
 
-![](pics/timeline2.png)
+![](pics/timeline2srb.png)
 
 And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
 
@@ -384,7 +384,7 @@ And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_sy
 
 But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
 
-![](pics/timeline3.png)
+![](pics/timeline3srb.png)
 
 This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
 
@@ -402,7 +402,7 @@ Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-pres
 
 Here's how it works:
 
-![](pics/dp3t.png)
+![](pics/dp3tsrb.png)
 
 ([Here's the full comic](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
 
@@ -494,7 +494,7 @@ You're right. Masks don't stop you from getting sick[^incoming]... they stop you
 
 [^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
 
-![](pics/masks.png)
+![](pics/maskssrb.png)
 
 To put a number on it: surgical masks *on the infectious person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
 
@@ -615,7 +615,7 @@ Return of the exponential decay!
 
 This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
 
-![](pics/seirs.png)
+![](pics/seirssrb.png)
 
 Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
 
@@ -702,7 +702,7 @@ Teams of epidemiologists and policymakers ([left](https://www.americanprogress.o
 
 Here's the rough idea, with some (less-consensus) backup plans:
 
-![](pics/plan.png)
+![](pics/plansrb.png)
 
 So what does this mean for YOU, right now?
 
