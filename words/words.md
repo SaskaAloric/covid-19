@@ -130,7 +130,7 @@ Ovo je takozvani **SIR model** [^sir] (<icon s></icon> **S**usceptible - zdravi/
 
 **Komentar: Simulacije na osnovu kojih se donose odluke su *mnogo* sofisticiranije od ovih!** Ali SIR model i dalje može da objasni neke generalne trendove, iako mu nedostaju finese.
 
-U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postane <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> *inficirani* (eng. Exposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara*ženi* ali ne još zara*zni*.
+U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> *inficirani* (eng. Exposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara*ženi* ali ne još zara*zni*.
 
 ![](pics/seirsrb.png)
 
@@ -159,7 +159,7 @@ Ovo je skraćeno od "Reproduktivni broj" (eng. Reproduction number). To je *pros
 
 ![](pics/r2srb.png)
 
-**R** se menja tokom trajanja epidemije, jer se menjaju broj imunih kao i intervencije.
+**R** se menja tokom trajanja epidemije, jer se menja broj imunih i intervencije.
 
 **R<sub>0</sub>** je vrednost R *na početku epidemije, pre imuniteta ili intervencija*. R<sub>0</sub> bliže prikazuje snagu samog virusa, ali se ipak menja u zavisnosti od lokacije. Na primer, R<sub>0</sub> je veće u gušće naseljenim gradovima nego u retko naseljenim ruralnim sredinama.
 
