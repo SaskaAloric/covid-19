@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-"Jedina stvar za strah je sam strah" bio je glup savet.
+"Jedino čega se treba plašiti je sam strah" bio je glup savet.
 
 Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već kako *kanališemo* naš strah. Strah nam daje snagu da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
 
@@ -724,4 +724,4 @@ U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
 Ne umanjujte strah da biste probudili nadu. Naš strah treba da se *udruži* sa nadom, kao što su stvaraoci aviona i padobrana. Pripremanje za strašne budućnosti je takođe i način na koji *stvaramo* budućnost kojoj se nadamo.
 
-Jedina stvar za strah je ideja da je jedina stvar za strah - sâm strah.
+Jedino čega se treba plašiti je ideja da se jedino terba plašiti samog straha.
