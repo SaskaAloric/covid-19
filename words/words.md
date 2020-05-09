@@ -417,7 +417,7 @@ Ovako ona radi:
     
     Za ostala pitanja kao što je potrošnja internet protoka, integritet izvora, i ostala pitanja u vezi sa bezbednošću podataka, pogledajte [open-source DP-3T predloge/whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
-Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], inspirisani su i Apple i Google da se pozabave razvijanjem aplikacije za Android/iOS za praćenje kontakata sa primarnom zaštitom privatnosti.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravsveni sistem od tebe tražiti da intaliraš neku aplikaciju. Ako je ona pre svega sa zaštitom privatnosti i sa javno dostupnim kodom, molimo te instaliraj je!
+Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], inspirisani su i Apple i Google da se pozabave razvijanjem aplikacije za Android/iOS za praćenje kontakata sa primarnom zaštitom privatnosti.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravstveni sistem od tebe tražiti da instaliraš neku aplikaciju. Ako je ona pre svega sa zaštitom privatnosti i javno dostupnim kodom, molimo te instaliraj je!
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
@@ -427,11 +427,11 @@ Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], inspirisani su i Apple 
 
 Ali šta je sa ljudima koji nemaju pametne telefone? Ili sa infekcijama koje se dešavaju preko kvaka na vratima? Ili sa "stvarnim" asimptomatskim slučajevima? Aplikacije za praćenje kontakata ne mogu da uhvate baš sva prenošenja... *i to je okej!* Mi ni ne moramo da ih *sve* uhvatimo, već samo 60+% da bismo došli do R<1.
 
-(Fusnota o nerviranju oko mešanja termina - između predsimptomatskih i "stvarnih" asimtomatskih slučajeva - "stvarni" asimptomatski su vrlo retki:[^rant])
+(Fusnota o nerviranju oko mešanja termina - između predsimptomatskih i "stvarnih" asimptomatskih slučajeva - "stvarni" asimptomatski su vrlo retki:[^rant])
 
-[^rant]: Veliki broj novih izveštaja - i iskreno, dosta istraživačkih radova - ne razlikuje "slučajeve koji ne pokazuju simptome kad ih testiraju" (predsimptomastki slučajevi) i "slučajeve koji ne pokazuju simptome *nikada*" (stvarni asimptomatski). Jedini način na koji oni mogu da se razdvoje je da se radi ponovno testiranje neko vreme kasnije.
+[^rant]: Veliki broj novih izveštaja - i iskreni da budemo, dosta istraživačkih radova - ne razlikuje "slučajeve koji ne pokazuju simptome kad ih testiraju" (predsimptomastki slučajevi) i "slučajeve koji ne pokazuju simptome *nikada*" (stvarni asimptomatski). Jedini način na koji oni mogu da se razdvoje je da se radi ponovno testiranje posle nekog vremena.
 
-    Šta je šta [ovo istraživanje](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) je uradilo. (Obratite pažnju: "Rano objavljivanje radova se ne smatra finalnim verzijama.") U kol-centru u Južnoj Koreji koja je imala izbijanje COVID-19 bolesti, "samo 4 slučaja  (1.9%) su ostali asimptomatski u toku 14 dana karantina, i niko od njihovih ukućana nije imao sekundarnu infekciju."
+    Šta je šta - [ovo istraživanje](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) je uradilo. (Obratite pažnju: "Rano objavljivanje radova se ne smatra finalnim verzijama.") U kol-centru u Južnoj Koreji koja je imala izbijanje COVID-19 bolesti, "samo 4 slučaja  (1.9%) su ostali asimptomatski u toku 14 dana karantina, i niko od njihovih ukućana nije imao sekundarnu infekciju."
     
     
     To znači da su  "stvarni asimptomatski" slučajevi stvarno retki, a da vas zaraze takvi je još ređe.
