@@ -244,7 +244,7 @@ Pripremite se, prinudno sletanje...
 
 ...moglo je da bude gore. Evo paralelnog univerzuma koji smo zaobišli:
 
-###Scenarijo 0: Ne učiniti apsolutno ništa
+###Scenario 0: Ne učiniti apsolutno ništa
 
 Otprilike jednoj od 20 osoba inficiranih koronavirusom potrebna je intenzivna nega.[^icu_covid] U bogatim zemljama kao što su SAD, postoji jedno mesto na intenzivnoj nezi na 3400 stanovnika.[^icu_us] Stoga, bolnički sistem u SAD može da podnese da 20 ljudi na svakih 3400 bude *istovremeno* zaraženo – ili 0.6% populacije.
 
@@ -266,7 +266,7 @@ Ovo je ono što je [Izveštaj Imperial Koledža od 16. marta](http://www.imperia
 
 (Dosta vesti i medija na društvenim mrežama izveštava da će "80% biti inficirano" *bez* informacije da je to pod pretpostavkom "DA SE NE URADI NIŠTA". Strah je pretočen u klikove, a ne u razumevanje.)
 
-###Scenarijo 1: Peglanje krive / Imunitet krda
+###Scenario 1: Peglanje krive / Imunitet krda
 
 Plan "Peglanje krive" je bio reklamiran od strane svake zvanične javne zdravstvene organizacije, dok je inicijalno pominjani plan u Velikoj Britaniji pod nazivom "imunitet krda" bio sveopšte kritikovan. To su u stvari *isti planovi*. Samo su u VB plan dosta loše iskomunicirali.[^yong]
 
@@ -313,7 +313,7 @@ To je bio još jedan zaključak Izveštaja Imperial Koledza od 16. marta, koji j
 
 To znači, nemoj samo da *peglaš* krivu, *uništi* krivu. Na primer, sa...
 
-###Scenarijo 2: Višemesečno zatvaranje (gradova, policijski čas i slično)
+###Scenario 2: Višemesečno zatvaranje (gradova, policijski čas i slično)
 
 Hajde da vidimo šta se dešava ako *suzbijemo* krivu sa petomesečnim zatvaranjem, smanjimo <icon i></icon> praktično potpuno, a onda se *napokon* vratimo normalnom životu:
 
@@ -323,14 +323,14 @@ Hajde da vidimo šta se dešava ako *suzbijemo* krivu sa petomesečnim zatvaranj
 
 Ups.
 
-Ovo je taj "drugi talas" o kojem svi pričaju. Čim prestanemo sa zatvaranjem, opet dolazi do R > 1. Onda, jedan preostali <icon i></icon> (ili neki <span class="nowrap"><icon i></icon> koji je došao)</span> može da prouzrokuje ponovni skok u broju slučajeva, što je skoro pa podjednako loše kao da smo samo uradili Scenarijo 0: Apsolutno ništa.
+Ovo je taj "drugi talas" o kojem svi pričaju. Čim prestanemo sa zatvaranjem, opet dolazi do R > 1. Onda, jedan preostali <icon i></icon> (ili neki <span class="nowrap"><icon i></icon> koji je došao)</span> može da prouzrokuje ponovni skok u broju slučajeva, što je skoro pa podjednako loše kao da smo samo uradili Scenario 0: Apsolutno ništa.
 
 
 **Zatvaranje nije lek, već samo restart situacije.**
 
 Dobro, šta to znači, mi sad samo treba da se zatvaramo (ili da uvodimo policijski čas) iznova i iznova?
 
-###Scenarijo 3: Naizmenično Zatvaranje-Otvaranje
+###Scenario 3: Naizmenično Zatvaranje-Otvaranje
 
 Ovo rešenje je prvo bilo predloženo u Izveštaju Imperial Koledža 16. marta, i posle još jednom u jednom radu naučnika sa Harvarda.[^lockdown_harvard]
 
@@ -360,7 +360,7 @@ Ali, čekajte. Zar nisu Tajvan i Južna Koreja *već* zauzdali COVID-19? Na čit
 
 Kako?
 
-###Scenarijo 4: Testiranje, praćenje, izolovanje
+###Scenario 4: Testiranje, praćenje, izolovanje
 
 *"Da, sigurno, mi smo \*mogli\* da uradimo to što su i Tajvan i Južna Koreja uradili na početku, ali sada je previše kasno za to. Omašili smo početak."*
 
@@ -485,7 +485,7 @@ Ali šta ako stvari *i dalje* idu po zlu? Stvari su već otišle u vrlo pogrešn
 
 Pesimista pravi padobran.
 
-###Scenarijo 4+: Maske za sve, leto, ciklično otvaranje i zatvaranje
+###Scenario 4+: Maske za sve, leto, ciklično otvaranje i zatvaranje
 
 Šta ako je R<sub>0</sub> mnogo veće nego što smo mi mislili, i pored svih intervencija, i blagog distanciranja, mi *i dalje* ne uspevamo da dobijemo R < 1?
 
