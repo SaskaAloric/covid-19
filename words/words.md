@@ -239,7 +239,7 @@ Pripremite se za prinudno sletanje...
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>Narednih nekoliko meseci</div>
     </div>
 </div>
 
@@ -261,9 +261,9 @@ Otprilike jednoj od 20 osoba inficiranih koronavirusom potrebna je intenzivna ne
 
 Ovo je daleko od dobrog.
 
-Ovo je ono što je [Izveštaj Imperial Koledža od 16. marta](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) takođe zaključio: ako se ništa ne uradi, popuniće se svi kapaciteti intenzivne nege, dok je preko 80% stanovništva zaraženo. (zapamtimo: ukupan broj slučajeva je *preskočio* imunitet krda)
+Ovo je ono što je [Izveštaj Imperial Koledža od 16. marta](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) takođe zaključio: ako se ništa ne uradi, popuniće se svi kapaciteti intenzivne nege, dok je preko 80% stanovništva zaraženo. (Setite se: ukupan broj slučajeva je *preskočio* imunitet krda)
 
-Čak i kad bi samo 0.5% zaraženih slučajeva preminulo - vrlo velikodušna/optimistična pretpostavka kad više nema dostupnih mesta na intenzivnoj nezi - u velikim državama kao što su SAD, sa populacijom od 300 miliona, 0.5% od tih 80% inficiranih - predstavlja u stvari 1.2 miliona mrtvih... *AKO ne bi ništa uradili.*
+Čak i kad bi samo 0.5% zaraženih slučajeva preminulo - vrlo optimistična pretpostavka kad više nema dostupnih mesta na intenzivnoj nezi - u velikim državama kao što su SAD, sa populacijom od 300 miliona, 0.5% od tih 80% inficiranih - predstavlja u stvari 1.2 miliona mrtvih... *AKO ne bi ništa uradili.*
 
 (Dosta vesti i medija na društvenim mrežama izveštava da će "80% biti inficirano" *i bez* "DA SE NE URADI NIŠTA". Strah je pretočen u klikove, a ne u razumevanje. :/ )
 
@@ -531,200 +531,197 @@ Benefit: Čak i ako je 50-50 šansa da hirurške maske smanje prenošenje sa 0% 
 (ostali razlozi za/protiv maski:[^mask_args])
 
 [^mask_args]: **"Mi moramo da čuvamo zalihe za bolnice."** *Apsolutno se slažem.* Ali to je u stvari argument da se poveća proizvodnja maski, a ne da se ostavlja u rezerve. U međuvremenu, možemo da pravimo tekstilne maske.
+**"Teško je da se pravilno nose."** Takođe je teško da se peru ruke u skladu sa preporukama Svetske Zdravstvene Organizacije - ozbiljno, "Korak 3) desni dlan preko levog prednjeg dela šake/dorsum"?! - davno se učio latinski, plus nisu svi učili delove šake kao medicinski izraz – ali mi i dalje preporučujemo pranje ruku, jer nesavršeno je i dalje bolje nego ništa.
+**"Ljudi će postati opušteniji sa pranjem ruku i fizičkim distanciranjem."**  Naravno, i pojasevi za vezivanje čine da ljudi prestanu da ignorišu stop znak, i konac za zube čini da ljudi jedu kamenje (sarkazam, prim prev :D). Da se uozbiljimo, mi bismo zapravo to koristilil kao kontra-argument - maske su ljudima *kontantni* podsetnik da treba da budu pažljivi - a i u Istočnoj Aziji, maske su takođe simbol solidarnosti!
 
-   **"Teško je da se pravilno nose."** Takođe je teško da se peru ruke u skladu sa preporukama Svetske Zdravstvene Organizacije - ozbiljno, "Korak 3) desni dlan preko levog prednjeg dela šake/dorsum"?! - davno se učio latinski, plus nisu svi učili delove šake kao medicinski izraz – ali mi i dalje preporučujemo pranje ruku, jer nesavršeno je i dalje bolje nego ništa.
-   
-   **"Ljudi će postati opušteniji sa pranjem ruku i fizičkim distanciranjem."**  Naravno, i pojasevi za vezivanje čine da ljudi prestanu da ignorišu stop znak, i konac za zube čini da ljudi jedu kamenje (sarkazam, prim prev :D). Da se uozbiljimo, mi bismo zapravo to koristilil kao kontra-argument - maske su ljudima *kontantni* podsetnik da treba da budu pažljivi - a i u Istočnoj Aziji, maske su takođe simbol solidarnosti!
-    
+*Samo* maskama nećemo dostići R < 1. Ali ako pranje ruku & "Testiranje, praćenje, izolovanje" spuste vrednost do R = 1.10, ako samo 1/3 ljudi nose maske dostićićemo R < 1, virus zauzdan!
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+**Leto:**
 
-**Summer:**
+OK, ovo nije "intervencija" koju možemo kontrolisati, ali će pomoći! Neki mediji su izveštavali da leto neće učiniti ništa koronavirusu. Oni su samo delimično u pravu: samo leto neće pomoći da se dostigne R < 1, ali *hoće* umanjiti R.
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+U slučaju COVID-19, svaki dodatni 1° C (1.8 stepeni na Farenhajtovoj skali) snižava R za 1.2%.[^heat] Razlika u stepenima između leta i zime u Njujorku je 26°C (47°F),[^nyc_heat] tako da će kao posledica letnjih vrelina vrednost R opasti za ~31%. (Prim. prev. )
 
-For COVID-19, every extra 1° Celsius (1.8° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 26°C (47°F),[^nyc_heat] so summer will make R drop by ~31%.
+[^heat]: “Povećanje temperature za jedan stepen Celzijusove skale [...] smanjeuje R za 0.0225” i “Prosečna vrednsot R za ovih 100 gradova je 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
-
-[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
+[^nyc_heat]: Tokom 2019 u Centralnom parku, tokom najtoplijeg meseca (Jul) bilo je 79.6°F, a tokom najhladnijeg meseca (Januar) bilo je 32.5°F. Razlika je 47.1°F, odnosno ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+Leto samo po sebi neće učiniti da je R < 1, ali kako imamo ograničene resurse, možemo umanjiti neke od intervencija tokom leta – tako da ih možemo *povećati* tokom zime.
 
-**A "Circuit Breaker" Lockdown:**
+**"Ciklično" zatvaranje:**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+I ako sve to *i dalje* nije dovoljno da dođemo do R < 1... možemo se ponovo zatvoriti.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+Ali nećemo morati da prolazimo kroz ciklus 2 meseca u zatvorenom / 1 mesec na otvorenom iznova i iznova! Kako se R smanjuje, biće nam potreban jedan ili dva "ciklična" zatvaranja pre nego što se pojavi vakcina. (U Singapuru je moralo da dođe do ovoga nedavno, "iako" su uspevali da kontrolišu COVID-19 tokom prethodna 4 meseca. Ovo nije neuspeh: ovo *je* potrebno za uspeh.)
 
-Here's a simulation of a "lazy case" scenario:
+Evo simulacije "lenjog" scenarija:
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. Zatvaranje, praćeno
+2. Umerenom količinom politika povećane higijene & "Testiranje, Praćenje, Izolovanje", sa blagom količinom "Maske za sve", a zatim...
+3. Još jedan "ciklus" zatvaranja pre nego što vakcina postane dostupna.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+Da ne pominjemo sve *ostale* intervencije koje možemmo primeniti da dodatno snizimo R:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* Restrikcije putovanja sa karantinom
+* Kontrola temperature u tržnim centrima i školama
+* Detaljno čišćenje javnih prostora
+* [Prelazak na nogovanje umesto rukovanja](https://twitter.com/V_actually/status/1233785527788285953)
+* I sve ostalo što će ljudi smisliti
 
 . . .
 
-We hope these plans give you hope. 
+Nadamo se da vam ovi planovi daju nadu. 
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**Čak i u pesimističnom scenariju, *moguće* je pobediti COVID-19, štiteći našu mentalnu i finansijsku stabilnost.** Koristeći zatvaranja kao "dugme za reset", čuvajući R < 1 sa izolacijom slučajeva + prateći kontakte uz zaštitu privatnosti + *barem* platnenim maskama za sve... i život se može vratiti u nešto skoro-normalno!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+Sigurno, suve su vam ruke. Ali, imaćete šansu da pozovete simpatiju u prodavnicu stripova! Imaćete šansu da odete sa prijateljima u bioskop i gledate poslednji holivudski blokbaster. Imaćete šansu da posmatrate ljude u biblioteci, uživajući u činjenici da ljudi nastavljaju sa sitnicama koje *život znače.*
 
-Even under the worst-case scenario... life perseveres.
+Čak i u najgorem slučaju... život opstaje.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+A sada, hajde da planiramo za neke od *gorih* najgorih scenarija. Sletanje na vodu, pripremite svoje prsluke za spasavanje, i molimo pratite svetla do izlaza u slučaju opasnosti:
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>Narednih nekoliko godina</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Dobili ste COVID-19 i oporavili ste se. Ili, primili ste vakcinu protiv COVID-19. U svakom slučaju, sada ste imuni...
 
-...*for how long?*
+...*koliko dugo?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19 je u najbližoj vezi sa SARS-om, koji oporavljenima daje dvogodišnji imunitet.[^SARS immunity]
+* Virusi koji prouzrokuju tipičnu prehladu daju vam imunitet od 8 meseci.[^cold immunity]
+* Postoje neki izveštaji o ljudima koji su se oporavili od COVID-19, ali su ipak naknadno detektovani kao pozitivni testiranjem, ali je nejasno da li su ovo greške testiranja.[^unclear]
+* Jedna *još-uvek-nerecenzirana* studija na majmunima je pokazala da COVID-19 imunitet traje barem 28 dana.[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+Ali u slučaju COVID-19 i *ljudi*, prvog maja 2020, "koliko dugo" je još uvek velika nepoznanica.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: “SARS antitela su održana u proseku 2 godine [...] Stoga, SARS pacijenti mogu ponovo postati podložni infekciji ≥3 godine nakon inicijalne infekcije.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Nažalost" nikad nećemo znati koliko dugo bi SARS imunitet trajao, obzirom da je suzbijen tako brzo.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: “Nismo pronašli značajnu razliku između verovatnoće pozitivnog testa bar jednom i verovatniće povratka beta-koronavirusa HKU1 i OC43 nakon 34 nedelje posle priključivanja studiji/prve infekcije.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: “Jednom kada osoba pobedi virus, delovi virusa opstaju još neko vreme. Ali oni ne mogu izazvati infekciju, ali mogu izazvati pozitivan ishod na testu.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: Iz [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Napomena: Ovaj članak još uvek nije prošao recenziju.* Takođe, da istaknemo: oni su samo testirali nakon 28 dana. 
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <span class="nowrap"><icon r></icon>**,</span> exponentially decaying into susceptible, no-immunity <span class="nowrap"><icon s></icon>s</span> after 1 year, on *average*, with variation:
+Za ove simulacije, pretpostavimo da traje jednu godinu.
+**Ova simulacija počinje sa 100% <span class="nowrap"><icon r></icon>,</span>** čiji broj eksponencijalno opada, dok oni prelaze u zdrave/podložne, bez imuniteta <span class="nowrap"><icon s></icon></span> kroz 1 godinu *u proseku*:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+Povratak eksponencijalnog opadanja!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+Ovo je **SEIRS model**. Drugo "S" u nazivu označava da postoji povratak u <icon s></icon> Susceptible - podložno stanje ponovo.
 
 ![](pics/seirssrb.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+Hajde da simuliramo COVID-19 širenje, tokom 10 godina, bez intervencija... *pretpostavljajući da imunitet traje samo godinu dana:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+U prethodnim simulacijama imali smo samo *jedan* maksimum kada smo premašivali kapacitete intenzivne nege. Sada ih ima više *i* roj <icon i></icon> slučajeva je *permanentno* na granici kapaciteta intenzivne nege. (Koje smo, setite se, procenili na *trostruko* veće za potrebe ovih simulacija)
 
-R = 1, it's **endemic.**
+R = 1, je **endemija.**
 
-Thankfully, because summer reduces R, it'll make the situation better:
+Na sreću, zato što leto smanjuje R, poboljšaće simulaciju:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
 
-Oh.
+Ups.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <span class="nowrap"><icon i></icon>s,</span> but that in turn reduces new immune <span class="nowrap"><icon r></icon>s.</span> Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+Kontraintuitivno, leto čini da se maksimumi pogoršavaju *i* vraćaju! To je zato što leto smanji broj novih <span class="nowrap"><icon i></icon>,</span> ai to takođe smanjuje i broj imunih <span class="nowrap"><icon r></icon>.</span> Što znači da se imunitet smanji tokom leta, *kreirajući* tako intenzivnija ponavljanja porasta zaraženih tokom zima.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+Na sreću, rešenje za ovo je prilično zdravorazumsko – vakcinacija svake jeseni/zime, kao što to radimo sa vakcinama protiv gripa:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(Nakon puštanja snimka, probajte vaše simulacije sa različitim kampanjama vakcinacije! Setite se da možete pauzirati i nastaviti simulaciju u bilo kom trenutku)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+Ali imamo i jedno strašnije pitanje:
 
-What if there's no vaccine for *years*? Or *ever?*
+Šta ako budemo čekali na vakcinu *godinama*? Ili *zauvek?*
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
+**Da budemo jasni: ovo je neverovatno.** Većina epidemiologa očekuje vakcinu za godinu do dve. Tačno je da ne postoji vakcina ni za jedan od koronavirusa, ali to je zato što je SARS bio suzbijen brzo, a vakcina protiv tipične prehlade nije smatrana isplativnom investicijom. 
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+Međutim, istraživači zaraznih bolesti su izrazili sledeća strahovanja: Šta ako ne možemo da napravimo dovoljno vakcina?[^vax_enough] Šta ako ubrzamo proces po cenu bezbednosti?[^vax_safe]
 
-[^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: “Ako stigne vakcina protiv koronavirusa, da li svet može da napravi dovoljno?” [autorka Roxanne Khamsi, u časopisu Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “Ne žurite s produkcijom COVID-19 vakcina i lekova bez dovoljno čvrstih garancija o njihovoj bezbednosti” [autor Shibo Jiang, u časopisu Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
-Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+Čak i u scenariju iz noćne more u kome nema vakcine, i dalje postoje tri izlaza. Slede od najviše do najmanje strašnih:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+1) Ponavljanje ciklusa intervencija za dostizanje R < 1, do postizanja "prirodnog imuniteta krda". (Upozorenje: ovo će za rezultat imati puno smrti i oštećenih pluća. *I* neće raditi ako imunitet ne traje.)
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+2) Ponavljanje R < 1 intervencija zauvek. Praćenje kontakata i nošenje maski samo postane nova normalnost u post-COVID-19 svetu, kao što su testovi na seksualno prenosive infekcije i korišćenje kondoma postali nova norma u post-HIV svetu.
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+3) Ponavljanje R < 1 intervencija dok ne razvijemo tretmane koji čine da COVID-19 zahteva intenzivnu negu mnogo mnogo ređe. (Što bi *svakako* trebalo da radimo!) Smanjivanje potreba za intenizvnom negom faktorom 10x je isto što i povećanje naših kapaciteta u intenzivnoj nezi za faktor od 10x:
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+**Evo simulacije *bez* trajnog imuniteta, *bez* vakcine, pa čak i bez bilo kakvih intervencija - samo sa sporim povećavanjem spremnosti da preživimo nove talase:**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+Čak i u ovom *najgorem* od najgorih slučajeva... život opstaje.
 
 . . .
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+Možda želite da preispitate naše pretpostavke i probate drugačije vrednsoti R<sub>0</sub> i ostalih parametara. Ili želite da simulirate *svoju* kombinaciju intervencija!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+**Ovde je simulacija, u kojoj je menjanje *svega* dostupno. (skrolovanjem ćete videti sve kontrole) Simulirajte i igrajte se dok ne zadovoljite znatiželju:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+Ovaj osnovni "epidemiološki simulator letenja" nas je naučio dosta toga. Dozvolio nam je da odgovorimo na mnoga pitanja o prethodnim mesecima, budućim mesecima i budućim godinama.
 
-So finally, let's return to...
+Konačno, hajde da se vratimo na...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>Sada</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+Avion je potonuo. Uhvatili smo se za splavove za spašavanje. Vreme je da pronađemo kopno.[^dry_land]
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: Metafora kopna [iz članka autora Marc Lipsitch i Yonatan Grad, u STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+Timovi epidemiologa i donosioca odluka ([levo](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desno](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), i [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote *i* slobode.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+U nastavku je obris ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
 ![](pics/plansrb.png)
 
-So what does this mean for YOU, right now?
+Šta ovo znači za TEBE, sada?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**Za sve:** Poštuj mere policijskog časa tako da svi možemo izaći iz Faze I što pre moguće. Nastavi da pereš te ruke. Pravi svoje maske. Preuzmi aplikaciju za praćenje kontakata koja *poštuje privatnost* kada postane dostupna sledećeg meseca. Ostani zdravo, fizički i mentalno! I piši lokalnim donosiocima odluka da se uozbilje i...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**Za donosioce odluka:** Donesite zakone da podržite osobe koje moraju da se samoizoluju/koji su u karantinu. Uposlite više osoba da se bave praćenjem kontakata, *podržite* ih adekvatnim aplikacijama koje prate kontakte i poštuju privatnost. Usmerite više finansija u stvari koje bi treblo da pravimo, kao što su...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+**Za stvaraoce:** Stvarajte testove. Stvarajte respiratore. Stvarajte opremu za ličnu zaštitu za bolnice. Stvarajte testove. Stvarajte maske. Stvarajte aplikacije. Stvarajte antivirotike, profilaktike, i ostale lekove i tretmane koji nisu vakcine. Stvarajte vakcine. Stvarajte testove. Stvarajte testove. Stvarajte testove. Stvarajte nadu. 
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+Ne umanjujte strah da pobudite nadu. Naš strah treba da se *udruži* sa nadom, kao što su stvaraoci aviona i padobrana. Pripremanje za strašne budućnosti je i način na koji *stvaramo* budućnost kojoj se nadamo.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+Jedina stvar za strah je ideja da je jedina stvar za strah sam strah.
