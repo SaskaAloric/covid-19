@@ -199,7 +199,7 @@
     </div>
 </div>
 <p>...moglo je da bude gore. Evo paralelnog univerzuma koji smo zaobišli:</p>
-<h3>Scenarijo 0: Ne učiniti apsolutno ništa</h3>
+<h3>Scenario 0: Ne učiniti apsolutno ništa</h3>
 <p>Otprilike jednoj od 20 osoba inficiranih koronavirusom potrebna je intenzivna nega.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> U bogatim zemljama kao što su SAD, postoji jedno mesto na intenzivnoj nezi na 3400 stanovnika.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> Stoga, bolnički sistem u SAD može da podnese da 20 ljudi na svakih 3400 bude <em>istovremeno</em> zaraženo – ili 0.6% populacije.</p>
 <p>Čak i kada bi SAD <em>utrostručili</em> kapacitet intenzivne nege na 2%, ovako bi izgledao slučaj kada se <em>ništa ne preduzme:</em></p>
 <div class="sim">
@@ -209,7 +209,7 @@
 <p>Ovo je ono što je <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">Izveštaj Imperial Koledža od 16. marta</a> takođe zaključio: ako se ništa ne uradi, popuniće se svi kapaciteti intenzivne nege, dok je preko 80% stanovništva zaraženo. (Setite se: ukupan broj slučajeva je <em>preskočio</em> imunitet krda)</p>
 <p>Čak i kad bi samo 0.5% zaraženih slučajeva preminulo (vrlo optimistična pretpostavka kad više nema dostupnih mesta na intenzivnoj nezi) u velikim državama kao što su SAD, sa populacijom od 300 miliona, 0.5% od tih 80% inficiranih predstavlja u stvari 1.2 miliona mrtvih... <em>AKO se ne uradi ništa.</em></p>
 <p>(Dosta vesti i medija na društvenim mrežama izveštava da će "80% biti inficirano" <em>bez</em> informacije da je to pod pretpostavkom "DA SE NE URADI NIŠTA". Strah je pretočen u klikove, a ne u razumevanje.)</p>
-<h3>Scenarijo 1: Peglanje krive / Imunitet krda</h3>
+<h3>Scenario 1: Peglanje krive / Imunitet krda</h3>
 <p>Plan "Peglanje krive" je bio reklamiran od strane svake zvanične javne zdravstvene organizacije, dok je inicijalno pominjani plan u Velikoj Britaniji pod nazivom "imunitet krda" bio sveopšte kritikovan. To su u stvari <em>isti planovi</em>. Samo su u VB plan dosta loše iskomunicirali.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a></p>
 <p>Oba plana, s' druge strane, imaju jednu bukvalno fatalnu manu.</p>
 <p>Prvo, pogledajmo dva osnovna načina kako se ”pegla kriva”: pranje ruku &amp; fizičko distanciranje/udaljavanje.</p>
@@ -231,18 +231,18 @@
 <p>To je bio još jedan zaključak Izveštaja Imperial Koledza od 16. marta, koji je ubedio Engleze da odustanu od njihovog početnog plana. Svaki pokušaj u <em>ublažavanju</em> (što je smanjenje R, ali i dalje R &gt; 1) će propasti. Jedini način da se izađe iz ove situacije je <strong>suzbijanje</strong> (smanjenje R tako da bude R &lt; 1).</p>
 <p><img src="pics/mitigation_vs_suppressionsrb.png" /></p>
 <p>To znači, nemoj samo da <em>peglaš</em> krivu, <em>uništi</em> krivu. Na primer, sa...</p>
-<h3>Scenarijo 2: Višemesečno zatvaranje (gradova, policijski čas i slično)</h3>
+<h3>Scenario 2: Višemesečno zatvaranje (gradova, policijski čas i slično)</h3>
 <p>Hajde da vidimo šta se dešava ako <em>suzbijemo</em> krivu sa petomesečnim zatvaranjem, smanjimo <icon i></icon> praktično potpuno, a onda se <em>napokon</em> vratimo normalnom životu:</p>
 <div class="sim">
         <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 <p>Ups.</p>
-<p>Ovo je taj "drugi talas" o kojem svi pričaju. Čim prestanemo sa zatvaranjem, opet dolazi do R &gt; 1. Onda, jedan preostali <icon i></icon> (ili neki <span class="nowrap"><icon i></icon> koji je došao)</span> može da prouzrokuje ponovni skok u broju slučajeva, što je skoro pa podjednako loše kao da smo samo uradili Scenarijo 0: Apsolutno ništa.</p>
+<p>Ovo je taj "drugi talas" o kojem svi pričaju. Čim prestanemo sa zatvaranjem, opet dolazi do R &gt; 1. Onda, jedan preostali <icon i></icon> (ili neki <span class="nowrap"><icon i></icon> koji je došao)</span> može da prouzrokuje ponovni skok u broju slučajeva, što je skoro pa podjednako loše kao da smo samo uradili Scenario 0: Apsolutno ništa.</p>
 <p><strong>Zatvaranje nije lek, već samo restart situacije.</strong></p>
 <p>Dobro, šta to znači, mi sad samo treba da se zatvaramo (ili da uvodimo policijski čas) iznova i iznova?</p>
-<h3>Scenarijo 3: Naizmenično Zatvaranje-Otvaranje</h3>
+<h3>Scenario 3: Naizmenično Zatvaranje-Otvaranje</h3>
 <p>Ovo rešenje je prvo bilo predloženo u Izveštaju Imperial Koledža 16. marta, i posle još jednom u jednom radu naučnika sa Harvarda.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></p>
-<p><strong>Evo i simulacije:</strong> (Pošto se izigrate sa "već nameštenim scenarijom", možete da probate i <em>vaše</em> rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača i dugmiće <em>dok</em> traje simulacija! Setite se da možete da pauzirate &amp; nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)</p>
+<p><strong>Evo i simulacije:</strong> (Pošto se izigrate sa "već nameštenim scenariom", možete da probate i <em>vaše</em> rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača i dugmiće <em>dok</em> traje simulacija! Setite se da možete da pauzirate &amp; nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)</p>
 <div class="sim">
         <iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
@@ -253,7 +253,7 @@
 <p>Ali, sad ne kažemo da <em>ne bi trebalo</em> da se zatvaramo opet! Vratićemo se kasnije na to "ciklično" otvaranje i zatvaranje. I dalje je daleko od idealnog.</p>
 <p>Ali, čekajte. Zar nisu Tajvan i Južna Koreja <em>već</em> zauzdali COVID-19? Na čitava četiri meseca, <em>bez</em> dugoročnog zatvaranja?!</p>
 <p>Kako?</p>
-<h3>Scenarijo 4: Testiranje, praćenje, izolovanje</h3>
+<h3>Scenario 4: Testiranje, praćenje, izolovanje</h3>
 <p><em>"Da, sigurno, mi smo *mogli* da uradimo to što su i Tajvan i Južna Koreja uradili na početku, ali sada je previše kasno za to. Omašili smo početak."</em></p>
 <p>Upravo to! “Zatvaranje nije lek, ali jeste restart”... <strong>i novi početak je ono što nam treba.</strong></p>
 <p>Da bismo razumeli kako su Tajvan &amp; Južna Koreja zaustavili COVID-19, potrebno je da razumemo tačne vremenske okvire tipične COVID-19 infekcije <a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>:</p>
@@ -300,7 +300,7 @@
 <p>...</p>
 <p>Ali šta ako stvari <em>i dalje</em> idu po zlu? Stvari su već otišle u vrlo pogrešnu stranu. To je strah, i to je dobro! Strah nam daje snagu da smišljamo <em>rezervne planove</em>.</p>
 <p>Pesimista pravi padobran.</p>
-<h3>Scenarijo 4+: Maske za sve, leto, ciklično otvaranje i zatvaranje</h3>
+<h3>Scenario 4+: Maske za sve, leto, ciklično otvaranje i zatvaranje</h3>
 <p>Šta ako je R<sub>0</sub> mnogo veće nego što smo mi mislili, i pored svih intervencija, i blagog distanciranja, mi <em>i dalje</em> ne uspevamo da dobijemo R &lt; 1?</p>
 <p>Setimo se, iako ne možemo da dođemo do R &lt; 1, smanjenjem R smanjujemo ukupan broj slučajeva, što znači da spašavamo živote. Ali i dalje, R &lt; 1 je idealno, tako da evo na koje još dodatne načine možemo da utičemo na smanjenje R:</p>
 <p><strong>Maske Za Sve:</strong></p>
