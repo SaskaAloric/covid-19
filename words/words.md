@@ -26,24 +26,24 @@
 
 Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već kako *kanališemo* naš strah. Strah nam daje snagu da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
 
-Iskreno, mi (Marcel, epidemiološka slika + Nicky, umetnost/kod) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
+Iskreno, mi (Marcel, epidemiološka slika + Nicky, dizajn/kod) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
 
-* **Poslednjih nekoliko meseci** (uvodni kurs epidemiologije, SEIR model, R & R<sub>0</sub>)
+* **Prethodnih nekoliko meseci** (uvodni kurs epidemiologije, SEIR model, R i R<sub>0</sub>)
 * **Narednih nekoliko meseci** (ograničenja kretanja, praćenje kontakata, maske)
-* **Narednih nekoliko godina** (gubitak imuniteta? nedostatak vakcine?)
+* **Narednih nekoliko godina** (imunitet, vakcinacija)
 
-Ovaj vodič (objavljen prvog maja 2020. vidi ovu fusnotu!→[^timestamp]) za cilj ima da u vama pobudi nadu *i* strah. Da bismo pobedili COVID-19 **na način koji čuva naše mentalno i finansijsko stanje**, potreban nam je optimizam za smišljanje planova, i pesimizam za smišljanje rezervnih planova. Po rečima Gladis Brovnin Stern (Gladys Bronwyn Stern): *“Optimista izmisli avion a pesimista padobran.”*
+Ovaj vodič (objavljen prvog maja 2020. godine, vidi ovu fusnotu!→[^timestamp]) za cilj ima da u vama pobudi nadu *i* strah. Da bismo pobedili COVID-19 **na način koji čuva naše mentalno i finansijsko stanje**, potreban nam je optimizam za smišljanje planova, ali i pesimizam za smišljanje rezervnih planova. Po rečima Gladis Brovnin Stern: *“Optimista izmisli avion, a pesimista padobran.”*
 
 [^timestamp]: Fusnote će sadržati izvore informacija, linkove i bonus komentare, kao ovaj komentar!
     
-    **Ovaj vodič je objavljen prvog maja 2020.** Mnogi detalji će se menjati ali smo mi uvereni da će ovaj vodič pokriti 95% mogućih budućnosti i da će početni kurs Epidemiologije biti zauvek od koristi.
+    **Ovaj vodič je objavljen prvog maja 2020.** Mnogi detalji će se menjati ali smo mi uvereni da će ovaj vodič pokriti 95% mogućih budućnosti i da će početni kurs epidemiologije biti zauvek od koristi.
 
 Vežite se: na putu smo da osetimo turbulencije.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>Poslednjih nekoliko meseci</div>
+        <div>Prethodnih nekoliko meseci</div>
     </div>
 </div>
 
@@ -51,11 +51,11 @@ Piloti koriste simulatore letenja da nauče kako da ne sruše avione.
 
 **Epidemiolozi koriste simulatore epidemija da nauče kako da ne uruše čovečanstvo.**
 
-Počećemo od veoma, *veoma* jednostavnog "epidemiološkog simulatora letenja"! U ovoj simulaciji, <icon i></icon> zarazni ljudi (eng. Infected) mogu preneti zarazu na podložne/zdrave ljude <icon s></icon> (eng. Susceptible) uvećavajući tako broj zaraznih <icon i></icon>:
+Počećemo od veoma, *veoma* jednostavnog "epidemiološkog simulatora letenja"! U ovoj simulaciji, <icon i></icon> zarazni ljudi (eng. **I**nfected) mogu preneti zarazu na podložne/zdrave ljude <icon s></icon> (eng. **S**usceptible) uvećavajući tako broj zaraznih <icon i></icon>:
 
 ![](pics/spreadsrb.png)
 
-Procenjeno je da *se na početku* izbijanja COVID-19, virus prenosio sa <icon i></icon> na <icon s></icon> svaka 4 dana, *u proseku*.[^serial_interval] (zapamtite, ovo puno varira)
+Procenjeno je da *se na početku* izbijanja COVID-19, virus prenosio sa <icon i></icon> na <icon s></icon> *u proseku* na svaka 4 dana.[^serial_interval] (Zapamtite, ovaj vremenski period puno varira.)
 
 [^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Napomena: Preliminarne verzije članaka ne treba uzimati u obzir na isti način kao finalne verzije.)
 
@@ -74,7 +74,7 @@ Ako simuliramo "dupliranje broja slučajeva na svaka 4 dana", *i ništa više*, 
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, ali brzo eksplodira. Od "a ma to je samo grip" do "zapravo, grip ne uzrokuje *masovne grobnice u bogatim gradovima*". 
+Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, ali brzo eksplodira. Od "a ma to je samo grip" do "zapravo, grip ne uzrokuje *masovne grobnice u razvijenim gradovima*". 
 
 ![](pics/exponentialsrb.png)
 
@@ -94,11 +94,11 @@ Ovo je "S-kriva" ili **kriva logističkog rasta.** Počinje malim brojevima, zat
 
 Ali, ova simulacija je *i dalje* pogrešna. Nismo iskoristili činjenicu da zarazni <icon i></icon> u nekom trenutku prestaju da budu zarazni, ili 1) oporavkom, 2) "oporavkom" sa oštećenim plućima, ili 3) umiranjem.
 
-Zarad pojednostavljenja, hajde da pretpostavimo da svi <icon i></icon> zarazni ljudi postaju <icon r></icon> oporavljeni (eng. Recovered). (Samo zapamtite da u realnosti, neki umiru. Zato se na engleskom u okviru SIR modela - Recovered često nazivaju i Removed, tj. uklonjeni iz daljeg epidemiološkog razmatranja ili smrću ili trajnim imunitetom, prim. prev.) <span class="nowrap"><icon r></icon></span> oporavljeni ne mogu ponovo biti zaraženi, i pretpostavimo – *za sada!* – da oni ostaju doživotno imuni.
+Zarad pojednostavljenja, hajde da pretpostavimo da svi <icon i></icon> zarazni ljudi postaju <icon r></icon> oporavljeni (eng. **R**ecovered). (Samo zapamtite da u realnosti, neki umiru. Zato se na engleskom u okviru **SIR** modela - **R**ecovered često nazivaju i **R**emoved, tj. uklonjeni iz daljeg epidemiološkog razmatranja ili smrću ili trajnim imunitetom, prim. prev.) <span class="nowrap"><icon r></icon></span> oporavljeni ne mogu ponovo biti zaraženi, i pretpostavimo – *za sada!* – da oni ostaju doživotno imuni.
 
-U slučaju COVID-19, procenjeno je da su <icon i></icon> zarazni 10 dana, *u proseku*.[^infectiousness] To znači da će se neki oporaviti za manje od 10 dana, a nekima će biti potrebno više. **To izgleda ovako sa simulacijom koja *počinje* sa 100% <span class="nowrap"><icon i></icon>:</span>**
+U slučaju COVID-19, procenjeno je da su <icon i></icon> zarazni  *u proseku* 10 dana.[^infectiousness] To znači da će se neki oporaviti za manje od 10 dana, a nekima će biti potrebno više. **To ovako izgleda sa simulacijom koja *počinje* sa 100% <span class="nowrap"><icon i></icon>:</span>**
 
-[^infectiousness]: “Medijalna vrednost perioda tokom koga je COVID-19 pozitivna osoba zarazna \[...\] je 9.5 dana.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Da, znamo da "medijalna" vrednost nije isto što i "prosečna vrednost". U cilju ovog pojednostavljenog edukativnog modela mislimo da su ove dve vrednosti dovoljno blizu.
+[^infectiousness]: “Medijalna vrednost perioda tokom koga je COVID-19 pozitivna osoba zarazna \[...\] je 9.5 dana.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Da, znamo da "medijalna" vrednost nije isto što i "prosečna vrednost". U cilju ovog pojednostavljenog edukativnog modela mislimo da su ove dve vrednosti dovoljno bliske.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
@@ -120,9 +120,9 @@ počinjemo sa samo 0.001% <span class="nowrap"><icon i></icon>:</span>
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-I *otuda* poznata kriva! Ovo nije zvono kriva (prim. prev. normalna raspodela, Gausova raspodela), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
+I *otuda* poznata kriva! Ovo nije zvonasta kriva (prim. prev. normalna raspodela, Gausova raspodela), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
 
-Ovo je takozvani **SIR model** [^sir] (<icon s></icon> **S**usceptible - zdravi/podložni <icon i></icon> **I**nfectious - zarazni <icon r></icon> **R**ecovered - oporavljeni), *druga* najvažnija ideja u početnom kursu Epidemiologije:
+Ovo je takozvani **SIR model** [^sir] (<icon s></icon> **S**usceptible - zdravi/podložni <icon i></icon> **I**nfectious - zarazni <icon r></icon> **R**ecovered - oporavljeni), *druga* najvažnija ideja u početnom kursu epidemiologije:
 
 [^sir]: Za više tehničkih objašnjenja o SIR modelu, vidite [Institut za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-sir.html#) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
@@ -130,11 +130,11 @@ Ovo je takozvani **SIR model** [^sir] (<icon s></icon> **S**usceptible - zdravi/
 
 **Komentar: Simulacije na osnovu kojih se donose odluke su *mnogo* sofisticiranije od ovih!** Ali SIR model i dalje može da objasni neke generalne trendove, iako mu nedostaju finese.
 
-U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> *inficirani* (eng. Exposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara*ženi* ali ne još zara*zni*.
+U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> *inficirani* (eng. **E**xposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara*ženi* ali ne još zara*zni*.
 
 ![](pics/seirsrb.png)
 
-(Ova varijanta modela zove se **SEIR model**[^seir], gde "E" potiče od <icon e></icon> "Exposed" - inficiranih. Na engleskom "Exposed", u svakodnevnom značenju približno našem "izložen", može značiti i da imate i da nemate virus, međutim u ovom tehničkom značenju, "Exposed" znači da imate virus. Naučna terminologija je loša. Prim. prev. iz istog razloga je u ovom prevodu odabrano korišćenje "inficirani" umesto "izloženi".)
+(Ova varijanta modela zove se **SEIR model**[^seir], gde "E" potiče od <icon e></icon> "**E**xposed" - inficiranih. Na engleskom "Exposed", u svakodnevnom značenju približno našem "izložen", može značiti i da imate i da nemate virus, međutim u ovom tehničkom značenju, "Exposed" znači da imate virus. Naučna terminologija je loša. Prim. prev. iz istog razloga je u ovom prevodu odabrano korišćenje "inficirani" umesto "izloženi".)
 
 [^seir]: Za više tehničkih objašnjenja o SEIR modelu, pogledajte [Institute za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-seir.html) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
@@ -149,9 +149,9 @@ U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Nije se mnogo toga promenilo! Vreme tokom kojeg osoba ostaje <icon e></icon> inficirana (ali ne i zarazna) menja odnos <span class="nowrap"><icon e></icon>-:-<icon i></icon>,</span> kao i *kada* trenutni broj slučajeva dostiže maksimum... ali *visina* maksimuma, i ukupan broj slučajeva na kraju, ostaje isti.
+Nije se mnogo toga promenilo! Vreme tokom kojeg osoba ostaje <icon e></icon> inficirana (ali ne i zarazna) menja odnos <span class="nowrap"><icon e></icon>:<icon i></icon>,</span> kao i *kada* trenutni broj slučajeva dostiže maksimum... ali *visina* maksimuma, i ukupan broj slučajeva na kraju, ostaje isti.
 
-Zašto je to tako? To je zbog *prve* najvažnije ideje u početnom kursu Epidemiologije:
+Zašto je to tako? To je zbog *prve* najvažnije ideje u početnom kursu epidemiologije:
 
 ![](pics/r.png)
 
@@ -169,13 +169,13 @@ R<sub>0</sub> "tipičnog" sezonskog gripa je oko 1.28[^r0_flu]. Ovo znači da na
 
 [^r0_flu]: “Medijalna vrednost R za sezonski grip je 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-Procenjena vrednost R<sub>0</sub> za COVID-19 je oko 2.2,[^r0_covid] mada jedna *još-uvek-nedovršena* studija procenjuje da je vrednost bila 5.7(!) u Vuhanu.[^r0_wuhan]
+Procenjena vrednost R<sub>0</sub> za COVID-19 je oko 2.2,[^r0_covid] mada jedna *još-uvek-nedovršena* studija procenjuje da je u Vuhanu vrednost R<sub>0</sub> bila 5.7(!).[^r0_wuhan]
 
 [^r0_covid]: “Procenili smo bazični reproduktivni broj R<sub>0</sub> virusa 2019-nCoV na oko 2.2 (interval velike gustine od 90%: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
 [^r0_wuhan]: “Izračunali smo da medijalna vrednost R<sub>0</sub> iznosi 5.7 (interval sa 95% poverenja: 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-U našim simulacijama – *na početku & u proseku* – <icon i></icon> zarazi nekoga svaka 4 dana, tokom 10 dana. "4 dana" je dva i po puta manje od "10 dana". Ovo znači da – *na početku & u proseku* – <icon i></icon> zarazi 2.5 drugih. Stoga je R<sub>0</sub> = 2.5. (upozorenja:[^r0_caveats_sim])
+U našim simulacijama – *na početku i u proseku* – u toku 10 dana, svaki <icon i></icon> zarazi nekoga na svaka 4 dana. "4 dana" je dva i po puta kraće od "10 dana". Ovo znači da – *na početku i u proseku* – <icon i></icon> zarazi 2.5 drugih. Stoga je R<sub>0</sub> = 2.5. (upozorenja:[^r0_caveats_sim])
 
 [^r0_caveats_sim]: Ovde smo pretpostavili da je osoba jednako zarazna tokom celog "zaraznog perioda". Opet, pojednostavljenje u službi obrazovanja.
 
@@ -191,7 +191,7 @@ Ali zapamtite, što je manje <span class="nowrap"><icon s></icon></span>, *ređe
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-Kada je dovoljan broj ljudi imun, tada je R < 1 i virus je zauzdan! Ovo je **imunitet krda**. Za viruse gripa, imunitet krda se dostiže *vakcinisanjem*. Pokušaj da se dostigne "prirodan imunitet krda" izlažući ljude zarazi je *užasna* ideja. (Ali ne zbog razloga koji vam možda padaju na pamet! Objasnićemo kasnije.)
+Kada je dovoljan broj ljudi imun, tada je R < 1 i virus je zauzdan! Ovo se naziva **imunitet krda**. Za viruse gripa, imunitet krda se dostiže *vakcinisanjem*. Pokušaj da se dostigne "prirodan imunitet krda" izlažući ljude zarazi je *užasna* ideja. (Ali ne zbog razloga koji vam možda padaju na pamet! Objasnićemo kasnije.)
 
 A sada, poigrajmo se sa SEIR modelom ponovo, ali prikazujući kako se vrednosti R<sub>0</sub> i R menjaju tokom vremena, kao i granični broj zaraženih kada je imunitet krda dostignut:
 
@@ -203,7 +203,7 @@ A sada, poigrajmo se sa SEIR modelom ponovo, ali prikazujući kako se vrednosti 
 
 Ovo se dešava zato što u trenutku kada broj <span class="nowrap">ne-<icon s></icon></span> nadmaši broj potreban za imunitet krda, tada se dostiže R < 1. A kada je R < 1, tada i broj trenutnih slučajeva prestaje da raste: dostignut je maksimalni broj zaraženih.
 
-**Ako ćete iz ovog čitanja usvojiti samo jednu pouku, nek' to bude poruka na sledećem dijagramu** – u pitanju je izuzetno kompleksan dijagram, te mu posvetite onoliko vremena koliko je potrebno da ga u potpunosti savladate:
+**Ako ćete iz ovog čitanja usvojiti samo jednu pouku, neka to bude poruka na sledećem dijagramu** – u pitanju je izuzetno kompleksan dijagram, te mu posvetite onoliko vremena koliko je potrebno da ga u potpunosti savladate:
 
 ![](pics/r3srb.png)
 
@@ -260,7 +260,7 @@ Otprilike jednoj od 20 osoba inficiranih koronavirusom potrebna je intenzivna ne
 
 Daleko od dobrog.
 
-Ovo je ono što je [Izveštaj Imperial Koledža od 16. marta](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) takođe zaključio: ako se ništa ne uradi, popuniće se svi kapaciteti intenzivne nege, dok je preko 80% stanovništva zaraženo. (Setite se: ukupan broj slučajeva je *preskočio* imunitet krda)
+Ovo je ono što je [Izveštaj Imperial Koledža od 16. marta](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) takođe zaključio: ako se ništa ne uradi, popuniće se svi kapaciteti intenzivne nege, dok je preko 80% stanovništva zaraženo. (Setite se: ukupan broj slučajeva je *premašio* imunitet krda)
 
 Čak i kad bi samo 0.5% zaraženih slučajeva preminulo (vrlo optimistična pretpostavka kad više nema dostupnih mesta na intenzivnoj nezi) u velikim državama kao što su SAD, sa populacijom od 300 miliona, 0.5% od tih 80% inficiranih predstavlja u stvari 1.2 miliona mrtvih... *AKO se ne uradi ništa.*
 
@@ -268,7 +268,7 @@ Ovo je ono što je [Izveštaj Imperial Koledža od 16. marta](http://www.imperia
 
 ###Scenario 1: Peglanje krive / Imunitet krda
 
-Plan "Peglanje krive" je bio reklamiran od strane svake zvanične javne zdravstvene organizacije, dok je inicijalno pominjani plan u Velikoj Britaniji pod nazivom "imunitet krda" bio sveopšte kritikovan. To su u stvari *isti planovi*. Samo su u VB plan dosta loše iskomunicirali.[^yong]
+Plan "Peglanje krive" je bio reklamiran od strane svake zvanične javne zdravstvene organizacije, dok je inicijalno pominjani plan u Velikoj Britaniji pod nazivom "imunitet krda" bio sveopšte kritikovan. To su u stvari *isti planovi*. Samo su u VB plan dosta loše predstavili.[^yong]
 
 [^yong]: “On kaže da je cilj isti kao u drugim zemljama: peglanje krive time što se poljulja/uzdrma/razvuče početak infekcije. Posledično, narod će postići imunitet krda; to je sporedni efekat, a ne cilj. [...] Zvaničan plan akcije vlasti u vezi sa koronavirusom, dostupan na njihovom sajtu, uopšte nije pominjao imunitet krda.”
     
@@ -276,9 +276,9 @@ Plan "Peglanje krive" je bio reklamiran od strane svake zvanične javne zdravstv
 
 Oba plana, s' druge strane, imaju jednu bukvalno fatalnu manu.
 
-Prvo, pogledajmo dva osnovna načina kako se ”pegla kriva”: pranje ruku & fizičko distanciranje/udaljavanje.
+Prvo, pogledajmo dva osnovna načina kako se ”pegla kriva”: pranje ruku i fizičko distanciranje/udaljavanje.
 
-Češće pranje ruku smanjuje prehlade & grip u bogatim zemljama za ~25%[^handwashing], dok je zatvaranje celog grada u Londonu smanjilo kontakte za ~70%[^london]. Stoga, hajde da pretpostavimo da pranje ruku smanjuje R za *do* 25%, a distanciranje *do* 70%:
+Češće pranje ruku smanjuje prehlade i grip u bogatim zemljama za ~25%[^handwashing], dok je zatvaranje celog grada u Londonu smanjilo kontakte za ~70%[^london]. Stoga, hajde da pretpostavimo da pranje ruku smanjuje R za *do* 25%, a distanciranje *do* 70%:
 
 [^handwashing]: “U svih osam dostupnih istraživanja su zaključili da pranje ruku smanjuje rizik od infekcija respiratornog sistema, sa smanjenjem rizika u intervalu od 6% do 44% [zbirna srednja vrednost je 24%, interval od 95% poverenja je 6–40%].” Mi smo zaokružili srednju vrednost na 25% u ovim simulacijama radi jednostavnosti. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Napomena: kako ova meta-analiza pokazuje, kvalitet istraživanja na temu pranja ruku (bar u bogatijim zemljama) su grozna.
 
@@ -337,7 +337,7 @@ Ovo rešenje je prvo bilo predloženo u Izveštaju Imperial Koledža 16. marta, 
 [^lockdown_harvard]: “Ako ne uzmemo u obzir ostale intervencije, glavni parametar uspešnosti sprovođenja mera fizičkog distanciranja je da li su popunjeni svi kapaciteti intenzivnih nega. Da bi se ovo izbeglo, produžena ili pak naizmenična fizička distanciranja su potencijalno neophodna i do 2022 godine.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
 **Evo i simulacije:** 
-(Pošto se izigrate sa "već nameštenim scenarijom", možete da probate i *vaše* rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača i dugmiće *dok* traje simulacija! Setite se da možete da pauzirate & nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)
+(Pošto se izigrate sa "već nameštenim scenarijom", možete da probate i *vaše* rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača i dugmiće *dok* traje simulacija! Setite se da možete da pauzirate i nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
@@ -349,12 +349,12 @@ U redu, lepo je nacrtati tu liniju koja predstavlja "kapacitet intenzivne nege",
 
 **Mentalno zdravlje:** Usamljenost je jedno od najbitnijih faktora rizika za depresiju, anksioznost i samoubistvo. I povezuje se sa preuranjenom smrtnošću u sličnoj meri kao i pušenje 15 cigareta dnevno.[^loneliness]
 
-[^loneliness]: Pogledajte [Sliku 6 iz Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Naravno, obratimo pažnju da su uočili *korelaciju*. Ali, sem ako ne želimo da nasumično ljude stavljamo u izolaciju da bismo istraživali usamljenost, jedino što imamo su prosto podaci sa posmatranja kao što je ovo. 
+[^loneliness]: Pogledajte [Sliku 6 iz Holt-Lunstad i Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Naravno, obratimo pažnju da su uočili *korelaciju*. Ali, sem ako ne želimo da nasumično ljude stavljamo u izolaciju da bismo istraživali usamljenost, jedino što imamo su prosto podaci sa posmatranja kao što je ovo. 
 
 **Finansijsko stanje:** "Šta ćemo sa ekonomijom?!" zvuči kao da neko više brine o parama nego o životima, ali "ekonomija" nije samo berza i zarada poslodavaca: to je mogućnost da ljudi zarade za hranu i krov nad glavom za njih i njihove bližnje, da ulažu u budućnost njihove dece, i uživaju u umetnosti, hrani, video igrama - u svim onim stvarima koje čine život lepim i vrednim. I pored toga, siromaštvo *samo po sebi* ima katastrofalne posledice po mentalno i fizičko zdravlje.
 
 
-Ali, sad ne kažemo da *ne bi trebalo* da se zatvaramo opet! Vratićemo se kasnije na to "ciklično" otvaranje i zatvaranje. I dalje je daleko od idealnog.
+Ali, sad ne kažemo da *ne bi trebalo* da se zatvaramo opet! Vratićemo se kasnije na to "ciklično" otvaranje i zatvaranje. I dalje je daleko od idealne situacije.
 
 Ali, čekajte. Zar nisu Tajvan i Južna Koreja *već* zauzdali COVID-19? Na čitava četiri meseca, *bez* dugoročnog zatvaranja?!
 
@@ -367,7 +367,7 @@ Kako?
 
 Upravo to! “Zatvaranje nije lek, ali jeste restart”... **i novi početak je ono što nam treba.**
 
-Da bismo razumeli kako su Tajvan & Južna Koreja zaustavili COVID-19, potrebno je da razumemo tačne vremenske okvire tipične COVID-19 infekcije [^timeline]:
+Da bismo razumeli kako su Tajvan i Južna Koreja zaustavili COVID-19, potrebno je da razumemo tačne vremenske okvire tipične COVID-19 infekcije [^timeline]:
 
 [^timeline]: **3 dana u proseku za infektivnost:** “Pretpostavljajući da je inkubacioni period normalna distribucija oko srednje vrednosti 5.2 dana (iz drugog istraživanja COVID-19 slučajeva), zaključujemo da infektivnost počinje vec od 2.3 dana (interval 95% poverenja je 0.8–3.0 dana) pre nego što se manifestuju simptomi” (u prevodu: Ako pretpostavimo da se simptomi vide od petog dana, zaraznost je počela dva dana pre, tj. počinje od treceg dana) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
     
@@ -389,7 +389,7 @@ Ali, ako mi prenađemo *i stavimo u karantin* skorašnje kontakte tog jednog ana
 
 ![](pics/timeline3srb.png)
 
-Ovo se zove **praćenje kontakata**. Ideja je stara, i bila je korišćena u velikoj meri da se zauzda širenje Ebole[^ebola], i sada je suština plana kojim su Tajvan & Južna Koreja zauzdali COVID-19!
+Ovo se zove **praćenje kontakata**. Ideja je stara, i bila je korišćena u velikoj meri da se zauzda širenje Ebole[^ebola], i sada je suština plana kojim su Tajvan i Južna Koreja zauzdali COVID-19!
 
 
 [^ebola]: “Praćenje kontakata je bilo od suštinske važnosti u Liberiji i predstavlja jednu od najvećih napora i akcija za praćenje kontakata tokom svih epidemija u istoriji.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
@@ -403,7 +403,7 @@ Tradicionalno, kontakti se prikupljaju prilikom intervjuisanja zaražene osobe, 
 
 Čekaj, aplikacije koje prate kontakte?... Da li to znači da se odričemo naše privatnosti, dajući pristup Velikom bratu?
 
-Ni pod razno! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, tim epidemiologa i kriptografa (u koji je uključen i jedan od nas, Marcel Salathé) *već* rade na pravljenju takve aplikacije - sa kodom koji je dostupan svima - koja ne otkriva **nikakve podatke o identitetu, lokaciji, kontaktima, pa čak ni *koliko kontakata* je osoba imala.**
+Ni pod razno! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, tim epidemiologa i kriptografa (u koji je uključen i jedan od nas, Marcel Salathé) *već* rade na pravljenju takve aplikacije - sa kodom koji je dostupan svima - koja ne otkriva **podatke o identitetu, lokaciji, kontaktima, pa čak ni *koliko kontakata* je osoba imala.**
 
 Ovako ona radi:
 
@@ -417,7 +417,7 @@ Ovako ona radi:
     
     Za ostala pitanja kao što je potrošnja internet protoka, integritet izvora, i ostala pitanja u vezi sa bezbednošću podataka, pogledajte [open-source DP-3T predloge/whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
-Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], inspirisani su i Apple i Google da se pozabave razvijanjem aplikacije za Android/iOS za praćenje kontakata sa primarnom zaštitom privatnosti.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravstveni sistem od tebe tražiti da instaliraš neku aplikaciju. Ako je ona pre svega sa zaštitom privatnosti i javno dostupnim kodom, molimo te instaliraj je!
+Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], i Apple i Google su zainteresovani da se pozabave razvijanjem aplikacije za Android/iOS za praćenje kontakata sa primarnom zaštitom privatnosti.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravstveni sistem od tebe tražiti da instaliraš neku aplikaciju. Ako je obezbeđena zaštita privatnosti i sa javno dostupnim kodom (open-source), molimo te instaliraj je!
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
@@ -439,7 +439,7 @@ Ali šta je sa ljudima koji nemaju pametne telefone? Ili sa infekcijama koje se 
 
 Izolacija *simptomatskih* slučajeva bi smanjila R za do 40%, a odlazak u karantin njihovih *pred/a-simptomatskih* kontakata bi smanjilo R za do 50%[^oxford]:
 
-[^oxford]: Iz istog istraživanja sa Oksforda koje je prvo predložilo aplikacije za suzbijanje COVID-19 bolesti: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Pogledajte Sliku 2. Pretpostavljajući R<sub>0</sub> = 2.0, oni su zaključili da:    
+[^oxford]: Iz istog istraživanja sa Oksforda koje je prvo predložilo aplikacije za suzbijanje COVID-19 bolesti: [Luca Ferretti i Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Pogledajte Sliku 2. Pretpostavljajući R<sub>0</sub> = 2.0, oni su zaključili da:    
     
     * Simptomatični doprinose R = 0.8 (40%)
     * Predsimptomatični doprinose  R = 0.9 (45%)
@@ -452,7 +452,7 @@ Izolacija *simptomatskih* slučajeva bi smanjila R za do 40%, a odlazak u karant
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Stoga, čak i bez stavljanja u karantin 100% kontakata, možemo da dođemo do R < 1 *bez zatvaranja*! Ovo je mnogo bolje za naše mentalno zdravlje i finansijsku situaciju. (Što se tiče troškova ljudi koji moraju da se samoizoluju/odu u karantin, *vlade bi trebalo da potpomognu* - plate za testove, osiguraju njihove poslove, subvencionišu odsustvo, i slično. To je i dalje jeftinije nego zatvaranje čitavih gradova pa makar i u intervalima.)
+Stoga, čak i bez stavljanja u karantin 100% kontakata, možemo da dođemo do R < 1 *bez zatvaranja*! Ovo je mnogo bolje za naše mentalno zdravlje i finansijsku situaciju. (Što se tiče troškova ljudi koji moraju da se samoizoluju/odu u karantin, *vlade bi trebalo da potpomognu* - plate za testove, osiguraju njihove poslove, subvencionišu odsustvo, i slično. To je i dalje jeftinije nego zatvaranje čitavih gradova, pa makar i u intervalima.)
 
 
 Mi bismo onda održavali R < 1 dok ne dođemo do vakcine, što onda podložne <span class="nowrap"><icon s></icon></span> pretvara u imune <span class="nowrap"><icon r></icon>.</span> Izvolite imunitet *krda*, ali na pravi način:
@@ -498,11 +498,11 @@ Setimo se, iako ne možemo da dođemo do R < 1, smanjenjem R smanjujemo ukupan b
 
 I bili biste u pravu. Maske ne mogu da nas zaštite od infekcije[^incoming]... one štite *druge* od nas.
 
-[^incoming]: “Nijedna od ovih hirurških maski nema adekvatan učinak filtera, kao što ni ne prijanjaju licu u dovoljnoj meri, da bi se mogle klasifikovati kao respiratorna zaštita.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+[^incoming]: “Nijedna od ovih hirurških maski nema adekvatan učinak filtera, kao što ni ne prijanjaju licu u dovoljnoj meri, da bi se mogle klasifikovati kao respiratorna zaštita.” [Tara Oberg i Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
 [^outgoing]: “Ukupno smanjenje od 3.4 puta [70% smanjenja] u broju čestica aerosoli koje je primećeno, zajedno sa skoro potpunom eliminacijom velikih kapljica koje je demonstrirano od strane by Johnson et al., sugeriše da bi nošenje hirurške maske od strane zaraženog lica imalo klinički značajan uticaj na prenošenje zaraze.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Pogledajte Tabelu 1: 100% pamučna majica ima oko 2/3 efikasnost filtriranja u poređenju sa hirurškom maskom, za dve vrste testiranih bakterijskih aerosoli.
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., i Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Pogledajte Tabelu 1: 100% pamučna majica ima oko 2/3 efikasnost filtriranja u poređenju sa hirurškom maskom, za dve vrste testiranih bakterijskih aerosoli.
 
 ![](pics/maskssrb.png)
 
@@ -534,7 +534,7 @@ Benefit: Čak i ako je šansa 50% da hirurške maske smanje prenošenje sa 0% na
 	
 	**"Ljudi će postati opušteniji sa pranjem ruku i fizičkim distanciranjem."**  Naravno, i pojasevi za vezivanje čine da ljudi počnu da ignorišu stop znak, i konac za zube čini da ljudi jedu kamenje. Za ozbiljno, mi bismo zapravo to koristili kao kontra-argument - maske su ljudima *konstantni* podsetnik da treba da budu pažljivi - a uzgred, u Istočnoj Aziji maske su takođe i simbol solidarnosti!
 
-*Samo* maskama nećemo dostići R < 1. Ali ako pranje ruku & "Testiranje, praćenje, izolovanje" spuste vrednost do R = 1.10, ako samo 1/3 ljudi nose maske dostići ćemo R < 1, i virus zauzdan!
+*Samo* maskama nećemo dostići R < 1. Ali ako pranje ruku i "Testiranje, praćenje, izolovanje" spuste vrednost do R = 1.10, i na to dodamo da samo trećina ljudi nosi maske,  dostići ćemo R < 1 i virus je zauzdan!
 
 **Leto:**
 
@@ -542,9 +542,9 @@ OK, ovo nije "intervencija" koju možemo kontrolisati, ali će pomoći! Neki med
 
 U slučaju COVID-19, svaki dodatni 1°C snižava R za 1.2%.[^heat] Razlika u stepenima između leta i zime u Njujorku je 26°C,[^nyc_heat] tako da će kao posledica letnjih vrelina vrednost R opasti za ~31%. (Prim. prev. )
 
-[^heat]: “Povećanje temperature za jedan stepen Celzijusove skale [...] smanjuje R za 0.0225” i “Prosečna vrednost R za ovih 100 gradova je 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Povećanje temperature za jedan stepen Celzijusove skale [...] smanjuje R za 0.0225” i “Prosečna vrednost R za ovih 100 gradova je 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan i Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
-[^nyc_heat]: Tokom 2019. godine u Centralnom parku, tokom najtoplijeg meseca (Jul) bilo je 79.6°F, a tokom najhladnijeg meseca (Januar) bilo je 32.5°F. Razlika je 47.1°F, odnosno ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
+[^nyc_heat]: Tokom 2019. godine u Centralnom parku, tokom najtoplijeg meseca (Jul) bilo je 79.6°F, a tokom najhladnijeg meseca (Januar) bilo je 32.5°F. Razlika je 47.1°F, odnosno ~26°C. [PDF sa Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
@@ -561,7 +561,7 @@ Ali nećemo morati da prolazimo kroz ciklus 2 meseca u zatvorenom / 1 mesec na o
 Evo simulacije "letnjeg" scenarija:
 
 1. Zatvaranje, praćeno
-2. Umerenom količinom politika povećane higijene & "Testiranje, Praćenje, Izolovanje", sa blagom količinom "Maske za sve", a zatim...
+2. Umerenom količinom politika povećane higijene i "Testiranje, Praćenje, Izolovanje", sa blagom količinom "Maske za sve", a zatim...
 3. Još jedan "ciklus" zatvaranja pre nego što vakcina postane dostupna.
 
 <div class="sim">
@@ -604,11 +604,11 @@ Dobili ste COVID-19 i oporavili ste se. Ili, primili ste vakcinu protiv COVID-19
 * Postoje neki izveštaji o ljudima koji su se oporavili od COVID-19, pa su posle bili ponovo pozitivni na COVID-19, ali je nejasno da li su ovo u stvari greške testiranja.[^unclear]
 * Jedna *još-uvek-nerecenzirana* studija na majmunima je pokazala da COVID-19 imunitet traje barem 28 dana.[^monkeys]
 
-Ali u slučaju COVID-19 & *ljudi*, prvog maja 2020., "koliko dugo" je još uvek velika nepoznanica.
+Ali u slučaju COVID-19 *i ljudima*, prvog maja 2020., "koliko dugo" je još uvek velika nepoznanica.
 
 [^SARSimmunity]: “SARS antitela su održana u proseku 2 godine [...] Stoga, SARS pacijenti mogu ponovo postati podložni infekciji ≥3 godine nakon inicijalne infekcije.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Nažalost" nikad nećemo saznati koliko dugo bi SARS imunitet trajao, s obzirom da je suzbijen tako brzo.
 
-[^coldimmunity]: “Nismo pronašli značajnu razliku između verovatnoće pozitivnog testa bar jednom i verovatnoće povratka beta-koronavirusa HKU1 i OC43 nakon 34 nedelje posle priključivanja studiji/prve infekcije.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^coldimmunity]: “Nismo pronašli značajnu razliku između verovatnoće pozitivnog testa bar jednom i verovatnoće povratka beta-koronavirusa HKU1 i OC43 nakon 34 nedelje posle priključivanja studiji/prve infekcije.” [Marta Galanti i Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
 [^unclear]: “Jednom kada osoba pobedi virus, delovi virusa opstaju još neko vreme. Oni ne mogu izazvati infekciju, ali mogu izazvati pozitivan ishod na testu.” [iz STAT News od Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
@@ -633,7 +633,7 @@ Hajde da simuliramo COVID-19 širenje, tokom 10 godina, bez intervencija... *pre
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-U prethodnim simulacijama imali smo samo *jedan* maksimum kada smo premašivali kapacitete intenzivne nege. Sada ih ima više *i* broj <icon i></icon> slučajeva je *permanentno* na granici kapaciteta intenzivne nege. (Koje smo, setite se, uzeli da su *trostruko* veće nego u realnosti za potrebe ovih simulacija)
+U prethodnim simulacijama imali smo samo *jedan* maksimum kada smo premašivali kapacitete intenzivne nege. Sada ih ima više, *i* broj <icon i></icon> slučajeva je *konstantno* na granici kapaciteta intenzivne nege. (Koje smo, setite se, uzeli da su *trostruko* veće nego u realnosti.)
 
 R = 1, je **endemija.**
 
@@ -659,7 +659,7 @@ Ali imamo i jedno strašnije pitanje:
 
 Šta ako budemo čekali na vakcinu *godinama*? Ili *zauvek?*
 
-**Da budemo jasni: ovo je skoro neverovatno.** Većina epidemiologa očekuje vakcinu za godinu do dve. Tačno je da ne postoji vakcina ni za jedan od koronavirusa, ali to je zato što je SARS bio suzbijen brzo, a vakcina protiv tipične prehlade nije smatrana isplativnom investicijom. 
+**Da budemo jasni: ovo je skoro neverovatno.** Većina epidemiologa očekuje vakcinu za godinu do dve. Tačno je da ne postoji vakcina ni za jedan od koronavirusa, ali to je zato što je SARS bio suzbijen brzo, a vakcina protiv tipične prehlade nije smatrana isplativom investicijom. 
 
 Međutim, istraživači zaraznih bolesti su izrazili sledeća strahovanja: Šta ako ne možemo da napravimo dovoljno vakcina?[^vax_enough] Šta ako ubrzamo proces po cenu bezbednosti?[^vax_safe]
 
@@ -708,7 +708,7 @@ Avion je potonuo. Uhvatili smo se za čamce za spašavanje. Vreme je da pronađe
 
 [^dry_land]: Metafora kopna [iz članka autora Marc Lipsitch i Yonatan Grad, u STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Timovi epidemiologa i donosioca odluka ([levo](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desno](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), i [multi-partizanski](https://ethics.harvard.edu/covid-roadmap)) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote *i* slobode.
+Timovi epidemiologa i donosioca odluka ([levo](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desno](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), i [zajedničkim snagama](https://ethics.harvard.edu/covid-roadmap)) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote *i* slobode.
 
 U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
@@ -716,7 +716,7 @@ U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
 Šta ovo znači za TEBE, sada?
 
-**Za sve:** Poštuj mere policijskog časa tako da svi možemo izaći iz Faze I što je pre moguće. Nastavi da pereš te ruke. Pravi svoje maske. Preuzmi aplikaciju za praćenje kontakata koja *poštuje privatnost* kada postane dostupna sledećeg meseca. Ostani zdravo, fizički i mentalno! I piši lokalnim donosiocima odluka da se uozbilje i...
+**Za sve:** Poštuj mere lokalnih i nacionalnih vlasti tako da svi možemo izaći iz Faze I što je pre moguće. Nastavi da pereš ruke. Pravi svoje maske. Preuzmi aplikaciju za praćenje kontakata koja *poštuje privatnost* kada postane dostupna sledećeg meseca. Ostani zdravo, fizički i mentalno! I piši lokalnim donosiocima odluka da se uozbilje i...
 
 **Za donosioce odluka:** Donesite zakone da podržite osobe koje moraju da se samoizoluju/koji su u karantinu. Uposlite više osoba da se bave praćenjem kontakata, *podržite* ih adekvatnim aplikacijama koje prate kontakte i poštuju privatnost. Usmerite više finansija u stvari koje bi trebalo da pravimo, kao što su...
 
@@ -724,4 +724,4 @@ U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
 Ne umanjujte strah da biste probudili nadu. Naš strah treba da se *udruži* sa nadom, kao što su stvaraoci aviona i padobrana. Pripremanje za strašne budućnosti je takođe i način na koji *stvaramo* budućnost kojoj se nadamo.
 
-Jedino čega se treba plašiti je ideja da se jedino terba plašiti samog straha.
+Jedino čega se treba plašiti je ideja da se jedino treba plašiti sâmog straha.
