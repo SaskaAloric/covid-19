@@ -119,7 +119,7 @@ počinjemo sa samo 0.001% <span class="nowrap"><icon i></icon>:</span>
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-I *otuda* famozna kriva! Ovo nije zvonasta kriva (prim. prev. normalna raspodela, Gausova raspodela), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
+I *otuda* famozna kriva! Ovo nije zvonasta kriva (poznata i kao normalna ili Gausova raspodela, prim. prev.), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
 
 Ovo je takozvani **SIR model** (<icon s></icon> **S**usceptible - zdravi/podložni <icon i></icon> **I**nfectious - zarazni <icon r></icon> **R**ecovered - oporavljeni) [^sir], *druga* najvažnija ideja u početnom kursu epidemiologije:
 
@@ -141,8 +141,10 @@ U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-
 
 [^latent]: “Pretpostavljajući distribuciju perioda inkubacije sa prosečnom vrednošću od 5.2 dana iz druge studije na ranim COVID-19 slučajevima, mi smo zaključili da zaraznost počinje od 2.3 dana (interval sa 95% poverenja je 0.8–3.0 dana) pre nego što počnu simptomi.” (u prevodu: Pretpostavljajući da simptomi počinju petog dana, zaraznost počinje dva dana pre = zaraznost počinje tri dana nakon što je osoba inficirana) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su *aktuelni* slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span>    
+<b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su *aktuelni* slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span>[^izvestavanje]    
 <b style='color:#888'>Siva kriva</b> su *ukupni* slučajevi (aktuelni + oporavljeni <span class="nowrap"><icon r></icon>):</span>
+
+[^izvestavanje]: Dnevni izveštaji o COVID-19 pozitivnim pacijentima o kojima čujete na dnevnim konferencijama za štampu su samo deo *aktuelnih* slučajeva, označenih crvenom bojom na graficima u simulacijama. U dnevnim izveštajima i medijima govori se samo o zaraznima koji su *testirani*, prim. prev.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
@@ -540,11 +542,13 @@ Dobitak: Čak i ako je šansa 50% da hirurške maske smanje prenošenje sa 0% na
 
 OK, ovo nije "intervencija" koju možemo kontrolisati, ali će pomoći! Neki mediji su izveštavali da leto neće učiniti ništa koronavirusu. Oni su samo delimično u pravu: sâmo leto neće pomoći da se dostigne R < 1, ali *hoće* umanjiti R.
 
-U slučaju COVID-19, svaki dodatni 1°C snižava R za 1.2%.[^heat] Razlika u stepenima između leta i zime u Njujorku je 26°C[^nyc_heat], tako da će kao posledica letnjih vrelina vrednost R opasti za ~31%. (Prim. prev. )
+U slučaju COVID-19, svaki dodatni 1°C snižava R za 1.2%.[^heat] Razlika u stepenima između leta i zime u Njujorku je 26°C[^nyc_heat], tako da će kao posledica letnjih vrelina vrednost R opasti za ~31%. Što se tiče situacije u Srbiji, razlika između zimskog i letnjeg perioda u protekloj godini iznosi 19.1°C, čime dolazimo do procene da će R opasti za ~23%. Ako pogledamo razliku temperatura između januara 2020. godine i jula 2019. godine, u Beogradu je ona iznosila 22.3°C (R se smanjuje za ~27%), dok je na Zlatiboru 19.2°C (R je manje za ~23%). Prim. prev. [^rhzm]
 
 [^heat]: “Povećanje temperature za jedan stepen Celzijusove skale [...] smanjuje R za 0.0225” i “Prosečna vrednost R za ovih 100 gradova je 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan i Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 [^nyc_heat]: Tokom 2019. godine u Centralnom parku, tokom najtoplijeg meseca (Jul) bilo je 79.6°F, a tokom najhladnijeg meseca (Januar) bilo je 32.5°F. Razlika je 47.1°F, odnosno ~26°C. [PDF sa Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
+
+[^rhzm]: Po podacima Republičkog hidrometeorološkog zavoda Srbije za [zimu 2019/20. Godine](http://www.hidmet.gov.rs/podaci/meteorologija/ciril/zima.pdf), [leto 2019. godine](http://www.hidmet.gov.rs/podaci/meteorologija/ciril/leto.pdf), [januar 2020. godine](http://www.hidmet.gov.rs/podaci/meteorologija/ciril/Januar.pdf) i [jul 2019. godine](http://www.hidmet.gov.rs/podaci/meteorologija/ciril/Jul.pdf).
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
