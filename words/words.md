@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-"Jedino čega se treba plašiti je sâm strah" bio je glup savet.
+"Jedino čega se treba plašiti je sâm strah" je bio glup savet.
 
 Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
 
@@ -57,13 +57,11 @@ Počećemo od veoma, *veoma* jednostavnog "epidemiološkog simulatora letenja"! 
 
 Procenjeno je da *se na početku* izbijanja COVID-19, virus prenosio sa <icon i></icon> na <icon s></icon> *u proseku* na svaka 4 dana.[^serial_interval] (Zapamtite, ovaj vremenski period puno varira.)
 
-[^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana).” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Napomena: Preliminarne verzije članaka ne treba uzimati u obzir na isti način kao finalne verzije.)
+[^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana).” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Napomena: Preliminarne verzije radova ne treba posmatrati na isti način kao finalne verzije.)
 
 Ako simuliramo *samo efekat* "dupliranja broja slučajeva na svaka 4 dana", u populaciji koja počinje sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa? 
 
-**Pritiskom na "Pokreni" pokreće se simulacija! Možete je puštati ponovo kasnije sa drugačijim parametrima:** 
-
-(tehnički detalji: [^caveats])
+**Pritiskom na "Pokreni" pokreće se simulacija! Možete je puštati ponovo kasnije sa drugačijim parametrima** (napomena o simulacijama [^caveats]): 
 
 [^caveats]: **Zapamtite: sve ove simulacije su vrlo pojednostavljene u svrhu obrazovanja.**
     
@@ -176,7 +174,7 @@ Procenjena vrednost R<sub>0</sub> za COVID-19 je oko 2.2[^r0_covid], mada jedna 
 
 [^r0_wuhan]: “Izračunali smo da medijalna vrednost R<sub>0</sub> iznosi 5.7 (interval sa 95% poverenja: 3.8–8.9).” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-U našim simulacijama – *na početku i u proseku* – u toku 10 dana, svaki <icon i></icon> zarazi nekoga na svaka 4 dana. "4 dana" je dva i po puta kraće od "10 dana". Ovo znači da – *na početku i u proseku* – <icon i></icon> zarazi 2.5 drugih. Stoga je R<sub>0</sub> = 2.5[^r0_caveats_sim]
+U našim simulacijama – *na početku i u proseku* – u toku 10 dana, svaki <icon i></icon> zarazi nekoga na svaka 4 dana. "4 dana" je dva i po puta kraće od "10 dana". Ovo znači da – *na početku i u proseku* – <icon i></icon> zarazi 2.5 drugih. Stoga je R<sub>0</sub> = 2.5.[^r0_caveats_sim]
 
 [^r0_caveats_sim]: Ovde smo pretpostavili da je osoba jednako zarazna tokom celog "zaraznog perioda". Opet, pojednostavljenje u službi obrazovanja.
 
@@ -384,7 +382,7 @@ Ako se slučajevi samoizoluju kad shvate da su se razboleli (tj. osete simptome)
 
 ![](pics/timeline2srb.png)
 
-I zapravo, 44% svih prenošenja su u stvari: *pred*-simptomatska! [^pre_symp]
+I zapravo, 44% svih prenošenja su: *pred*-simptomatska! [^pre_symp]
 
 [^pre_symp]: “Mi smo procenili da su 44% (interval 95% poverenja je 25–69%) sekundarnih slučajeva bili zaraženi tokom predsimptomatskog perioda za dati slučaj.” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
@@ -420,7 +418,7 @@ Ovako ona radi:
     
     Za ostala pitanja kao što je potrošnja internet protoka, integritet izvora, i ostala pitanja u vezi sa bezbednošću podataka, pogledajte [open-source DP-3T predloge!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
-Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], i Apple i Google su zainteresovani da adaptiraju iOS i Android sisteme radi lakšeg razvoja aplikacija za praćenje kontakata sa primarnom zaštitom privatnosti.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravstveni sistem od tebe tražiti da instaliraš neku aplikaciju. Ako je obezbeđena zaštita privatnosti i aplikacija ima javno dostupan kod (open-source), molimo te instaliraj je!
+Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], i Apple i Google rade razvijanju rešenja za praćenje kontakata sa zaštitom privatnosti kroz adaptiranje sistema iOS i Android.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravstveni sistem od tebe tražiti da instaliraš neku aplikaciju. Ako je obezbeđena zaštita privatnosti i aplikacija ima javno dostupan kod (open-source), molimo te instaliraj je!
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
@@ -509,7 +507,7 @@ I bili biste u pravu. Maske ne mogu da nas zaštite od infekcije[^incoming]... o
 
 ![](pics/maskssrb.png)
 
-Ako hoćemo da pričamo u brojevima: hirurške maske *na inficiranoj osobi* smanjuju izbacivanje kapljica u obliku aerosoli koje sadrže viruse gripa i prehlade za 70%.[^outgoing] Smanjivanje prenošenja za 70% ima *sličan* efekat kao što ima i zatvaranje gradova!
+Ako hoćemo da pričamo u brojevima: kada *inficirana osoba* nosi hiruršku masku ona smanjuju izbacivanje kapljica za do 70% (a one mogu sadržati viruse gripa i prehlade).[^outgoing] Smanjivanje prenošenja za 70% ima *sličan* efekat kao što ima i zatvaranje gradova!
 
 No svejedno, mi i dalje ne znamo zasigurno koji je uticaj maski na *konkretno* COVID-19 zarazu. U nauci se objavljuju jedino rezultati ako ste bar 95% sigurni u njih. (...ok, barem bi trebalo da je tako.[^replication]) Maske, bar 1. maja 2020, su manje od "95% sigurne".
 
@@ -667,7 +665,7 @@ Međutim, istraživači zaraznih bolesti su izrazili sledeća strahovanja: Šta 
 
 [^vax_enough]: “Ako stigne vakcina protiv koronavirusa, da li svet može da ih napravi dovoljno?” [autorka Roxanne Khamsi, u časopisu Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Ne žurite sa pravljenjem COVID-19 vakcina i lekova bez dovoljno čvrstih dokaza o njihovoj bezbednosti.” [autor Shibo Jiang, u časopisu Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “Ne žurite sa upotrebom COVID-19 vakcina i lekova bez dovoljnog broja bezbednosnih provera.” [autor Shibo Jiang, u časopisu Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
 Čak i u scenariju iz noćne more u kojem nema vakcine, i dalje postoje tri izlaza. Slede od najviše do najmanje strašnih:
 
@@ -724,6 +722,6 @@ U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
 **Za stvaraoce:** Pravite testove. Pravite respiratore. Pravite opremu za ličnu zaštitu za bolnice. Pravite testove. Pravite maske. Pravite aplikacije. Pravite antivirotike, profilaktike, i ostale lekove i tretmane koji nisu vakcine. Pravite vakcine. Pravite testove. Pravite testove. Pravite testove. Stvarajte nadu. 
 
-Ne umanjujte strah da biste probudili nadu. Naš strah treba da se *udruži* sa nadom, kao što su stvaraoci aviona i padobrana. Pripremanje za strašne budućnosti je takođe i način na koji *stvaramo* budućnost kojoj se nadamo.
+Ne umanjujte strah da biste probudili nadu. Naš strah treba da se *udruži* sa nadom, kao što su izumitelji aviona i padobrana. Pripremanje za strašne budućnosti je takođe i način na koji *stvaramo* budućnost kojoj se nadamo.
 
 Jedino čega se treba plašiti je ideja da se jedino treba plašiti sâmog straha.
