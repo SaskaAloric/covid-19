@@ -22,9 +22,9 @@
 	</div>
 </div>
 
-"Jedino čega se treba plašiti je sâm strah" je bio glup savet.
+„Jedino čega se treba plašiti je sâm strah“ je bio glup savet.
 
-Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
+Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu „masovnu paniku“. Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa sadašnjim opasnostima i priprema nas za one kasnije.
 
 Iskreno, mi (Marcel, epidemiologija + Nicky, dizajn/programiranje) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
 
@@ -51,21 +51,21 @@ Piloti koriste simulatore letenja da nauče kako da ne sruše avione.
 
 **Epidemiolozi koriste simulatore epidemija da nauče kako da ne uruše čovečanstvo.**
 
-Počećemo od veoma, *veoma* jednostavnog "epidemiološkog simulatora letenja"! U ovoj simulaciji, <icon i></icon> zarazni ljudi (eng. **I**nfected) mogu preneti zarazu na podložne/zdrave ljude <icon s></icon> (eng. **S**usceptible) uvećavajući tako broj zaraznih <icon i></icon>:
+Počećemo od veoma, *veoma* jednostavnog „epidemiološkog simulatora letenja“! U ovoj simulaciji, <icon i></icon> zarazni ljudi (eng. **I**nfected) mogu preneti zarazu na podložne/zdrave ljude <icon s></icon> (eng. **S**usceptible) uvećavajući tako broj zaraznih <icon i></icon>:
 
 ![](pics/spreadsrb.png)
 
 Procenjeno je da *se na početku* izbijanja COVID-19, virus prenosio sa <icon i></icon> na <icon s></icon> *u proseku* na svaka 4 dana.[^serial_interval] (Zapamtite, ovaj vremenski period puno varira.)
 
-[^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana).” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Napomena: Preliminarne verzije radova ne treba posmatrati na isti način kao finalne verzije.)
+[^serial_interval]: „Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana).“ [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Napomena: Preliminarne verzije radova ne treba posmatrati na isti način kao finalne verzije.)
 
-Ako simuliramo *samo efekat* "dupliranja broja slučajeva na svaka 4 dana", u populaciji koja počinje sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa? 
+Ako simuliramo *samo efekat* „dupliranja broja slučajeva na svaka 4 dana“, u populaciji koja počinje sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa? 
 
-**Pritiskom na "Pokreni" pokreće se simulacija! Možete je puštati ponovo kasnije sa drugačijim parametrima** (napomena o simulacijama [^caveats]): 
+**Pritiskom na „Pokreni“ pokreće se simulacija! Možete je puštati ponovo kasnije sa drugačijim parametrima** (napomena o simulacijama [^caveats]): 
 
 [^caveats]: **Zapamtite: sve ove simulacije su vrlo pojednostavljene u svrhu obrazovanja.**
     
-    Jedno pojednostavljenje: Kada kažete simulaciji "Inficiraj 1 novu osobu svakih X dana", ona zapravo povećava broj zaraznih za 1/X svakog dana. Slično za buduća podešavanja u ovim simulacijama – "Oporavak svakih X dana" zapravo umanjuje broj zaraznih za 1/X svakog dana.
+    Jedno pojednostavljenje: Kada kažete simulaciji „Inficiraj 1 novu osobu svakih X dana“, ona zapravo povećava broj zaraznih za 1/X svakog dana. Slično za buduća podešavanja u ovim simulacijama – „Oporavak svakih X dana“ zapravo umanjuje broj zaraznih za 1/X svakog dana.
     
     Ove dve interpretacije *nisu* u potpunosti iste, ali su dovoljno blizu, i za potrebe obrazovanja učinkovitije su od direktnog uspostavljanja stopa transmisije i oporavka.
 
@@ -73,7 +73,7 @@ Ako simuliramo *samo efekat* "dupliranja broja slučajeva na svaka 4 dana", u po
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, a zatim naglo poraste. Od "a ma to je samo grip" do "zapravo, grip ne uzrokuje *masovne grobnice u razvijenim gradovima*". 
+Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, a zatim naglo poraste. Od „a ma to je samo grip“ do „zapravo, grip ne uzrokuje *masovne grobnice u razvijenim gradovima*“. 
 
 ![](pics/exponentialsrb.png)
 
@@ -89,15 +89,15 @@ Kako ovo menja rast zaraznih tokom epidemije? Otkrijmo:
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-Ovo je "S-kriva" ili **kriva logističkog rasta.** Počinje malim brojevima, zatim eksplodira, a onda usporava.
+Ovo je „S-kriva“ ili **kriva logističkog rasta.** Počinje malim brojevima, zatim eksplodira, a onda usporava.
 
-Ali, ova simulacija je *i dalje* pogrešna. Nismo iskoristili činjenicu da zarazni <icon i></icon> u nekom trenutku prestaju da budu zarazni, ili 1) oporavkom, 2) "oporavkom" sa oštećenim plućima, ili 3) umiranjem.
+Ali, ova simulacija je *i dalje* pogrešna. Nismo iskoristili činjenicu da zarazni <icon i></icon> u nekom trenutku prestaju da budu zarazni, ili 1) oporavkom, 2) „oporavkom“ sa oštećenim plućima, ili 3) umiranjem.
 
 Zarad pojednostavljenja, hajde da pretpostavimo da svi <icon i></icon> zarazni ljudi postaju <icon r></icon> oporavljeni (eng. **R**ecovered). (Samo zapamtite da u realnosti, neki umiru. Zato se na engleskom u okviru **SIR** modela - **R**ecovered često nazivaju i **R**emoved, tj. uklonjeni iz daljeg epidemiološkog razmatranja ili smrću ili trajnim imunitetom, prim. prev.) <span class="nowrap"><icon r></icon></span> oporavljeni ne mogu ponovo biti zaraženi, i pretpostavimo – *za sada!* – da oni ostaju doživotno imuni.
 
 U slučaju COVID-19, procenjeno je da su <icon i></icon> zarazni  *u proseku* 10 dana.[^infectiousness] To znači da će se neki oporaviti za manje od 10 dana, a nekima će biti potrebno više. **To ovako izgleda sa simulacijom koja *počinje* sa 100% <span class="nowrap"><icon i></icon>:</span>**
 
-[^infectiousness]: “Medijalna vrednost perioda tokom koga je COVID-19 pozitivna osoba zarazna \[...\] je 9.5 dana.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Da, znamo da "medijalna" vrednost nije isto što i "prosečna vrednost". U cilju ovog pojednostavljenog edukativnog modela mislimo da su ove dve vrednosti dovoljno bliske.
+[^infectiousness]: „Medijalna vrednost perioda tokom koga je COVID-19 pozitivna osoba zarazna \[...\] je 9.5 dana.“ [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Da, znamo da „medijalna“ vrednost nije isto što i „prosečna vrednost“. U cilju ovog pojednostavljenog edukativnog modela mislimo da su ove dve vrednosti dovoljno bliske.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
@@ -119,7 +119,7 @@ počinjemo sa samo 0.001% <span class="nowrap"><icon i></icon>:</span>
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-I *otuda* famozna kriva! Ovo nije zvonasta kriva (poznata i kao normalna ili Gausova raspodela, prim. prev.), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
+I *otuda* famozna kriva! Ovo nije zvonasta kriva (poznata i kao normalna ili Gausova raspodela, prim. prev.), nije čak ni „log-normalna“ kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
 
 Ovo je takozvani **SIR model** (<icon s></icon> **S**usceptible - zdravi/podložni <icon i></icon> **I**nfectious - zarazni <icon r></icon> **R**ecovered - oporavljeni) [^sir], *druga* najvažnija ideja u početnom kursu epidemiologije:
 
@@ -133,13 +133,13 @@ U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <s
 
 ![](pics/seirsrb.png)
 
-(Ova varijanta modela zove se **SEIR model**, gde "E" potiče od <icon e></icon> "**E**xposed" - inficiranih.[^seir] Na engleskom "Exposed" , što znaci "izložen", ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu "Exposed" znači da osoba ima virus. Naučna terminologija je loša. Prim. prev. da bi se izbegla ista dilema u ovom prevodu odabrano korišćenje reči "inficirani" umesto "izloženi".)
+(Ova varijanta modela zove se **SEIR model**, gde „E“ potiče od <icon e></icon> „**E**xposed“ - inficiranih.[^seir] Na engleskom „Exposed“ , što znaci „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je loša. Prim. prev. da bi se izbegla ista dilema u ovom prevodu odabrano korišćenje reči „inficirani“ umesto „izloženi“.)
 
 [^seir]: Za više tehničkih objašnjenja o SEIR modelu, pogledajte [Institute za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-seir.html) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model).
 
 U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-ne-još-zarazan provede 3 dana, *u proseku*.[^latent] Šta se dešava ako i to dodamo u simulaciju?
 
-[^latent]: “Pretpostavljajući distribuciju perioda inkubacije sa prosečnom vrednošću od 5.2 dana iz druge studije na ranim COVID-19 slučajevima, mi smo zaključili da zaraznost počinje od 2.3 dana (interval sa 95% poverenja je 0.8–3.0 dana) pre nego što počnu simptomi.” (u prevodu: Pretpostavljajući da simptomi počinju petog dana, zaraznost počinje dva dana pre = zaraznost počinje tri dana nakon što je osoba inficirana) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: „Pretpostavljajući distribuciju perioda inkubacije sa prosečnom vrednošću od 5.2 dana iz druge studije na ranim COVID-19 slučajevima, mi smo zaključili da zaraznost počinje od 2.3 dana (interval sa 95% poverenja je 0.8–3.0 dana) pre nego što počnu simptomi.“ (u prevodu: Pretpostavljajući da simptomi počinju petog dana, zaraznost počinje dva dana pre = zaraznost počinje tri dana nakon što je osoba inficirana) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
 <b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su *aktuelni* slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span>[^izvestavanje]    
 <b style='color:#888'>Siva kriva</b> su *ukupni* slučajevi (aktuelni + oporavljeni <span class="nowrap"><icon r></icon>):</span>
@@ -156,7 +156,7 @@ Zašto je to tako? To je zbog *prve* najvažnije ideje u početnom kursu epidemi
 
 ![](pics/r.png)
 
-Ovo je skraćeno od "Reproduktivni broj" (eng. Reproduction number). To je *prosečan* broj ljudi koje <icon i></icon> zarazi *pre* nego što oni ozdrave (ili umru).
+Ovo je skraćeno od „Reproduktivni broj“ (eng. Reproduction number). To je *prosečan* broj ljudi koje <icon i></icon> zarazi *pre* nego što oni ozdrave (ili umru).
 
 ![](pics/r2srb.png)
 
@@ -166,19 +166,19 @@ Ovo je skraćeno od "Reproduktivni broj" (eng. Reproduction number). To je *pros
 
 (Većina članaka u novinama – čak i neki istraživački radovi! – mešaju R i R<sub>0</sub>. Opet, naučna terminologija je loša.)
 
-R<sub>0</sub> "tipičnog" sezonskog gripa je oko 1.28.[^r0_flu] Ovo znači da na *početku* epidemije gripa, svaki <icon i></icon> zarazi 1.28 drugih *u proseku.* (Ako zvuči čudno što ovo nije ceo broj, setite se da "prosečno" majke imaju 2.4 deteta. To ne znači da polu-deca trče okolo.)
+R<sub>0</sub> „tipičnog“ sezonskog gripa je oko 1.28.[^r0_flu] Ovo znači da na *početku* epidemije gripa, svaki <icon i></icon> zarazi 1.28 drugih *u proseku.* (Ako zvuči čudno što ovo nije ceo broj, setite se da „prosečno“ majke imaju 2.4 deteta. To ne znači da polu-deca trče okolo.)
 
-[^r0_flu]: “Medijalna vrednost R za sezonski grip je 1.28 (interkvartalni interval: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: „Medijalna vrednost R za sezonski grip je 1.28 (interkvartalni interval: 1.19–1.37)“ [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
 Procenjena vrednost R<sub>0</sub> za COVID-19 je oko 2.2[^r0_covid], mada jedna *još-uvek-nedovršena* studija procenjuje da je u Vuhanu vrednost R<sub>0</sub> bila 5.7(!).[^r0_wuhan]
 
-[^r0_covid]: “Procenili smo bazični reproduktivni broj R<sub>0</sub> virusa 2019-nCoV na oko 2.2 (interval velike gustine od 90%: 1.4–3.8).” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: „Procenili smo bazični reproduktivni broj R<sub>0</sub> virusa 2019-nCoV na oko 2.2 (interval velike gustine od 90%: 1.4–3.8).“ [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_wuhan]: “Izračunali smo da medijalna vrednost R<sub>0</sub> iznosi 5.7 (interval sa 95% poverenja: 3.8–8.9).” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_wuhan]: „Izračunali smo da medijalna vrednost R<sub>0</sub> iznosi 5.7 (interval sa 95% poverenja: 3.8–8.9).“ [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-U našim simulacijama – *na početku i u proseku* – u toku 10 dana, svaki <icon i></icon> zarazi nekoga na svaka 4 dana. "4 dana" je dva i po puta kraće od "10 dana". Ovo znači da – *na početku i u proseku* – <icon i></icon> zarazi 2.5 drugih. Stoga je R<sub>0</sub> = 2.5.[^r0_caveats_sim]
+U našim simulacijama – *na početku i u proseku* – u toku 10 dana, svaki <icon i></icon> zarazi nekoga na svaka 4 dana. „4 dana“ je dva i po puta kraće od „10 dana“. Ovo znači da – *na početku i u proseku* – <icon i></icon> zarazi 2.5 drugih. Stoga je R<sub>0</sub> = 2.5.[^r0_caveats_sim]
 
-[^r0_caveats_sim]: Ovde smo pretpostavili da je osoba jednako zarazna tokom celog "zaraznog perioda". Opet, pojednostavljenje u službi obrazovanja.
+[^r0_caveats_sim]: Ovde smo pretpostavili da je osoba jednako zarazna tokom celog „zaraznog perioda“. Opet, pojednostavljenje u službi obrazovanja.
 
 **Igrajte se sa računanjem R<sub>0</sub> da vidite kako R<sub>0</sub> zavisi od vremena potrebnog za oporavak i vremena proteklog do novo-zaraženih:**
 
@@ -192,7 +192,7 @@ Ali zapamtite, što je manje <span class="nowrap"><icon s></icon></span>, *ređe
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-Kada je dovoljan broj ljudi imun, tada je R < 1 i virus je zauzdan! Ovo se naziva **imunitet krda**. Za viruse gripa, imunitet krda se dostiže *vakcinisanjem*. Pokušaj da se dostigne "prirodan imunitet krda" izlažući ljude zarazi je *užasna* ideja. (Ali ne zbog razloga koji vam možda padaju na pamet! Objasnićemo kasnije.)
+Kada je dovoljan broj ljudi imun tada je R < 1 i virus je zauzdan! Ovo se naziva **imunitet krda**. Za viruse gripa, imunitet krda se dostiže *vakcinisanjem*. Pokušaj da se dostigne „prirodan imunitet krda“ izlažući ljude zarazi je *užasna* ideja. (Ali ne zbog razloga koji vam možda padaju na pamet! Objasnićemo kasnije.)
 
 A sada, poigrajmo se sa SEIR modelom ponovo, ali prikazujući kako se vrednosti R<sub>0</sub> i R menjaju tokom vremena, kao i granični broj zaraženih kada je imunitet krda dostignut:
 
@@ -210,7 +210,7 @@ Ovo se dešava zato što u trenutku kada broj <span class="nowrap">ne-<icon s></
 
 **Ovo znači: NE moramo da zauzdamo sva prenošenja virusa, čak ni skoro sva, da bismo zaustavili COVID-19!**
 
-Ovo je paradoks. COVID-19 je ekstremno zarazan, ali da ga zauzdamo, potrebno je zaustaviti "samo" 60% prenosa virusa. 60%?! Da je to školska ocena, bila bi neka dvojčica. Ali ako je R<sub>0</sub> = 2.5, smanjenjem od 61% dostižemo R = 0.975, koje je manje od 1 i virus je zauzdan! (tačna formula:[^exact_formula])
+Ovo je paradoks. COVID-19 je ekstremno zarazan, ali da ga zauzdamo, potrebno je zaustaviti „samo“ 60% prenosa virusa. 60%?! Da je to školska ocena, bila bi neka dvojčica. Ali ako je R<sub>0</sub> = 2.5, smanjenjem od 61% dostižemo R = 0.975, koje je manje od 1 i virus je zauzdan! (tačna formula:[^exact_formula])
 
 [^exact_formula]: Setite se da je R = R<sub>0</sub> × udeo zaraza koje se i dalje mogu odvijati. I još se setite da je ovaj udeo zaraza koje i dalje mogu da se odvijaju = 1 - udeo zaraza koje su *zaustavljene*.
     
@@ -228,11 +228,11 @@ Ovo je paradoks. COVID-19 je ekstremno zarazan, ali da ga zauzdamo, potrebno je 
 
 (Ako mislite da je R<sub>0</sub> ili bilo koji drugi broj u našim simulacijama premali/prevelik, super je što preispitujete naše pretpostavke! Na kraju ovog vodiča biće još fleksibilnija verzija simulacije u kojoj možete uneti *vaše* brojeve, i simulirati šta se dešava.)
 
-*Sve* interevencije protiv COVID-19 o kojima ste čuli – pranje ruku, socijalno/fizičko distanciranje, policijski čas, samoizolacija, praćenje kontakata i karantin, maske, pa čak i "imunitet krda" –  *sve* one rade istu stvar:
+*Sve* interevencije protiv COVID-19 o kojima ste čuli – pranje ruku, socijalno/fizičko distanciranje, policijski čas, samoizolacija, praćenje kontakata i karantin, maske, pa čak i „imunitet krda“ –  *sve* one rade istu stvar:
 
 Spuštaju vrednost do R < 1.
 
-U nastavku, hajde da iskoristimo naš "epidemiološki simulator letenja" da istražimo: Kako postići R < 1 tako da **sačuvamo našu mentalnu *i* finansijsku stabilnost?**
+U nastavku, hajde da iskoristimo naš „epidemiološki simulator letenja“ da istražimo: Kako postići R < 1 tako da **sačuvamo našu mentalnu *i* finansijsku stabilnost?**
 
 Pripremite se, prinudno sletanje...
 
