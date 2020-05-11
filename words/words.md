@@ -2,7 +2,7 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	Šta se sledeće dešava? 
+        	Šta dalje? 
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
 			COVID-19 budućnosti, objašnjene sa interaktivnim simulacijama
@@ -26,13 +26,13 @@
 
 Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
 
-Iskreno, mi (Marcel, epidemiologija + Nicky, dizajn/kod) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi usmerili naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
+Iskreno, mi (Marcel, epidemiologija + Nicky, dizajn/programiranje) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
 
 * **Prethodnih nekoliko meseci** (uvodni kurs epidemiologije, SEIR model, R i R<sub>0</sub>)
 * **Narednih nekoliko meseci** (ograničenja kretanja, praćenje kontakata, maske)
 * **Narednih nekoliko godina** (imunitet, vakcinacija)
 
-Ovaj vodič (objavljen prvog maja 2020. godine, vidi ovu fusnotu!→[^timestamp]) za cilj ima da u vama pobudi nadu *i* strah. Da bismo pobedili COVID-19 **na način koji čuva naše mentalno i finansijsko stanje**, potreban nam je optimizam za smišljanje planova, ali i pesimizam za smišljanje rezervnih planova. Po rečima Gladis Brovnin Stern: *“Optimista izmisli avion, a pesimista padobran.”*
+Ovaj vodič (objavljen prvog maja 2020. godine, vidi ovu fusnotu!→[^timestamp]) za cilj ima da u vama pobudi nadu *i* strah. Da bismo pobedili COVID-19 **na način koji čuva našu mentalnu i finansijsku stabilnost**, potreban nam je optimizam za smišljanje planova, ali i pesimizam za smišljanje rezervnih planova. *“Optimista izmisli avion, a pesimista padobran.”*, Gladis Brovnin Stern. 
 
 [^timestamp]: Fusnote će sadržati izvore informacija, linkove i bonus komentare, kao ovaj komentar!
     
@@ -74,7 +74,7 @@ Ako simuliramo *samo efekat* "dupliranja broja slučajeva na svaka 4 dana", u po
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, ali brzo eksplodira. Od "a ma to je samo grip" do "zapravo, grip ne uzrokuje *masovne grobnice u razvijenim gradovima*". 
+Ovo je **kriva eksponencijalnog rasta.** Počinje malim brojevima, a zatim naglo poraste. Od "a ma to je samo grip" do "zapravo, grip ne uzrokuje *masovne grobnice u razvijenim gradovima*". 
 
 ![](pics/exponentialsrb.png)
 
@@ -104,7 +104,7 @@ U slučaju COVID-19, procenjeno je da su <icon i></icon> zarazni  *u proseku* 10
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-Ovo je suprotno od eksponencijalnog rasta, ovo je **kriva eksponencijalnog opadanja.**
+Ovo je suprotno od eksponencijalnog rasta, ovo je **kriva eksponencijalnog pada.**
 
 Šta se dešava ako simulirate S krivu logističkog rasta *sa* oporavljanjem?
 
@@ -120,7 +120,7 @@ počinjemo sa samo 0.001% <span class="nowrap"><icon i></icon>:</span>
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-I *otuda* poznata kriva! Ovo nije zvonasta kriva (prim. prev. normalna raspodela, Gausova raspodela), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
+I *otuda* famozna kriva! Ovo nije zvonasta kriva (prim. prev. normalna raspodela, Gausova raspodela), nije čak ni "log-normalna" kriva. Ona nema ime. Ali videli ste je zilion puta, i preklinjani ste da je ispeglate.
 
 Ovo je takozvani **SIR model** [^sir] (<icon s></icon> **S**usceptible - zdravi/podložni <icon i></icon> **I**nfectious - zarazni <icon r></icon> **R**ecovered - oporavljeni), *druga* najvažnija ideja u početnom kursu epidemiologije:
 
@@ -142,14 +142,14 @@ U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-
 
 [^latent]: “Pretpostavljajući distribuciju perioda inkubacije sa prosečnom vrednošću od 5.2 dana iz druge studije na ranim COVID-19 slučajevima, mi smo zaključili da zaraznost počinje od 2.3 dana (interval sa 95% poverenja 0.8–3.0 dana) pre nego što počnu simptomi” (prevod: Pretpostavljajući da simptomi počinju petog dana, zaraznost počinje dva dana pre = zaraznost počinje tri dana nakon što je osoba inficirana) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su *trenutni* slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span>    
-<b style='color:#888'>Siva kriva</b> su *ukupni* slučajevi (trenutni + oporavljeni <span class="nowrap"><icon r></icon>):</span>
+<b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su *aktuelni* slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span>    
+<b style='color:#888'>Siva kriva</b> su *ukupni* slučajevi (aktuelni + oporavljeni <span class="nowrap"><icon r></icon>):</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Nije se mnogo toga promenilo! Vreme tokom kojeg osoba ostaje <icon e></icon> inficirana (ali ne i zarazna) menja odnos <span class="nowrap"><icon e></icon>:<icon i></icon>,</span> kao i *kada* trenutni broj slučajeva dostiže maksimum... ali *visina* maksimuma, i ukupan broj slučajeva na kraju, ostaje isti.
+Nije se mnogo toga promenilo! Vreme tokom kojeg osoba ostaje <icon e></icon> inficirana (ali ne i zarazna) menja odnos <span class="nowrap"><icon e></icon>:<icon i></icon>,</span> kao i *kada* aktuelni broj slučajeva dostiže maksimum... ali *visina* maksimuma, i ukupan broj slučajeva na kraju, ostaje isti.
 
 Zašto je to tako? To je zbog *prve* najvažnije ideje u početnom kursu epidemiologije:
 
@@ -185,7 +185,7 @@ U našim simulacijama – *na početku i u proseku* – u toku 10 dana, svaki <i
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-Ali zapamtite, što je manje <span class="nowrap"><icon s></icon></span>, *ređe* <span class="nowrap"><icon s></icon></span> postaju <span class="nowrap"><icon i></icon>.</span> *Trenutni* reproduktivni broj (R) zavisi ne samo od *bazičnog* reproduktivnog broja (R<sub>0</sub>), *nego i od* brojnosti ljudi koji nisu više <icon s></icon> tj. podložni/zdravi (time što su, na primer, ozdravili i stekli prirodni imunitet).
+Ali zapamtite, što je manje <span class="nowrap"><icon s></icon></span>, *ređe* <span class="nowrap"><icon s></icon></span> postaju <span class="nowrap"><icon i></icon>.</span> *Aktuelni* reproduktivni broj (R) zavisi ne samo od *bazičnog* reproduktivnog broja (R<sub>0</sub>), *nego i od* brojnosti ljudi koji nisu više <icon s></icon> tj. podložni/zdravi (time što su, na primer, ozdravili i stekli prirodni imunitet).
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
@@ -199,11 +199,11 @@ A sada, poigrajmo se sa SEIR modelom ponovo, ali prikazujući kako se vrednosti 
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**Obratite pažnju: Ukupan broj slučajeva *ne staje sa rastom* kada se dostigne broj zaraženih potrebnih za imuniteta krda, već ga premašuje!** I taj broj je premašen *tačno u trenutku* kada broj trenutnih slučajeva dostiže svoj maksimum. (Ovo se dešava nezavisno od toga kako promenite parametre – probajte!)
+**Obratite pažnju: Ukupan broj slučajeva *ne staje sa rastom* kada se dostigne broj zaraženih potrebnih za imuniteta krda, već ga premašuje!** I taj broj je premašen *tačno u trenutku* kada broj aktuelnih slučajeva dostiže svoj maksimum. (Ovo se dešava nezavisno od toga kako promenite parametre – probajte!)
 
-Ovo se dešava zato što u trenutku kada broj <span class="nowrap">ne-<icon s></icon></span> nadmaši broj potreban za imunitet krda, tada se dostiže R < 1. A kada je R < 1, tada i broj trenutnih slučajeva prestaje da raste: dostignut je maksimalni broj zaraženih.
+Ovo se dešava zato što u trenutku kada broj <span class="nowrap">ne-<icon s></icon></span> nadmaši broj potreban za imunitet krda, tada se dostiže R < 1. A kada je R < 1, tada i broj aktuelnih slučajeva prestaje da raste: dostignut je maksimalni broj zaraženih.
 
-**Ako ćete iz ovog čitanja usvojiti samo jednu pouku, neka to bude poruka na sledećem dijagramu** – u pitanju je izuzetno kompleksan dijagram, temeljno ga analizirajte da ga u potpunosti savladate:
+**Ako ćete iz ovog čitanja usvojiti samo jednu pouku, neka to bude poruka na sledećem dijagramu** – u pitanju je izuzetno kompleksan dijagram, temeljno ga analizirajte:
 
 ![](pics/r3srb.png)
 
@@ -231,7 +231,7 @@ Ovo je paradoks. COVID-19 je ekstremno zarazan, ali da ga zauzdamo, potrebno je 
 
 Spuštaju vrednost do R < 1.
 
-U nastavku, hajde da iskoristimo naš "epidemiološki simulator letenja" da istražimo: Kako postići R < 1 na način koji **štiti našu mentalnu *i* finansijsku stabilnost?**
+U nastavku, hajde da iskoristimo naš "epidemiološki simulator letenja" da istražimo: Kako postići R < 1 tako da **sačuvamo našu mentalnu *i* finansijsku stabilnost?**
 
 Pripremite se, prinudno sletanje...
 
@@ -354,7 +354,7 @@ U redu, lepo je nacrtati tu liniju koja predstavlja "kapacitet intenzivne nege",
 **Finansijsko stanje:** "Šta ćemo sa ekonomijom?!" zvuči kao da neko više brine o parama nego o životima, ali "ekonomija" nije samo berza i zarada poslodavaca: to je mogućnost da ljudi zarade za hranu i krov nad glavom za njih i njihove bližnje, da ulažu u budućnost njihove dece, i uživaju u umetnosti, hrani, video igrama - u svim onim stvarima koje čine život lepim i vrednim. I pored toga, siromaštvo *samo po sebi* ima katastrofalne posledice po mentalno i fizičko zdravlje.
 
 
-Ali, sad ne kažemo da *ne bi trebalo* da se zatvaramo opet! Vratićemo se kasnije na to "ciklično" otvaranje i zatvaranje. I dalje je daleko od idealne situacije.
+Ali ne kažemo da smo *protiv* ponovnog zatvaranja! Vratićemo se kasnije na to "ciklično" otvaranje i zatvaranje. I dalje je daleko od idealne situacije.
 
 Ali, čekajte. Zar nisu Tajvan i Južna Koreja *već* zauzdali COVID-19? Na čitava četiri meseca, *bez* dugoročnog zatvaranja?!
 
@@ -452,7 +452,7 @@ Izolacija *simptomatskih* slučajeva bi smanjila R za do 40%, a odlazak u karant
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Stoga, čak i bez stavljanja u karantin 100% kontakata, možemo da dođemo do R < 1 *bez zatvaranja*! Ovo je mnogo bolje za naše mentalno zdravlje i finansijsku situaciju. (Što se tiče troškova ljudi koji moraju da se samoizoluju/odu u karantin, *vlade bi trebalo da potpomognu* - plate za testove, osiguraju njihove poslove, subvencionišu odsustvo, i slično. To je i dalje jeftinije nego zatvaranje čitavih gradova, pa makar i u intervalima.)
+Stoga, čak i bez stavljanja u karantin 100% kontakata, možemo da dođemo do R < 1 *bez zatvaranja*! Ovo je mnogo bolje za naše mentalno zdravlje i finansijsku situaciju. (Što se tiče troškova ljudi koji moraju da se samoizoluju/odu u karantin, *vlade bi trebalo da potpomognu* - plate za testove, osiguraju njihove poslove, subvencionišu odsustvo, i slično. To je i dalje jeftinije čak i od periodičnog zatvaranja čitavih gradova.)
 
 
 Mi bismo onda održavali R < 1 dok ne dođemo do vakcine, što onda podložne <span class="nowrap"><icon s></icon></span> pretvara u imune <span class="nowrap"><icon r></icon>.</span> Izvolite imunitet *krda*, ali na pravi način:
@@ -513,14 +513,13 @@ No svejedno, mi i dalje ne znamo zasigurno koji je uticaj maski na *konkretno* C
 [^replication]: Svi pravi naučnici koji su pročitali poslednju rečenicu su se upravo sarkastično nasmejali. Pogledajte: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [kriza repreducibilnosti](https://en.wikipedia.org/wiki/Replication_crisis))
 
 
-U svakom slučaju, pandemija je kao poker. **Ako se kladite samo kad se 95% sigurni, izgubićete sve što imate.** Kao što je skorašnji članak na temu maski u Britanskom medicinskom časopisu primetio, [^precautionary] mi *moramo* da pravimo cost/benefit analize i u nesigurnim vremenima.
-
+U svakom slučaju, pandemija je kao poker. **Ako se kladite samo kad se 95% sigurni, izgubićete sve što imate.** Kao što je skorašnji članak na temu maski u Britanskom medicinskom časopisu primetio, [^precautionary] mi *moramo* da pravimo analizu potencijalnih uloga i dobitaka i u nesigurnim vremenima.
 
 [^precautionary]: “Vreme je da primenimo princip predostrožnosti” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: Ako uzmemo ručno pravljene tekstilne maske (koje su ~2/3 efektivne u odnosu na hirurške maske[^homemade]), to je super jeftino. Ako uzmemo hirurške maske, to je skuplje ali i dalje prilično jeftino.
+Ulog: Ako uzmemo ručno pravljene tekstilne maske (koje su ~2/3 efektivne u odnosu na hirurške maske[^homemade]), to je super jeftino. Ako uzmemo hirurške maske, to je skuplje ali i dalje prilično jeftino.
 
-Benefit: Čak i ako je šansa 50% da hirurške maske smanje prenošenje sa 0% na 70%, "očekivana vrednost" je i dalje 35%, što je kao da smo uveli polu-policijski čas! Stoga, hajde da probamo da procenimo da hirurške maske smanjuju R za 35%, smanjeno da odrazi nesigurnost. (Kao i u prethodnom slučaju, možete da se igrate i vidite kako se menjaju ishodi ako menjate parametre pomeranjem klizača levo-desno.)
+Dobitak: Čak i ako je šansa 50% da hirurške maske smanje prenošenje sa 0% na 70%, "očekivana vrednost" je i dalje 35%, što je kao da smo uveli polu-policijski čas! Stoga, hajde da probamo da procenimo da hirurške maske smanjuju R za 35%, smanjeno da odrazi nesigurnost. (Kao i u prethodnom slučaju, možete da se igrate i vidite kako se menjaju ishodi ako menjate parametre pomeranjem klizača levo-desno.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
@@ -582,7 +581,7 @@ Nadamo se da vam ovi planovi daju nadu.
 
 **Čak i u pesimističnom scenariju, *moguće* je pobediti COVID-19, štiteći našu psihičku i finansijsku stabilnost.** Koristeći zatvaranja kao "dugme za reset", čuvajući R < 1 sa izolacijom slučajeva + prateći kontakte uz zaštitu privatnosti + *barem* platnenim maskama za sve... i život se može vratiti u nešto skoro-normalno!
 
-Sigurno, suve su vam ruke. Ali, imaćete šansu da pozovete simpatiju u prodavnicu stripova! Imaćete šansu da odete sa prijateljima u bioskop i gledate poslednji holivudski blokbaster. Imaćete šansu da posmatrate ljude u biblioteci, uživajući u činjenici da ljudi nastavljaju sa sitnicama koje *život znače*.
+Sigurno, suve su vam ruke od čestog pranja. Ali, imaćete šansu da pozovete simpatiju u prodavnicu stripova! Imaćete šansu da odete sa prijateljima u bioskop i gledate poslednji holivudski blokbaster. Imaćete šansu da posmatrate ljude u biblioteci, uživajući u činjenici da ljudi nastavljaju sa sitnicama koje *život znače*.
 
 Čak i u najgorem slučaju... život opstaje.
 
@@ -621,7 +620,7 @@ Za ove simulacije, pretpostavimo da imunitet traje jednu godinu.
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Povratak eksponencijalnog opadanja!
+Povratak eksponencijalnog pada!
 
 Ovo je **SEIRS model**. Drugo "S" u nazivu označava da postoji povratak u <icon s></icon> Susceptible - podložno stanje ponovo.
 
@@ -687,7 +686,7 @@ Međutim, istraživači zaraznih bolesti su izrazili sledeća strahovanja: Šta 
 
 Možda želite da preispitate naše pretpostavke i probate drugačije vrednosti R<sub>0</sub> i ostalih parametara. Ili želite da simulirate *svoju* kombinaciju intervencija!
 
-**Ovde je simulacija, u kojoj je menjanje *svega* dostupno. (skrolovanjem ćete videti sve kontrole) Simulirajte i igrajte se dok ne zadovoljite znatiželju:**
+**Ovde je simulacija, u kojoj je menjanje *svega* dostupno (skrolovanjem ćete videti sve kontrole). Simulirajte i igrajte se dok ne zadovoljite znatiželju:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
@@ -708,7 +707,7 @@ Avion je potonuo. Uhvatili smo se za čamce za spašavanje. Vreme je da pronađe
 
 [^dry_land]: Metafora kopna [iz članka autora Marc Lipsitch i Yonatan Grad, u STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Timovi epidemiologa i donosioca odluka ([levo](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desno](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), i [zajedničkim snagama](https://ethics.harvard.edu/covid-roadmap)) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote *i* slobode.
+Timovi epidemiologa i donosioca odluka ([levih uverenja](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desnih uverenja](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), i [zajedničkim snagama](https://ethics.harvard.edu/covid-roadmap)) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote *i* slobode.
 
 U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
