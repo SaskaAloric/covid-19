@@ -301,7 +301,7 @@ Hajdemo sad da simuliramo šta bi se dogodilo sa COVID-19 epidemijom, da smo od 
 
 Tri napomene:
 
-1. Ovo *smanjuje* ukupan broj slučajeva! **Čak i da nemamo R < 1, smanjivanje R i dalje spašava živote, jer se time smanjuje i premašivanje broja zaraženih preko broja potrebnog za imunitet krda.** Dosta ljudi misli da se "Peglanjem krive" samo vremenski raširi broj slučajeva bez uticaja na ukupan broj. To je nemoguće u *svakom* osnovnom epidemiološkom modelu. Ali, zbog toga što su na vestima predstavili "80%+ biće inficirano" kao neizbežnu stvar, ljudi su mislili da će ukupan broj slučajeva prosto ostati isti, bez obzira na bilo šta. *Netačno.*
+1. Ovo *smanjuje* ukupan broj slučajeva! **Čak i da nemamo R < 1, smanjivanje R i dalje spasava živote, jer se time smanjuje i premašivanje broja zaraženih preko broja potrebnog za imunitet krda.** Dosta ljudi misli da se "Peglanjem krive" samo vremenski raširi broj slučajeva bez uticaja na ukupan broj. To je nemoguće u *svakom* osnovnom epidemiološkom modelu. Ali, zbog toga što su na vestima predstavili "80%+ biće inficirano" kao neizbežnu stvar, ljudi su mislili da će ukupan broj slučajeva prosto ostati isti, bez obzira na bilo šta. *Netačno.*
 
 2. Zbog dodatnih intervencija, aktuelni slučajevi su dostigli maksimum *pre* nego što je došlo do imuniteta krda. Zapravo, u ovoj simulaciji, ukupan broj slučajeva tek *malo* premašuje imunitet krda - što je bio i plan Velike Britanije! U tom trenutku je R < 1, što znači da se može odustati od svih ostalih intervencija, i COVID-19 ostaje zauzdan! Da, ako zanemarimo jedan problem:...
 
@@ -490,7 +490,7 @@ Pesimista pravi padobran.
 
 Šta ako je R<sub>0</sub> mnogo veće nego što smo mi mislili, i pored svih intervencija, i blagog distanciranja, mi *i dalje* ne uspevamo da dobijemo R < 1?
 
-Setimo se, iako ne možemo da dođemo do R < 1, smanjenjem R smanjujemo ukupan broj slučajeva, što znači da spašavamo živote. Ali i dalje, R < 1 je idealno, tako da evo na koje još dodatne načine možemo da utičemo na smanjenje R:
+Setimo se, iako ne možemo da dođemo do R < 1, smanjenjem R smanjujemo ukupan broj slučajeva, što znači da spasavamo živote. Ali i dalje, R < 1 je idealno, tako da evo na koje još dodatne načine možemo da utičemo na smanjenje R:
 
 
 **Maske Za Sve:**
@@ -586,7 +586,7 @@ Sigurno, suve su vam ruke od čestog pranja. Ali, imaćete šansu da pozovete si
 
 Čak i u najgorem slučaju... život opstaje.
 
-A sada, hajde da isplaniramo neke od *gorih* najgorih scenarija. Sletanje na vodu, pripremite svoje prsluke za spašavanje, i molimo pratite svetla do izlaza u slučaju opasnosti:
+A sada, hajde da isplaniramo neke od *gorih* najgorih scenarija. Sletanje na vodu, pripremite svoje prsluke za spasavanje, i molimo pratite svetla do izlaza u slučaju opasnosti:
 
 <div class="section chapter">
     <div>
@@ -704,7 +704,7 @@ Konačno, hajde da se vratimo na...
     </div>
 </div>
 
-Avion je potonuo. Uhvatili smo se za čamce za spašavanje. Vreme je da pronađemo kopno.[^dry_land]
+Avion je potonuo. Uhvatili smo se za čamce za spasavanje. Vreme je da pronađemo kopno.[^dry_land]
 
 [^dry_land]: Metafora kopna [iz članka autora Marc Lipsitch i Yonatan Grad, u STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
