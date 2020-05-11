@@ -14,19 +14,19 @@
 			</b>
 			pripremili
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiološka slika)
+			(epidemiologija)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
-			(umetnost/kod)
+			(dizajn/programiranje)
 		</div>
 	</div>
 </div>
 
 "Jedino čega se treba plašiti je sam strah" bio je glup savet.
 
-Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već kako *kanališemo* naš strah. Strah nam daje snagu da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
+Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu "masovnu paniku". Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa opasnostima sada i priprema nas za opasnosti kasnije.
 
-Iskreno, mi (Marcel, epidemiološka slika + Nicky, dizajn/kod) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
+Iskreno, mi (Marcel, epidemiologija + Nicky, dizajn/kod) smo zabrinuti. Kladimo se, i vi ste! Zato smo mi usmerili naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
 
 * **Prethodnih nekoliko meseci** (uvodni kurs epidemiologije, SEIR model, R i R<sub>0</sub>)
 * **Narednih nekoliko meseci** (ograničenja kretanja, praćenje kontakata, maske)
@@ -38,7 +38,7 @@ Ovaj vodič (objavljen prvog maja 2020. godine, vidi ovu fusnotu!→[^timestamp]
     
     **Ovaj vodič je objavljen prvog maja 2020.** Mnogi detalji će se menjati ali smo mi uvereni da će ovaj vodič pokriti 95% mogućih budućnosti i da će početni kurs epidemiologije biti zauvek od koristi.
 
-Vežite se: na putu smo da osetimo turbulencije.
+Vežite se, polećemo!
 
 <div class="section chapter">
     <div>
@@ -59,7 +59,7 @@ Procenjeno je da *se na početku* izbijanja COVID-19, virus prenosio sa <icon i>
 
 [^serial_interval]: “Prosečno vreme prenošenja zaraze (eng. serial interval) je 3.96 dana (interval poverenja od 95% je 3.53–4.39 dana)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Napomena: Preliminarne verzije članaka ne treba uzimati u obzir na isti način kao finalne verzije.)
 
-Ako simuliramo "dupliranje broja slučajeva na svaka 4 dana", *i ništa više*, u populaciji koja počinje sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa? 
+Ako simuliramo *samo efekat* "dupliranja broja slučajeva na svaka 4 dana", u populaciji koja počinje sa samo 0.001% <span class="nowrap"><icon i></icon>,</span> šta se događa? 
 
 **Pritiskom na "Pokreni" pokreće se simulacija! Možete je puštati ponovo kasnije sa drugačijim parametrima:** 
 (tehnički detalji: [^caveats])
@@ -82,7 +82,7 @@ Međutim, ova simulacija je pogrešna. Eksponencijalni rast, na svu sreću, ne d
 
 ![](pics/susceptiblessrb.png)
 
-Što je više zaraznih <span class="nowrap"><icon i></icon></span>, češće zdravi <span class="nowrap"><icon s></icon></span> postaju zarazni <span class="nowrap"><icon i></icon>,</span> **ali ima manje zdravih <span class="nowrap"><icon s></icon>,</span> pa *ređe* zdravi <span class="nowrap"><icon s></icon></span> postaju zarazni <span class="nowrap"><icon i></icon>.</span>**
+Što je više zaraznih <span class="nowrap"><icon i></icon></span>, zdravi <span class="nowrap"><icon s></icon></span> češće postaju zarazni <span class="nowrap"><icon i></icon>,</span> **ali ima manje zdravih <span class="nowrap"><icon s></icon>,</span> pa zdravi <span class="nowrap"><icon s></icon></span> *ređe* postaju zarazni <span class="nowrap"><icon i></icon>.</span>**
 
 Kako ovo menja rast zaraznih tokom epidemije? Otkrijmo:
 
@@ -134,7 +134,7 @@ U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <s
 
 ![](pics/seirsrb.png)
 
-(Ova varijanta modela zove se **SEIR model**[^seir], gde "E" potiče od <icon e></icon> "**E**xposed" - inficiranih. Na engleskom "Exposed", u svakodnevnom značenju približno našem "izložen", može značiti i da imate i da nemate virus, međutim u ovom tehničkom značenju, "Exposed" znači da imate virus. Naučna terminologija je loša. Prim. prev. iz istog razloga je u ovom prevodu odabrano korišćenje "inficirani" umesto "izloženi".)
+(Ova varijanta modela zove se **SEIR model**[^seir], gde "E" potiče od <icon e></icon> "**E**xposed" - inficiranih. Na engleskom "Exposed" , što znaci "izložen", ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu "Exposed" znači da osoba ima virus. Naučna terminologija je loša. Prim. prev. da bi se izbegla ista dilema u ovom prevodu odabrano korišćenje reči "inficirani" umesto "izloženi".)
 
 [^seir]: Za više tehničkih objašnjenja o SEIR modelu, pogledajte [Institute za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-seir.html) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
@@ -203,7 +203,7 @@ A sada, poigrajmo se sa SEIR modelom ponovo, ali prikazujući kako se vrednosti 
 
 Ovo se dešava zato što u trenutku kada broj <span class="nowrap">ne-<icon s></icon></span> nadmaši broj potreban za imunitet krda, tada se dostiže R < 1. A kada je R < 1, tada i broj trenutnih slučajeva prestaje da raste: dostignut je maksimalni broj zaraženih.
 
-**Ako ćete iz ovog čitanja usvojiti samo jednu pouku, neka to bude poruka na sledećem dijagramu** – u pitanju je izuzetno kompleksan dijagram, te mu posvetite onoliko vremena koliko je potrebno da ga u potpunosti savladate:
+**Ako ćete iz ovog čitanja usvojiti samo jednu pouku, neka to bude poruka na sledećem dijagramu** – u pitanju je izuzetno kompleksan dijagram, temeljno ga analizirajte da ga u potpunosti savladate:
 
 ![](pics/r3srb.png)
 
@@ -326,7 +326,7 @@ Ups.
 Ovo je taj "drugi talas" o kojem svi pričaju. Čim prestanemo sa zatvaranjem, opet dolazi do R > 1. Onda, jedan preostali <icon i></icon> (ili neki <span class="nowrap"><icon i></icon> koji je došao)</span> može da prouzrokuje ponovni skok u broju slučajeva, što je skoro pa podjednako loše kao da smo samo uradili Scenario 0: Apsolutno ništa.
 
 
-**Zatvaranje nije lek, već samo restart situacije.**
+**Zatvaranje nije rešenje, već samo restart situacije.**
 
 Dobro, šta to znači, mi sad samo treba da se zatvaramo (ili da uvodimo policijski čas) iznova i iznova?
 
@@ -417,7 +417,7 @@ Ovako ona radi:
     
     Za ostala pitanja kao što je potrošnja internet protoka, integritet izvora, i ostala pitanja u vezi sa bezbednošću podataka, pogledajte [open-source DP-3T predloge/whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
-Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], i Apple i Google su zainteresovani da se pozabave razvijanjem aplikacije za Android/iOS za praćenje kontakata sa primarnom zaštitom privatnosti.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravstveni sistem od tebe tražiti da instaliraš neku aplikaciju. Ako je obezbeđena zaštita privatnosti i sa javno dostupnim kodom (open-source), molimo te instaliraj je!
+Pored timova poput TCN Protocol[^tcn] i MIT PACT[^pact], i Apple i Google su zainteresovani da se pozabave razvijanjem aplikacije za Android/iOS za praćenje kontakata sa primarnom zaštitom privatnosti.[^gapple] (Ne veruješ Google/Apple? Ako! Lepota ovog sistema jeste što mu *ne treba* tvoje poverenje!) Možda će uskoro tvoj zdravstveni sistem od tebe tražiti da instaliraš neku aplikaciju. Ako je obezbeđena zaštita privatnosti i aplikacija ima javno dostupan kod (open-source), molimo te instaliraj je!
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
@@ -720,7 +720,7 @@ U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
 **Za donosioce odluka:** Donesite zakone da podržite osobe koje moraju da se samoizoluju/koji su u karantinu. Uposlite više osoba da se bave praćenjem kontakata, *podržite* ih adekvatnim aplikacijama koje prate kontakte i poštuju privatnost. Usmerite više finansija u stvari koje bi trebalo da pravimo, kao što su...
 
-**Za stvaraoce:** Stvarajte testove. Stvarajte respiratore. Stvarajte opremu za ličnu zaštitu za bolnice. Stvarajte testove. Stvarajte maske. Stvarajte aplikacije. Stvarajte antivirotike, profilaktike, i ostale lekove i tretmane koji nisu vakcine. Stvarajte vakcine. Stvarajte testove. Stvarajte testove. Stvarajte testove. Stvarajte nadu. 
+**Za stvaraoce:** Pravite testove. Pravite respiratore. Pravite opremu za ličnu zaštitu za bolnice. Pravite testove. Pravite maske. Pravite aplikacije. Pravite antivirotike, profilaktike, i ostale lekove i tretmane koji nisu vakcine. Pravite vakcine. Pravite testove. Pravite testove. Pravite testove. Stvarajte nadu. 
 
 Ne umanjujte strah da biste probudili nadu. Naš strah treba da se *udruži* sa nadom, kao što su stvaraoci aviona i padobrana. Pripremanje za strašne budućnosti je takođe i način na koji *stvaramo* budućnost kojoj se nadamo.
 
