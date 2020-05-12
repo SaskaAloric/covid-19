@@ -135,7 +135,7 @@ U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <s
 
 ![](pics/seirsrb.png)
 
-(Ova varijanta modela zove se **SEIR model**, gde „E“ potiče od <icon e></icon> „**E**xposed“ - inficiranih.[^seir] Na engleskom „Exposed“ , što znaci „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je nekad nekonzistentna. [^inficirani])
+(Ova varijanta modela zove se **SEIR model**, gde „E“ potiče od <icon e></icon> „**E**xposed“ - inficiranih.[^seir] Na engleskom „Exposed“ , što znači „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je nekad nekonzistentna. [^inficirani])
 
 [^seir]: Za više tehničkih objašnjenja o SEIR modelu, pogledajte [Institute za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-seir.html) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model).
 
@@ -314,7 +314,7 @@ Tri napomene:
 
 3. I dalje dolazi do zauzimanja svih kapaciteta na intenzivnoj nezi. Na nekoliko meseci. (I setimo se, *već* smo uzeli trostruko veći broj realnih kapaciteta u ovim simulacijama.)
 
-To je bio još jedan zaključak Izveštaja Imperial Koledza od 16. marta, koji je ubedio Engleze da odustanu od njihovog početnog plana. Svaki pokušaj u *ublažavanju* (što je smanjenje R, ali i dalje R > 1) će propasti. Jedini način da se izađe iz ove situacije je **suzbijanje** (smanjenje R tako da bude R < 1).
+To je bio još jedan zaključak Izveštaja Imperial Koledža od 16. marta, koji je ubedio Engleze da odustanu od svog početnog plana. Svaki pokušaj u *ublažavanju* (što je smanjenje R, ali i dalje R > 1) će propasti. Jedini način da se izađe iz ove situacije je **suzbijanje** (smanjenje R tako da bude R < 1).
 
 
 ![](pics/mitigation_vs_suppressionsrb.png)
@@ -345,7 +345,7 @@ Ovo rešenje je bilo predloženo prvo u Izveštaju Imperial Koledža 16. marta, 
 [^lockdown_harvard]: „Ako ne uzmemo u obzir ostale intervencije, glavni parametar uspešnosti sprovođenja mera fizičkog distanciranja je da li su popunjeni svi kapaciteti intenzivnih nega. Da bi se ovo izbeglo, produžena ili pak naizmenična fizička distanciranja su potencijalno neophodna i do 2022 godine.“ [Kissler i Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
 **Evo i simulacije:** 
-(Pošto se izigrate sa „već nameštenim scenariom“, možete da probate i *vaše* rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača *dok* traje simulacija! Setite se da možete da pauzirate i nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)
+(Pošto se izigrate sa „već nameštenim scenarijem“, možete da probate i *vaše* rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača *dok* traje simulacija! Setite se da možete da pauzirate i nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
@@ -359,7 +359,7 @@ Lepo je što smo nacrtali liniju koja predstavlja „kapacitet intenzivne nege�
 
 [^loneliness]: Pogledajte [Sliku 6 iz Holt-Lunstad i Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Naravno, obratimo pažnju da su uočili *korelaciju*. Ali, sem ako ne želimo da nasumično ljude stavljamo u izolaciju da bismo istraživali usamljenost, jedino što imamo su podaci sa posmatranja kao što je ovo. 
 
-**Finansijsko stanje:** „Šta ćemo sa ekonomijom?!“ zvuči kao da neko više brine o parama nego o životima, ali „ekonomija“ nije samo berza i zarada poslodavaca: to je mogućnost da ljudi zarade za hranu i krov nad glavom za njih i njihove bližnje, da ulažu u budućnost njihove dece, i uživaju u umetnosti, hrani, video igrama - u svim onim stvarima koje čine život lepim i vrednim. I pored toga, siromaštvo *samo po sebi* ima katastrofalne posledice po mentalno i fizičko zdravlje.
+**Finansijsko stanje:** „Šta ćemo sa ekonomijom?!“ zvuči kao da neko više brine o parama nego o životima, ali „ekonomija“ nije samo berza i zarada poslodavaca: to je mogućnost da ljudi zarade za hranu i krov nad glavom za sebe i svoje bližnje, da ulažu u budućnost svoje dece, i uživaju u umetnosti, hrani, video igrama - u svim onim stvarima koje čine život lepim i vrednim. I pored toga, siromaštvo *samo po sebi* ima katastrofalne posledice po mentalno i fizičko zdravlje.
 
 
 Ali ne kažemo da smo *protiv* ponovnog zatvaranja! Vratićemo se kasnije na to "ciklično" otvaranje i zatvaranje. I dalje je daleko od idealne situacije.
@@ -521,7 +521,7 @@ No svejedno, mi i dalje ne znamo zasigurno koji je uticaj maski na *konkretno* C
 [^replication]: Svi pravi naučnici koji su pročitali poslednju rečenicu su se upravo sarkastično nasmejali. Pogledajte: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [kriza repreducibilnosti](https://en.wikipedia.org/wiki/Replication_crisis))
 
 
-U svakom slučaju, pandemija je kao poker. **Ako se kladite samo kad se 95% sigurni, izgubićete sve što imate.** Kao što je skorašnji članak na temu maski u Britanskom medicinskom časopisu primetio[^precautionary], mi *moramo* da pravimo analizu potencijalnih uloga i dobitaka i u nesigurnim vremenima.
+U svakom slučaju, pandemija je kao poker. **Ako se kladite samo kad ste 95% sigurni, izgubićete sve što imate.** Kao što je skorašnji članak na temu maski u Britanskom medicinskom časopisu primetio[^precautionary], mi *moramo* da pravimo analizu potencijalnih uloga i dobitaka i u nesigurnim vremenima.
 
 [^precautionary]: „Vreme je da primenimo princip predostrožnosti.“ [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
@@ -591,7 +591,7 @@ Nadamo se da vam ovi planovi daju nadu.
 
 **Čak i u pesimističnom scenariju, *moguće* je pobediti COVID-19, štiteći našu psihičku i finansijsku stabilnost.** Koristeći zatvaranja kao „dugme za reset“, čuvajući R < 1 sa izolacijom slučajeva + prateći kontakte uz zaštitu privatnosti + *barem* platnenim maskama za sve... i život se može vratiti u nešto skoro-normalno!
 
-Sigurno, suve su vam ruke od čestog pranja. Ali, imaćete šansu da pozovete simpatiju u prodavnicu stripova! Imaćete šansu da odete sa prijateljima u bioskop i gledate poslednji holivudski blokbaster. Imaćete šansu da posmatrate ljude u biblioteci, uživajući u činjenici da ljudi nastavljaju sa sitnicama koje *život znače*.
+Ruke su vam sigurno suve od čestog pranja. Ali, imaćete šansu da pozovete simpatiju u prodavnicu stripova! Imaćete šansu da odete sa prijateljima u bioskop i gledate poslednji holivudski blokbaster. Imaćete šansu da posmatrate ljude u biblioteci, uživajući u činjenici da ljudi nastavljaju sa sitnicama koje *život znače*.
 
 Čak i u najgorem slučaju... život opstaje.
 
@@ -717,7 +717,7 @@ Avion je potonuo. Uhvatili smo se za čamce za spasavanje. Vreme je da pronađem
 
 [^dry_land]: Metafora kopna [iz članka autora Marc Lipsitch i Yonatan Grad, u STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Timovi epidemiologa i donosioca odluka ([levih uverenja](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desnih uverenja](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), i [zajedničkim snagama](https://ethics.harvard.edu/covid-roadmap)) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote *i* slobode.
+Timovi epidemiologa i donosilaca odluka ([levih uverenja](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desnih uverenja](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), i [zajedničkim snagama](https://ethics.harvard.edu/covid-roadmap)) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote *i* slobode.
 
 U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:
 
