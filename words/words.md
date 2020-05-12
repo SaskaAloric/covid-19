@@ -500,7 +500,7 @@ Setimo se, iako ne možemo da dođemo do R < 1, smanjenjem R smanjujemo ukupan b
 
 **Maske Za Sve:**
 
-*„Čekaj,“* možda ćete pitati, *„Zar se nije pokazalo da maske ne mogu potpuno da zaštite od zaraze?“*
+*„Čekajte,“* možda ćete pitati, *„Zar se nije pokazalo da maske ne mogu potpuno da zaštite od zaraze?“*
 
 I bili biste u pravu. Maske ne mogu da nas zaštite od infekcije[^incoming]... one štite *druge* od nas.
 
