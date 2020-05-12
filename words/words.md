@@ -94,7 +94,9 @@ Ovo je „S-kriva“ ili **kriva logističkog rasta.** Počinje malim brojevima,
 Ali, ova simulacija je *i dalje* pogrešna. Nismo iskoristili činjenicu da zarazni <icon i></icon> u nekom trenutku prestaju da budu zarazni, ili 1) oporavkom, 2) „oporavkom“ sa oštećenim plućima, ili 3) umiranjem.
 
 Zarad pojednostavljenja, hajde da pretpostavimo da svi zarazni <icon i></icon> postaju oporavljeni <icon r></icon> (eng. **R**ecovered). (Samo zapamtite da u realnosti, neki umiru. [^sirkoment]) Oporavljeni <span class="nowrap"><icon r></icon></span> ne mogu ponovo biti zaraženi, i pretpostavimo – *za sada!* – da oni ostaju doživotno imuni.
+
 [^sirkoment]: Na engleskom se u okviru **SIR** modela - **R**ecovered često nazivaju i **R**emoved, tj. uklonjeni iz daljeg epidemiološkog razmatranja ili smrću ili trajnim imunitetom, prim. prev.
+
 U slučaju COVID-19, procenjeno je da su <icon i></icon> zarazni  *u proseku* 10 dana.[^infectiousness] To znači da će se neki oporaviti za manje od 10 dana, a nekima će biti potrebno više. **To ovako izgleda sa simulacijom koja *počinje* sa 100% <span class="nowrap"><icon i></icon>:</span>**
 
 [^infectiousness]: „Medijalna vrednost perioda tokom koga je COVID-19 pozitivna osoba zarazna \[...\] je 9.5 dana.“ [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Da, znamo da „medijalna“ vrednost nije isto što i „prosečna vrednost“. U cilju ovog pojednostavljenog edukativnog modela mislimo da su ove dve vrednosti dovoljno bliske.
