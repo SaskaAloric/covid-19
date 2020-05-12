@@ -24,7 +24,7 @@
 
 „Jedino čega se treba plašiti je sâm strah“ je bio glup savet.
 
-Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu „masovnu paniku“. Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa sadašnjim opasnostima i priprema nas za one kasnije.
+Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će potceniti realnost situacije sa ciljem da izbegnu „masovnu paniku“. Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa sadašnjim opasnostima i priprema nas za one kasnije.
 
 Mi (Marcel, epidemiologija + Nicky, dizajn/programiranje) smo iskreno zabrinuti. Kladimo se da ste i vi! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
 
