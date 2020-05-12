@@ -104,7 +104,7 @@
     </div>
 </div>
 <p>„Jedino čega se treba plašiti je sâm strah“ je bio glup savet.</p>
-<p>Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će potceniti realnost situacije sa ciljem da izbegnu „masovnu paniku“. Strah nije problem, već šta <em>radimo</em> sa njim. Strah nam daje snagu da se nosimo sa sadašnjim opasnostima i priprema nas za one kasnije.</p>
+<p>Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu „masovnu paniku“. Strah nije problem, već šta <em>radimo</em> sa njim. Strah nam daje snagu da se nosimo sa sadašnjim opasnostima i priprema nas za one kasnije.</p>
 <p>Mi (Marcel, epidemiologija + Nicky, dizajn/programiranje) smo iskreno zabrinuti. Kladimo se da ste i vi! Zato smo mi kanalisali naš strah u pripremanje ovih <strong>interaktivnih simulacija</strong>, tako da <em>vi</em> možete kanalisati strah u razumevanje:</p>
 <ul>
 <li><strong>Prethodnih nekoliko meseci</strong> (uvodni kurs epidemiologije, SEIR model, R i R<sub>0</sub>)</li>
@@ -160,7 +160,7 @@
 <p><strong>Komentar: Simulacije na osnovu kojih se donose odluke su <em>mnogo</em> sofisticiranije od ovih!</strong> Ali SIR model i dalje može da objasni neke generalne trendove, iako mu nedostaju finese.</p>
 <p>U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <span class="nowrap"><icon i></icon>, </span> oni prvo postanu <icon e></icon> <em>inficirani</em> (eng. <strong>E</strong>xposed). U ovom stanju, ljudi imaju virus ali ga ne mogu još prenositi, oni su zara<em>ženi</em> ali ne još zara<em>zni</em>.</p>
 <p><img src="pics/seirsrb.png" /></p>
-<p>(Ova varijanta modela zove se <strong>SEIR model</strong>, gde „E“ potiče od <icon e></icon> „<strong>E</strong>xposed“ - inficiranih.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Na engleskom „Exposed“ , što znaci „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je nekad nekonzistentna. <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>)</p>
+<p>(Ova varijanta modela zove se <strong>SEIR model</strong>, gde „E“ potiče od <icon e></icon> „<strong>E</strong>xposed“ - inficiranih.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Na engleskom „Exposed“ , što znači „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je nekad nekonzistentna. <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>)</p>
 <p>U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-ne-još-zarazan provede 3 dana, <em>u proseku</em>.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> Šta se dešava ako i to dodamo u simulaciju?</p>
 <p><b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su <em>aktuelni</em> slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a><br />
 <b style='color:#888'>Siva kriva</b> su <em>ukupni</em> slučajevi (aktuelni + oporavljeni <span class="nowrap"><icon r></icon>):</span></p>
@@ -240,7 +240,7 @@
 <li><p>Zbog dodatnih intervencija, aktuelni slučajevi su dostigli maksimum <em>pre</em> nego što je došlo do imuniteta krda. Zapravo, u ovoj simulaciji, ukupan broj slučajeva tek <em>malo</em> premašuje imunitet krda - što je bio i plan Velike Britanije! U tom trenutku je R &lt; 1, što znači da se može odustati od svih ostalih intervencija, i COVID-19 ostaje zauzdan! Da, ako zanemarimo jedan problem:...</p></li>
 <li><p>I dalje dolazi do zauzimanja svih kapaciteta na intenzivnoj nezi. Na nekoliko meseci. (I setimo se, <em>već</em> smo uzeli trostruko veći broj realnih kapaciteta u ovim simulacijama.)</p></li>
 </ol>
-<p>To je bio još jedan zaključak Izveštaja Imperial Koledza od 16. marta, koji je ubedio Engleze da odustanu od njihovog početnog plana. Svaki pokušaj u <em>ublažavanju</em> (što je smanjenje R, ali i dalje R &gt; 1) će propasti. Jedini način da se izađe iz ove situacije je <strong>suzbijanje</strong> (smanjenje R tako da bude R &lt; 1).</p>
+<p>To je bio još jedan zaključak Izveštaja Imperial Koledža od 16. marta, koji je ubedio Engleze da odustanu od svog početnog plana. Svaki pokušaj u <em>ublažavanju</em> (što je smanjenje R, ali i dalje R &gt; 1) će propasti. Jedini način da se izađe iz ove situacije je <strong>suzbijanje</strong> (smanjenje R tako da bude R &lt; 1).</p>
 <p><img src="pics/mitigation_vs_suppressionsrb.png" /></p>
 <p>To znači nemoj samo da <em>peglaš</em> krivu - <em>uništi</em> krivu. Na primer, probajmo...</p>
 <h3>Scenario 2: Višemesečno zatvaranje (gradova, policijski čas i slično)</h3>
@@ -254,14 +254,14 @@
 <p>Dobro, šta to znači, mi sad samo treba da se zatvaramo (ili da uvodimo policijski čas) iznova i iznova?</p>
 <h3>Scenario 3: Naizmenično Zatvaranje-Otvaranje</h3>
 <p>Ovo rešenje je bilo predloženo prvo u Izveštaju Imperial Koledža 16. marta, a potom i u jednom radu naučnika sa Harvarda.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
-<p><strong>Evo i simulacije:</strong> (Pošto se izigrate sa „već nameštenim scenariom“, možete da probate i <em>vaše</em> rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača <em>dok</em> traje simulacija! Setite se da možete da pauzirate i nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)</p>
+<p><strong>Evo i simulacije:</strong> (Pošto se izigrate sa „već nameštenim scenarijem“, možete da probate i <em>vaše</em> rasporede zatvaranja gradova/policijskog časa, menjajući vrednosti klizača <em>dok</em> traje simulacija! Setite se da možete da pauzirate i nastavite simulaciju, kao i da promenite njenu brzinu izvršavanja.)</p>
 <div class="sim">
         <iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 <p>Ovo <em>bi</em> zadržalo ukupan broj slučajeva ispod kapaciteta invenzivne nege! I <em>mnogo</em> je bolje od zatvaranja gradova na 18 meseci, dok vakcina ne postane dostupna. Jedino što mi treba da radimo jeste.. da se zatvorimo na par meseci, otvorimo na par meseci, i ponavljamo ovo u krug dok ne dođemo do vakcine. (Ili u slučaju da nema vakcine, ponavljamo dok ne dostignemo imunitet krda... u 2022. godini.)</p>
 <p>Lepo je što smo nacrtali liniju koja predstavlja „kapacitet intenzivne nege“, ali postoji tu još vrlo bitnih stvari koje mi <em>ne možemo</em> da simuliramo. Na primer:</p>
 <p><strong>Mentalno zdravlje:</strong> Usamljenost je jedan od najbitnijih faktora rizika za depresiju, anksioznost i samoubistvo. I povezuje se sa preuranjenom smrtnošću u sličnoj meri kao i pušenje 15 cigareta dnevno.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a></p>
-<p><strong>Finansijsko stanje:</strong> „Šta ćemo sa ekonomijom?!“ zvuči kao da neko više brine o parama nego o životima, ali „ekonomija“ nije samo berza i zarada poslodavaca: to je mogućnost da ljudi zarade za hranu i krov nad glavom za njih i njihove bližnje, da ulažu u budućnost njihove dece, i uživaju u umetnosti, hrani, video igrama - u svim onim stvarima koje čine život lepim i vrednim. I pored toga, siromaštvo <em>samo po sebi</em> ima katastrofalne posledice po mentalno i fizičko zdravlje.</p>
+<p><strong>Finansijsko stanje:</strong> „Šta ćemo sa ekonomijom?!“ zvuči kao da neko više brine o parama nego o životima, ali „ekonomija“ nije samo berza i zarada poslodavaca: to je mogućnost da ljudi zarade za hranu i krov nad glavom za sebe i svoje bližnje, da ulažu u budućnost svoje dece, i uživaju u umetnosti, hrani, video igrama - u svim onim stvarima koje čine život lepim i vrednim. I pored toga, siromaštvo <em>samo po sebi</em> ima katastrofalne posledice po mentalno i fizičko zdravlje.</p>
 <p>Ali ne kažemo da smo <em>protiv</em> ponovnog zatvaranja! Vratićemo se kasnije na to "ciklično" otvaranje i zatvaranje. I dalje je daleko od idealne situacije.</p>
 <p>Ali, čekajte. Zar nisu Tajvan i Južna Koreja <em>već</em> zauzdali COVID-19? Na čitava četiri meseca, <em>bez</em> dugoročnog zatvaranja?!</p>
 <p>Kako?</p>
@@ -321,7 +321,7 @@
 <p><img src="pics/maskssrb.png" /></p>
 <p>Ako hoćemo da pričamo u brojevima: kada <em>inficirana osoba</em> nosi hiruršku masku ona smanjuju izbacivanje kapljica za do 70% (a one mogu sadržati viruse gripa i prehlade).<a href="#fn34" class="footnote-ref" id="fnref34" role="doc-noteref"><sup>34</sup></a> Smanjivanje prenošenja za 70% ima <em>sličan</em> efekat kao što ima i zatvaranje gradova!</p>
 <p>No svejedno, mi i dalje ne znamo zasigurno koji je uticaj maski na <em>konkretno</em> COVID-19 zarazu. U nauci se objavljuju jedino rezultati ako ste bar 95% sigurni u njih. (...ok, barem bi trebalo da je tako.<a href="#fn35" class="footnote-ref" id="fnref35" role="doc-noteref"><sup>35</sup></a>) Maske, bar 1. maja 2020, su manje od „95% sigurne“.</p>
-<p>U svakom slučaju, pandemija je kao poker. <strong>Ako se kladite samo kad se 95% sigurni, izgubićete sve što imate.</strong> Kao što je skorašnji članak na temu maski u Britanskom medicinskom časopisu primetio<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a>, mi <em>moramo</em> da pravimo analizu potencijalnih uloga i dobitaka i u nesigurnim vremenima.</p>
+<p>U svakom slučaju, pandemija je kao poker. <strong>Ako se kladite samo kad ste 95% sigurni, izgubićete sve što imate.</strong> Kao što je skorašnji članak na temu maski u Britanskom medicinskom časopisu primetio<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a>, mi <em>moramo</em> da pravimo analizu potencijalnih uloga i dobitaka i u nesigurnim vremenima.</p>
 <p>Ulog: Ako koristimo ručno pravljene platnene maske (koje su ~2/3 efektivne u odnosu na hirurške maske<a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a>), to je super jeftino. Ako koristimo hirurške maske, to je skuplje, ali i dalje prilično jeftino.</p>
 <p>Dobitak: Čak i ako je šansa 50% da hirurške maske smanje prenošenje sa 0% na 70%, „očekivana vrednost“ je i dalje 35%, što je kao da smo uveli polu-policijski čas! Stoga, hajde da probamo da procenimo da hirurške maske smanjuju R za 35%, umanjeno da odrazi nesigurnost. (Kao i u prethodnom slučaju, možete da se igrate i vidite kako se menjaju ishodi ako menjate parametre pomeranjem klizača.)</p>
 <div class="sim">
@@ -358,7 +358,7 @@
 </ul>
 <p>Nadamo se da vam ovi planovi daju nadu.</p>
 <p><strong>Čak i u pesimističnom scenariju, <em>moguće</em> je pobediti COVID-19, štiteći našu psihičku i finansijsku stabilnost.</strong> Koristeći zatvaranja kao „dugme za reset“, čuvajući R &lt; 1 sa izolacijom slučajeva + prateći kontakte uz zaštitu privatnosti + <em>barem</em> platnenim maskama za sve... i život se može vratiti u nešto skoro-normalno!</p>
-<p>Sigurno, suve su vam ruke od čestog pranja. Ali, imaćete šansu da pozovete simpatiju u prodavnicu stripova! Imaćete šansu da odete sa prijateljima u bioskop i gledate poslednji holivudski blokbaster. Imaćete šansu da posmatrate ljude u biblioteci, uživajući u činjenici da ljudi nastavljaju sa sitnicama koje <em>život znače</em>.</p>
+<p>Ruke su vam sigurno suve od čestog pranja. Ali, imaćete šansu da pozovete simpatiju u prodavnicu stripova! Imaćete šansu da odete sa prijateljima u bioskop i gledate poslednji holivudski blokbaster. Imaćete šansu da posmatrate ljude u biblioteci, uživajući u činjenici da ljudi nastavljaju sa sitnicama koje <em>život znače</em>.</p>
 <p>Čak i u najgorem slučaju... život opstaje.</p>
 <p>A sada, hajde da isplaniramo neke od <em>gorih</em> najgorih scenarija. Sletanje na vodu, pripremite svoje prsluke za spasavanje, i molimo pratite svetla do izlaza u slučaju opasnosti:</p>
 <div class="section chapter">
@@ -427,7 +427,7 @@
     </div>
 </div>
 <p>Avion je potonuo. Uhvatili smo se za čamce za spasavanje. Vreme je da pronađemo kopno.<a href="#fn48" class="footnote-ref" id="fnref48" role="doc-noteref"><sup>48</sup></a></p>
-<p>Timovi epidemiologa i donosioca odluka (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">levih uverenja</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">desnih uverenja</a>, i <a href="https://ethics.harvard.edu/covid-roadmap">zajedničkim snagama</a>) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote <em>i</em> slobode.</p>
+<p>Timovi epidemiologa i donosilaca odluka (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">levih uverenja</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">desnih uverenja</a>, i <a href="https://ethics.harvard.edu/covid-roadmap">zajedničkim snagama</a>) došli su do koncenzusa o tome kako pobediti COVID-19, čuvajući naše živote <em>i</em> slobode.</p>
 <p>U nastavku je skica ideje, sa nekim (manje-usaglašenim) rezervnim planovima:</p>
 <p><img src="pics/plansrb.png" /></p>
 <p>Šta ovo znači za TEBE, sada?</p>
