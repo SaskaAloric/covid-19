@@ -26,7 +26,7 @@
 
 Naravno, ne morate nagomilavati rolne toalet papira – ali ako se oni zaduženi za donošenje odluka plaše straha, oni će podceniti realnost situacije sa ciljem da izbegnu „masovnu paniku“. Strah nije problem, već šta *radimo* sa njim. Strah nam daje snagu da se nosimo sa sadašnjim opasnostima i priprema nas za one kasnije.
 
-Iskreno, mi (Marcel, epidemiologija + Nicky, dizajn/programiranje) smo zabrinuti. Kladimo se da ste i vi! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
+Mi (Marcel, epidemiologija + Nicky, dizajn/programiranje) smo iskreno zabrinuti. Kladimo se da ste i vi! Zato smo mi kanalisali naš strah u pripremanje ovih **interaktivnih simulacija**, tako da *vi* možete kanalisati strah u razumevanje:
 
 * **Prethodnih nekoliko meseci** (uvodni kurs epidemiologije, SEIR model, R i R<sub>0</sub>)
 * **Narednih nekoliko meseci** (ograničenja kretanja, praćenje kontakata, maske)
@@ -105,7 +105,7 @@ U slučaju COVID-19, procenjeno je da su <icon i></icon> zarazni  *u proseku* 10
 
 Ovo je suprotno od eksponencijalnog rasta, ovo je **kriva eksponencijalnog pada.**
 
-Šta se dešava ako simulirate S krivu logističkog rasta *sa* oporavljanjem?
+Kako se menja S-kriva logističkog rasta ako se u simulaciju *doda* efekat oporavljanja?
 
 ![](pics/graphs_q.png)
 
@@ -133,9 +133,11 @@ U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <s
 
 ![](pics/seirsrb.png)
 
-(Ova varijanta modela zove se **SEIR model**, gde „E“ potiče od <icon e></icon> „**E**xposed“ - inficiranih.[^seir] Na engleskom „Exposed“ , što znaci „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je loša. Prim. prev. da bi se izbegla ista dilema u ovom prevodu odabrano korišćenje reči „inficirani“ umesto „izloženi“.)
+(Ova varijanta modela zove se **SEIR model**, gde „E“ potiče od <icon e></icon> „**E**xposed“ - inficiranih.[^seir] Na engleskom „Exposed“ , što znaci „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je loša. [^inficirani])
 
 [^seir]: Za više tehničkih objašnjenja o SEIR modelu, pogledajte [Institute za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-seir.html) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model).
+
+[^inficirani]: Da bi se izbegla ista dilema u ovom prevodu odabrano korišćenje reči „inficirani“ umesto „izloženi“, prim. prev.
 
 U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-ne-još-zarazan provede 3 dana, *u proseku*.[^latent] Šta se dešava ako i to dodamo u simulaciju?
 
@@ -144,7 +146,7 @@ U slučaju COVID-19, procenjeno je da se u stanju <icon e></icon> inficiran-ali-
 <b style='color:#ff4040'>Crvena <b style='color:#FF9393'>+ Roze</b> kriva</b> su *aktuelni* slučajevi (zarazni <icon i></icon> + inficirani <span class="nowrap"><icon e></icon>),</span>[^izvestavanje]    
 <b style='color:#888'>Siva kriva</b> su *ukupni* slučajevi (aktuelni + oporavljeni <span class="nowrap"><icon r></icon>):</span>
 
-[^izvestavanje]: Dnevni izveštaji o COVID-19 pozitivnim pacijentima o kojima čujete na dnevnim konferencijama za štampu su samo deo *aktuelnih* slučajeva, označenih crvenom bojom na graficima u simulacijama. U dnevnim izveštajima i medijima govori se samo o zaraznima koji su *testirani*, prim. prev.
+[^izvestavanje]: U dnevnim izveštajima i medijima govori se samo o zaraznima koji su *testirani*, kojih je svakako manje od *aktuelnih* slučajeva prikazanih na graficima, prim. prev.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
