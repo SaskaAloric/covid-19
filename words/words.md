@@ -133,7 +133,7 @@ U stvari, hajde da dodamo jednu finesu: pre nego što <icon s></icon> postanu <s
 
 ![](pics/seirsrb.png)
 
-(Ova varijanta modela zove se **SEIR model**, gde „E“ potiče od <icon e></icon> „**E**xposed“ - inficiranih.[^seir] Na engleskom „Exposed“ , što znaci „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je loša. [^inficirani])
+(Ova varijanta modela zove se **SEIR model**, gde „E“ potiče od <icon e></icon> „**E**xposed“ - inficiranih.[^seir] Na engleskom „Exposed“ , što znaci „izložen“, ne potvrđuje da je virus u organizmu, već samo da je postojala šansa da se osoba zarazi. Međutim, u ovom modelu „Exposed“ znači da osoba ima virus. Naučna terminologija je nekad nekonzistentna. [^inficirani])
 
 [^seir]: Za više tehničkih objašnjenja o SEIR modelu, pogledajte [Institute za modelovanje bolesti](https://www.idmod.org/docs/hiv/model-seir.html) i [Vikipediju](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model).
 
@@ -166,7 +166,7 @@ Ovo je skraćeno od „Reproduktivni broj“ (eng. Reproduction number). To je *
 
 **R<sub>0</sub>** je vrednost R *na početku epidemije, pre imuniteta ili intervencija*. R<sub>0</sub> bliže prikazuje snagu samog virusa, ali se ipak menja u zavisnosti od lokacije. Na primer, R<sub>0</sub> je veće u gušće naseljenim gradovima nego u retko naseljenim ruralnim sredinama.
 
-(Većina članaka u novinama – čak i neki istraživački radovi! – mešaju R i R<sub>0</sub>. Opet, naučna terminologija je loša.)
+(Većina članaka u novinama – čak i neki istraživački radovi! – mešaju R i R<sub>0</sub>. Opet, naučna terminologija je nekad nekonzistentna.)
 
 R<sub>0</sub> „tipičnog“ sezonskog gripa je oko 1.28.[^r0_flu] Ovo znači da na *početku* epidemije gripa, svaki <icon i></icon> zarazi 1.28 drugih *u proseku.* (Ako zvuči čudno što ovo nije ceo broj, setite se da „prosečno“ majke imaju 2.4 deteta. To ne znači da polu-deca trče okolo.)
 
@@ -545,7 +545,7 @@ Dobitak: Čak i ako je šansa 50% da hirurške maske smanje prenošenje sa 0% na
 
 OK, ovo nije „intervencija“ koju možemo kontrolisati, ali će pomoći! Neki mediji su izveštavali da leto neće učiniti ništa koronavirusu. Oni su samo delimično u pravu: sâmo leto neće pomoći da se dostigne R < 1, ali *hoće* umanjiti R.
 
-U slučaju COVID-19, svaki dodatni 1°C snižava R za 1.2%.[^heat] Razlika u stepenima između leta i zime u Njujorku je 26°C[^nyc_heat], tako da će kao posledica letnjih vrelina vrednost R opasti za ~31%. Što se tiče situacije u Srbiji, razlika između zimskog i letnjeg perioda u protekloj godini iznosi 19.1°C, čime dolazimo do procene da će R opasti za ~23%. Ako pogledamo razliku temperatura između januara 2020. godine i jula 2019. godine, u Beogradu je ona iznosila 22.3°C (R se smanjuje za ~27%), dok je na Zlatiboru 19.2°C (R je manje za ~23%). Prim. prev. [^rhzm]
+U slučaju COVID-19, svaki dodatni 1°C snižava R za 1.2%.[^heat] Razlika u stepenima između leta i zime u Njujorku je 26°C[^nyc_heat], tako da će kao posledica letnjih vrelina vrednost R opasti za ~31%. Što se tiče situacije u Srbiji, razlika između letnjeg i zimskog perioda u protekloj godini iznosi 19.1°C, čime dolazimo do procene da će R opasti za ~23%. Ako pogledamo razliku temperatura između januara 2020. godine i jula 2019. godine, u Beogradu je ona iznosila 22.3°C (R se smanjuje za ~27%), dok je na Zlatiboru 19.2°C (R je manje za ~23%). Prim. prev. [^rhzm]
 
 [^heat]: „Povećanje temperature za jedan stepen Celzijusove skale [...] smanjuje R za 0.0225“ i „Prosečna vrednost R za ovih 100 gradova je 1.83“. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan i Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
