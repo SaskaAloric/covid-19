@@ -317,7 +317,7 @@ To je bio još jedan zaključak Izveštaja Imperial Koledza od 16. marta, koji j
 
 ![](pics/mitigation_vs_suppressionsrb.png)
 
-To znači, nemoj samo da *peglaš* krivu, *uništi* krivu. 
+To znači nemoj samo da *peglaš* krivu - *uništi* krivu. Na primer, probajmo...
 
 ###Scenario 2: Višemesečno zatvaranje (gradova, policijski čas i slično)
 
